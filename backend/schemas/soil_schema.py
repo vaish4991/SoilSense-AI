@@ -5,7 +5,7 @@ weather data, recommendations, and API request/response models.
 """
 from __future__ import annotations
 from typing import Literal, Optional, List
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 # ─────────────────────────────────────────────────────────────
@@ -41,18 +41,48 @@ class SoilFeatures(BaseModel):
 
 class PHEstimate(BaseModel):
     """pH estimate produced by the ML model, always presented as a range with confidence."""
-    min: float = Field(..., ge=0.0, le=14.0)
-    max: float = Field(..., ge=0.0, le=14.0)
-    midpoint: float = Field(..., ge=0.0, le=14.0)
+    # Calibrated interval bounds & point estimate (Requirement 10)
+    estimated_ph: float = Field(default=6.5, ge=0.0, le=14.0, description="Estimated point pH")
+    lower_bound: float = Field(default=5.5, ge=0.0, le=14.0, description="Lower pH bound (calibrated conformal prediction interval)")
+    upper_bound: float = Field(default=7.5, ge=0.0, le=14.0, description="Upper pH bound (calibrated conformal prediction interval)")
+    confidence_level: Literal["High", "Medium", "Low"] = Field(default="Medium", description="Qualitative confidence rating")
+
+    # Backwards-compatible fields for frontend and existing endpoints
+    min: float = Field(default=5.5, ge=0.0, le=14.0, description="Alias for lower_bound")
+    max: float = Field(default=7.5, ge=0.0, le=14.0, description="Alias for upper_bound")
+    midpoint: float = Field(default=6.5, ge=0.0, le=14.0, description="Alias for estimated_ph")
     confidence: float = Field(..., ge=0.0, le=1.0, description="Model confidence score 0–1")
     low_confidence_warning: Optional[str] = Field(
         default=None,
-        description="Warning message if prediction is outside training distribution"
+        description="Warning message if prediction is outside training distribution or inputs are sparse"
     )
     method_note: str = Field(
-        default="Predicted using Random Forest ensemble spread across decision trees.",
-        description="Brief explanation of how confidence was derived"
+        default="Split Conformal Prediction interval calibrated on real USDA NRCS SSURGO measured soil data.",
+        description="Brief explanation of how uncertainty and bounds were derived"
     )
+
+    @model_validator(mode="before")
+    @classmethod
+    def sync_bounds(cls, data: Any) -> Any:
+        if isinstance(data, dict):
+            # Sync estimated_ph <-> midpoint
+            if "estimated_ph" not in data and "midpoint" in data:
+                data["estimated_ph"] = data["midpoint"]
+            elif "midpoint" not in data and "estimated_ph" in data:
+                data["midpoint"] = data["estimated_ph"]
+
+            # Sync lower_bound <-> min
+            if "lower_bound" not in data and "min" in data:
+                data["lower_bound"] = data["min"]
+            elif "min" not in data and "lower_bound" in data:
+                data["min"] = data["lower_bound"]
+
+            # Sync upper_bound <-> max
+            if "upper_bound" not in data and "max" in data:
+                data["upper_bound"] = data["max"]
+            elif "max" not in data and "upper_bound" in data:
+                data["max"] = data["upper_bound"]
+        return data
 
 
 # ─────────────────────────────────────────────────────────────

@@ -89,10 +89,14 @@ export default function AnalysisReport({ data, onReset }) {
         </button>
       </div>
 
-      {/* Demo banner */}
-      {demo_data_used && (
+      {/* Real USDA dataset badge */}
+      {!demo_data_used ? (
+        <div className="demo-banner" style={{ borderColor: 'rgba(74, 124, 89, 0.4)', background: 'rgba(74, 124, 89, 0.1)', color: 'var(--color-primary-light)' }}>
+          🌿 <strong>Real USDA Dataset:</strong> Model trained on 6,000 real laboratory measurements from USDA NRCS SSURGO with Split Conformal Prediction intervals.
+        </div>
+      ) : (
         <div className="demo-banner">
-          🧪 <strong>Synthetic Dataset:</strong> ML trained on agronomically-grounded synthetic data. Replace with real field measurements for production use.
+          🧪 <strong>Synthetic Dataset:</strong> ML trained on synthetic data.
         </div>
       )}
 
@@ -130,7 +134,17 @@ export default function AnalysisReport({ data, onReset }) {
             <div className="ph-confidence">
               <div className="ph-confidence-header">
                 <span className="ph-confidence-label">Model Confidence</span>
-                <span className="ph-confidence-value">{confidencePct}%</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  {estimated_ph.confidence_level && (
+                    <span className={`badge ${
+                      estimated_ph.confidence_level === 'High' ? 'badge-green' :
+                      estimated_ph.confidence_level === 'Medium' ? 'badge-amber' : 'badge-red'
+                    }`}>
+                      {estimated_ph.confidence_level}
+                    </span>
+                  )}
+                  <span className="ph-confidence-value">{confidencePct}%</span>
+                </div>
               </div>
               <div className="progress-track">
                 <div

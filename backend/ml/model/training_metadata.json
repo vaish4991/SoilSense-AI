@@ -1,41 +1,79 @@
 {
   "model_name": "RandomForest",
-  "feature_columns": [
-    "texture_code",
-    "drainage_code",
-    "moisture_code",
-    "om_code",
-    "compaction_code",
-    "retention_code",
-    "color_code"
-  ],
-  "dataset_rows": 2000,
-  "dataset_source": "Synthetic (agronomic rules). See data/generate_dataset.py for methodology.",
-  "metrics": {
-    "RandomForest": {
-      "mae": 0.22446705953395035,
-      "rmse": 0.27618265403264597,
-      "r2": 0.6593998045112304
-    },
-    "GradientBoosting": {
-      "mae": 0.22565861332030862,
-      "rmse": 0.2762651770767863,
-      "r2": 0.6591962322464306
+  "dataset_source": "USDA NRCS Soil Data Access (SSURGO Database)",
+  "dataset_rows": 6000,
+  "unique_profiles": 6000,
+  "target_variable": "ph1to1h2o_r (standard measured 1:1 soil:water pH)",
+  "split_method": "GroupShuffleSplit on cokey (zero profile/location leakage)",
+  "train_samples": 4200,
+  "calibration_samples": 900,
+  "test_samples": 900,
+  "cross_validation": {
+    "folds": 5,
+    "method": "GroupKFold on cokey",
+    "results_by_model": {
+      "RandomForest": {
+        "cv_mae_mean": 0.3727,
+        "cv_mae_std": 0.0116,
+        "cv_rmse_mean": 0.5502,
+        "cv_rmse_std": 0.022,
+        "cv_r2_mean": 0.663,
+        "cv_r2_std": 0.0134
+      },
+      "GradientBoosting": {
+        "cv_mae_mean": 0.3858,
+        "cv_mae_std": 0.0123,
+        "cv_rmse_mean": 0.5568,
+        "cv_rmse_std": 0.0153,
+        "cv_r2_mean": 0.6548,
+        "cv_r2_std": 0.0048
+      },
+      "ExtraTrees": {
+        "cv_mae_mean": 0.3743,
+        "cv_mae_std": 0.0101,
+        "cv_rmse_mean": 0.5623,
+        "cv_rmse_std": 0.0199,
+        "cv_r2_mean": 0.648,
+        "cv_r2_std": 0.0085
+      },
+      "Ridge": {
+        "cv_mae_mean": 0.4562,
+        "cv_mae_std": 0.0161,
+        "cv_rmse_mean": 0.6301,
+        "cv_rmse_std": 0.019,
+        "cv_r2_mean": 0.5579,
+        "cv_r2_std": 0.0125
+      }
     }
   },
   "best_model_metrics": {
-    "mae": 0.22446705953395035,
-    "rmse": 0.27618265403264597,
-    "r2": 0.6593998045112304
+    "cv_mae_mean": 0.3727,
+    "cv_mae_std": 0.0116,
+    "cv_rmse_mean": 0.5502,
+    "cv_rmse_std": 0.022,
+    "cv_r2_mean": 0.663,
+    "cv_r2_std": 0.0134
   },
-  "feature_importances": {
-    "texture_code": 0.512814903307389,
-    "drainage_code": 0.10170831833200879,
-    "moisture_code": 0.0313760887057441,
-    "om_code": 0.08367558809986961,
-    "compaction_code": 0.03067096089279361,
-    "retention_code": 0.029979598391213846,
-    "color_code": 0.2097745422709809
+  "test_metrics": {
+    "test_mae": 0.3705,
+    "test_rmse": 0.5514,
+    "test_r2": 0.6485,
+    "test_coverage": 86.67,
+    "avg_interval_width": 1.33
   },
-  "training_note": "This model was trained on a synthetic dataset. Accuracy on real-world soils may differ. Replace data/soil_dataset.csv with measured field data for production use."
+  "uncertainty_method": "Split Conformal Prediction (inductive nonconformity quantiles)",
+  "conformal_q": 0.6644,
+  "nominal_coverage": 0.85,
+  "top_feature_importances": {
+    "soil_color_pale": 0.47229,
+    "soil_color_ord": 0.14987,
+    "drainage_ord": 0.05669,
+    "texture_ord": 0.04325,
+    "soil_color_red": 0.03692,
+    "soil_color_dark brown": 0.0276,
+    "soil_compaction_unknown": 0.02084,
+    "soil_compaction_ord": 0.01775,
+    "drainage_moderate": 0.01569,
+    "organic_matter_unknown": 0.01432
+  }
 }

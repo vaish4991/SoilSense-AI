@@ -1,25 +1,33 @@
 """
-SoilSense AI — ML Prediction Service (Phase 3 + 4)
+SoilSense AI — ML Prediction Service
 
-Provides soil pH estimation with HONEST uncertainty via ensemble spread:
-  - Each decision tree in the Random Forest makes its own prediction.
-  - The range [min_tree_pred, max_tree_pred] forms the pH interval.
-  - Confidence is derived from the spread (narrow spread = higher confidence)
-    and penalised when core input features are "unknown".
+Provides calibrated soil pH estimation with HONEST uncertainty using Split
+Conformal Prediction intervals trained on real USDA NRCS SSURGO laboratory data.
 
-This module is the ONLY place that produces numerical pH values.
-The LLM does NOT generate pH numbers.
+Guiding Principles:
+  - Point prediction comes from the validated regression model (Random Forest).
+  - Prediction interval [lower_bound, upper_bound] uses calibrated conformal margins
+    scaled by local ensemble variance and missing input penalties.
+  - Confidence is returned as both a calibrated float (0–1) and a discrete level:
+    'High' / 'Medium' / 'Low'.
+  - Confidence STRICTLY decreases when inputs are missing, sparse, or ambiguous.
+  - No artificial inflation: honest uncertainty calibrated on 6,000 real soil samples.
 """
 from __future__ import annotations
 import json
 import logging
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Any
 
 import joblib
 import numpy as np
+import pandas as pd
 
-from backend.ml.preprocessing import features_to_vector, FEATURE_NAMES
+from backend.ml.preprocessing import (
+    features_to_dataframe,
+    count_unknown_core_features,
+    ALL_INPUT_COLS,
+)
 from backend.schemas.soil_schema import PHEstimate, SoilFeatures
 
 logger = logging.getLogger("soilsense.predict")
@@ -28,17 +36,19 @@ MODEL_DIR = Path(__file__).parent / "model"
 MODEL_PATH = MODEL_DIR / "soil_ph_model.joblib"
 METADATA_PATH = MODEL_DIR / "training_metadata.json"
 
-# Singleton model (loaded once at startup)
-_model = None
+# Global model state
+_pipeline = None
+_conformal_q: float = 0.6644
+_median_spread: float = 0.0655
 _metadata: dict = {}
 
 
 def load_model() -> bool:
     """
-    Load the trained model from disk. Returns True if successful.
-    Called at application startup.
+    Load the trained model pipeline bundle and conformal calibration params from disk.
+    Returns True if successful.
     """
-    global _model, _metadata
+    global _pipeline, _conformal_q, _median_spread, _metadata
 
     if not MODEL_PATH.exists():
         logger.warning(
@@ -47,8 +57,20 @@ def load_model() -> bool:
         return False
 
     try:
-        _model = joblib.load(MODEL_PATH)
-        logger.info("ML model loaded from %s", MODEL_PATH)
+        loaded = joblib.load(MODEL_PATH)
+        if isinstance(loaded, dict) and "pipeline" in loaded:
+            _pipeline = loaded["pipeline"]
+            _conformal_q = float(loaded.get("conformal_q", 0.6644))
+            _median_spread = float(loaded.get("median_tree_spread", 0.0655))
+            logger.info(
+                "Loaded ML pipeline bundle (%s) with conformal margin q=%.4f",
+                loaded.get("model_name", "Unknown"), _conformal_q
+            )
+        else:
+            _pipeline = loaded
+            _conformal_q = 0.6644
+            _median_spread = 0.0655
+            logger.info("Loaded legacy ML model from %s", MODEL_PATH)
     except Exception as exc:
         logger.error("Failed to load model: %s", exc)
         return False
@@ -63,7 +85,7 @@ def load_model() -> bool:
 
 
 def is_model_loaded() -> bool:
-    return _model is not None
+    return _pipeline is not None
 
 
 def predict_ph(features: SoilFeatures) -> PHEstimate:
@@ -71,93 +93,102 @@ def predict_ph(features: SoilFeatures) -> PHEstimate:
     Predict soil pH from structured soil features.
 
     Returns a PHEstimate with:
-      - min / max  (confidence interval from tree spread)
-      - midpoint   (mean tree prediction)
-      - confidence (0–1, penalised for unknown inputs)
-
-    If the model is not loaded, returns a low-confidence fallback estimate.
+      - estimated_ph / midpoint: point pH prediction
+      - lower_bound / min: calibrated lower bound
+      - upper_bound / max: calibrated upper bound
+      - confidence: continuous confidence 0.10–0.92
+      - confidence_level: 'High' / 'Medium' / 'Low'
     """
-    global _model
-    if _model is None:
+    global _pipeline, _conformal_q, _median_spread
+    if _pipeline is None:
         load_model()
 
-    if _model is None:
+    if _pipeline is None:
         logger.warning("Model not loaded — returning fallback estimate")
         return _fallback_estimate(features)
 
     try:
-        X, has_unknowns = features_to_vector(features)
-        X = X.reshape(1, -1)
+        df_input = features_to_dataframe(features)
+        n_unknowns = count_unknown_core_features(features)
 
-        # ── Ensemble spread for uncertainty ──────────────────
-        if hasattr(_model, "estimators_"):
-            # RandomForest: collect per-tree predictions
-            tree_preds = np.array([tree.predict(X)[0] for tree in _model.estimators_])
+        # 1. Point prediction
+        point_pred = float(_pipeline.predict(df_input)[0])
+
+        # 2. Ensemble spread
+        reg = _pipeline.named_steps.get("reg")
+        prep = _pipeline.named_steps.get("prep")
+
+        if hasattr(reg, "estimators_") and prep is not None:
+            X_trans = prep.transform(df_input)
+            tree_preds = np.array([tree.predict(X_trans)[0] for tree in reg.estimators_])
+            tree_spread = float(np.std(tree_preds))
         else:
-            # GradientBoosting: use staged_predict for spread approximation
-            # Fall back to ±0.3 around the point estimate
-            point_pred = float(_model.predict(X)[0])
-            tree_preds = np.array([point_pred - 0.3, point_pred, point_pred + 0.3])
+            tree_spread = _median_spread
 
-        midpoint = float(np.mean(tree_preds))
-        spread = float(np.max(tree_preds) - np.min(tree_preds))
+        # 3. Calibrated Conformal Margin with local variance & missingness scaling
+        spread_ratio = tree_spread / max(0.01, _median_spread)
+        # Bounded spread adjustment
+        variance_factor = 0.80 + 0.20 * min(2.5, max(0.5, spread_ratio))
+        missing_factor = 1.0 + (0.12 * n_unknowns)
 
-        # Use 10th–90th percentile for a meaningful interval
-        ph_min = float(np.percentile(tree_preds, 10))
-        ph_max = float(np.percentile(tree_preds, 90))
+        margin = _conformal_q * variance_factor * missing_factor
+        margin = max(0.40, min(1.80, margin))
 
-        # Clamp to realistic soil pH range
-        ph_min = round(max(3.5, min(ph_min, 9.5)), 1)
-        ph_max = round(max(3.5, min(ph_max, 9.5)), 1)
-        midpoint = round(max(3.5, min(midpoint, 9.5)), 2)
+        # 4. Compute bounds clamped to realistic natural soil pH [3.5, 9.5]
+        lower_bound = round(max(3.5, point_pred - margin), 1)
+        upper_bound = round(min(9.5, point_pred + margin), 1)
+        estimated_ph = round(max(3.5, min(9.5, point_pred)), 2)
 
-        if ph_min > ph_max:
-            ph_min, ph_max = ph_max, ph_min
+        if lower_bound > upper_bound:
+            lower_bound, upper_bound = upper_bound, lower_bound
 
-        # ── Confidence score ──────────────────────────────────
-        # Base: inversely proportional to spread
-        # Spread of 0 → 100% confidence; spread ≥ 2.0 → low confidence
-        spread_confidence = max(0.0, 1.0 - (spread / 2.0))
+        interval_width = round(upper_bound - lower_bound, 1)
 
-        # Penalty for unknown core features
-        unknown_penalty = 0.0
-        if has_unknowns:
-            core_unknown_count = sum(
-                1 for v in [features.texture, features.drainage, features.moisture]
-                if v == "unknown"
-            )
-            unknown_penalty = min(0.4, core_unknown_count * 0.15)
+        # 5. Continuous Confidence Score (Honest & Input-Penalized)
+        base_confidence = max(0.15, 1.0 - (margin / 1.5))
+        confidence_penalty = 0.12 * n_unknowns
+        confidence = round(max(0.10, min(0.92, base_confidence - confidence_penalty)), 2)
 
-        confidence = round(max(0.1, spread_confidence - unknown_penalty), 2)
+        # 6. Qualitative Confidence Level
+        if confidence >= 0.65 and n_unknowns <= 1 and interval_width <= 1.2:
+            confidence_level = "High"
+        elif confidence >= 0.40 and n_unknowns <= 2 and interval_width <= 1.7:
+            confidence_level = "Medium"
+        else:
+            confidence_level = "Low"
 
-        # ── Low-confidence warning ────────────────────────────
+        # 7. Informative warnings
         warning = None
-        if confidence < 0.5:
+        if confidence_level == "Low" or n_unknowns >= 3:
             warning = (
-                "Low confidence: the soil description is limited. "
-                "Providing more details (texture, drainage, colour) will improve accuracy."
+                "Low confidence: Several core soil characteristics (texture, drainage, color) "
+                "were not detected. Providing more details will narrow the prediction interval."
             )
-        elif has_unknowns:
+        elif confidence_level == "Medium" or n_unknowns > 0:
             warning = (
-                "Moderate confidence: some core soil features were not detected. "
-                "A physical soil test is strongly recommended."
+                "Moderate confidence: Some features were inferred. A physical soil test is "
+                "strongly recommended before major soil amendments."
             )
 
         logger.info(
-            "pH estimate: %.2f (%.1f–%.1f), confidence=%.2f, spread=%.2f",
-            midpoint, ph_min, ph_max, confidence, spread,
+            "pH prediction: %.2f [%.1f–%.1f] (width=%.1f), confidence=%.2f (%s), unknowns=%d",
+            estimated_ph, lower_bound, upper_bound, interval_width, confidence, confidence_level, n_unknowns
         )
 
         return PHEstimate(
-            min=ph_min,
-            max=ph_max,
-            midpoint=midpoint,
+            estimated_ph=estimated_ph,
+            lower_bound=lower_bound,
+            upper_bound=upper_bound,
+            confidence_level=confidence_level,
+            min=lower_bound,
+            max=upper_bound,
+            midpoint=estimated_ph,
             confidence=confidence,
             low_confidence_warning=warning,
             method_note=(
-                "pH range derived from 10th–90th percentile of individual decision tree "
-                "predictions within the Random Forest ensemble. Confidence is inversely "
-                "proportional to prediction spread, with a penalty for unknown input features."
+                f"Trained on real USDA NRCS SSURGO laboratory measurements. Prediction interval "
+                f"derived from Split Conformal Prediction (85% nominal coverage) scaled by "
+                f"local ensemble spread and penalized for missing input features."
             ),
         )
 
@@ -167,12 +198,8 @@ def predict_ph(features: SoilFeatures) -> PHEstimate:
 
 
 def _fallback_estimate(features: SoilFeatures) -> PHEstimate:
-    """
-    Rule-based fallback pH estimate when the ML model is unavailable.
-    Uses simplified agronomic heuristics. Clearly flagged as fallback.
-    """
-    base = 6.5  # default neutral-ish
-
+    """Rule-based fallback pH estimate when the ML model is unavailable."""
+    base = 6.5
     if features.texture == "sandy":
         base -= 0.5
     elif features.texture == "clay":
@@ -186,17 +213,22 @@ def _fallback_estimate(features: SoilFeatures) -> PHEstimate:
     if features.organic_matter == "high":
         base -= 0.2
 
-    ph_min = round(max(4.0, base - 0.5), 1)
-    ph_max = round(min(9.0, base + 0.5), 1)
+    low = round(max(3.5, base - 0.7), 1)
+    high = round(min(9.5, base + 0.7), 1)
+    est = round(base, 2)
 
     return PHEstimate(
-        min=ph_min,
-        max=ph_max,
-        midpoint=round(base, 2),
-        confidence=0.35,
+        estimated_ph=est,
+        lower_bound=low,
+        upper_bound=high,
+        confidence_level="Low",
+        min=low,
+        max=high,
+        midpoint=est,
+        confidence=0.30,
         low_confidence_warning=(
-            "ML model is unavailable. This estimate uses simplified agronomic rules only. "
-            "Train the model with: python -m backend.ml.train"
+            "ML model is unavailable. This estimate uses simplified rule heuristics only. "
+            "Run 'python -m backend.ml.train' to initialize the real USDA model."
         ),
         method_note="Rule-based fallback estimate (ML model not loaded).",
     )

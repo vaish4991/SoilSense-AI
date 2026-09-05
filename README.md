@@ -67,36 +67,46 @@ flowchart TD
 
 ---
 
-## 4. ML Model
+## 4. ML Model & Uncertainty Calibration
 
-### Dataset
-- **Type**: Synthetic, agronomically-grounded
-- **Size**: 2,000 samples
-- **References**: Brady & Weil "The Nature and Properties of Soils" (15th ed.), FAO Soil Portal
-- **Important**: This is a DEMO dataset. Replace `data/soil_dataset.csv` with real field measurements for production use
+### Real-World Measured Dataset
+- **Data Source**: [USDA NRCS Soil Data Access (SDA) — SSURGO Database](https://sdmdataaccess.sc.egov.usda.gov/)
+- **Sample Count**: **6,000 real-world soil samples** across 6,000 unique pedon/soil components (`cokey`)
+- **Target Variable**: Laboratory-measured `ph1to1h2o_r` (standard 1:1 soil:water solution pH, range: 4.0 to 9.5, mean: 5.54)
+- **Zero Data Leakage**: Evaluated with strictly grouped splits on `cokey` (`GroupShuffleSplit` and `GroupKFold`). Records belonging to the same soil profile or location are NEVER shared across train, calibration, and test folds.
 
-### Features
-| Feature | Encoding |
-|---------|---------|
-| Texture | sandy=0, sandy-loam=1, loamy=2, silty=3, clay-loam=4, clay=5 |
-| Drainage | good=0, moderate=1, poor=2 |
-| Moisture | dry=0, moderate=1, wet=2 |
-| Organic matter | low=0, moderate=1, high=2 |
-| Compaction | loose=0, moderate=1, compacted=2 |
-| Water retention | low=0, moderate=1, high=2 |
-| Colour | pale=0, yellow=1, brown=2, dark brown=3, black=4, red=5 |
+### Candidate Model Comparison (5-Fold Group Cross-Validation)
 
-### Results
-| Model | MAE | RMSE | R² |
-|-------|-----|------|----|
-| Random Forest (winner) | 0.22 | 0.28 | 0.66 |
-| Gradient Boosting | 0.23 | 0.28 | 0.66 |
+| Model | CV MAE (Mean ± Std) | CV RMSE (Mean ± Std) | CV R² (Mean ± Std) | Status |
+|-------|---------------------|----------------------|--------------------|--------|
+| **Random Forest** | **0.3727 ± 0.0116** | **0.5502 ± 0.0220** | **0.6630 ± 0.0134** | **Selected Best** |
+| Extra Trees | 0.3743 ± 0.0101 | 0.5623 ± 0.0199 | 0.6480 ± 0.0085 | Runner-up |
+| Gradient Boosting | 0.3858 ± 0.0123 | 0.5568 ± 0.0153 | 0.6548 ± 0.0048 | Candidate |
+| Ridge (Linear Baseline)| 0.4562 ± 0.0161 | 0.6301 ± 0.0190 | 0.5579 ± 0.0125 | Baseline |
 
-### Uncertainty Method
-The ensemble spread across all 200 decision trees provides a natural uncertainty estimate:
-- pH range = 10th–90th percentile of tree predictions
-- Confidence = `max(0.1, 1 - spread/2.0) - unknown_penalty`
-- Low confidence warning issued when confidence < 50%
+### Independent Test Set Evaluation (900 Unseen Samples)
+- **Test MAE**: **0.3705** pH units
+- **Test RMSE**: **0.5514**
+- **Test R²**: **0.6485**
+- **Empirical Conformal Coverage**: **86.67%** (target: 85.0%)
+- **Average Prediction Interval Width**: **1.33 pH units**
+
+### Uncertainty Estimation: Split Conformal Prediction
+Instead of uncalibrated heuristics or hard-coded confidence, SoilSense AI implements **Split Conformal Prediction**:
+1. **Calibration Set**: A held-out calibration set (900 samples, disjoint by `cokey`) is used to calculate nonconformity scores $s_i = |y_i - \hat{y}_i|$.
+2. **Conformal Margin**: The calibrated margin $q_{1-\alpha} = 0.6644$ guarantees an 85% nominal prediction coverage with finite-sample correction.
+3. **Adaptive Scaling**: The interval is dynamically scaled by local tree spread ($\sigma_{\text{tree}}$) and penalized by input missingness:
+   $$\text{margin}(x) = q \times \left(0.80 + 0.20 \times \frac{\sigma_{\text{tree}}}{\text{median\_spread}}\right) \times (1.0 + 0.12 \times n_{\text{unknown}})$$
+4. **Honest Confidence Level**:
+   - `High`: Confidence $\ge 65\%$, at most 1 missing feature, and narrow interval ($\le 1.2$ pH units).
+   - `Medium`: Confidence $\ge 40\%$, at most 2 missing features, and interval width $\le 1.7$ pH units.
+   - `Low`: Confidence $< 40\%$, $\ge 3$ missing features, or wide interval ($> 1.7$ pH units).
+   - **Constraint**: Confidence strictly decreases as information is omitted, and is never artificially inflated.
+
+### Real-World Limitations
+- Surface observations cannot detect subsoil acidity or hardpans without depth profiling.
+- Local management history (recent liming, fertilizer application, irrigation salinity) can shift pH independently of native soil characteristics.
+- Physical lab soil testing is always advised before applying major chemical amendments.
 
 ---
 

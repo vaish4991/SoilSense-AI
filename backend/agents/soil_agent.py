@@ -139,7 +139,7 @@ async def run_soil_analysis(request: AnalyzeSoilRequest) -> SoilAnalysisResponse
         weather=weather,
         recommendations=recommendations,
         ai_explanation=explanation,
-        demo_data_used=True,  # synthetic dataset used
+        demo_data_used=False,  # Real USDA NRCS SSURGO dataset used
     )
 
 
@@ -162,10 +162,11 @@ Soil Profile:
 - Location: {features.location}
 - Target Crop: {features.target_crop}
 
-ML Prediction (Random Forest):
-- Estimated pH range: {ph_estimate.min}–{ph_estimate.max}
-- Midpoint: {ph_estimate.midpoint}
-- Model confidence: {ph_estimate.confidence * 100:.0f}%
+ML Prediction (Random Forest trained on real USDA NRCS soil data):
+- Estimated point pH: {ph_estimate.estimated_ph}
+- Calibrated prediction interval: {ph_estimate.lower_bound}–{ph_estimate.upper_bound}
+- Model confidence: {ph_estimate.confidence * 100:.0f}% ({ph_estimate.confidence_level})
+- Uncertainty note: {ph_estimate.method_note}
 - Warning: {ph_estimate.low_confidence_warning or 'None'}
 
 Weather ({weather.location_name}):
