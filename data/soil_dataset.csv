@@ -1,0 +1,2001 @@
+texture,drainage,moisture,organic_matter,compaction,water_retention,color,texture_code,drainage_code,moisture_code,om_code,compaction_code,retention_code,color_code,ph
+sandy,poor,moderate,moderate,moderate,high,pale/white,0,2,1,1,1,2,0,6.4
+clay-loam,poor,wet,moderate,loose,high,brown,4,2,2,1,0,2,2,6.37
+loamy,poor,moderate,moderate,moderate,low,pale/white,2,2,1,1,1,0,0,6.82
+silty,good,wet,high,moderate,low,red,3,0,2,2,1,0,5,6.39
+silty,good,wet,high,compacted,high,brown,3,0,2,2,2,2,2,6.7
+clay,moderate,dry,high,moderate,low,yellow/tan,5,1,0,2,1,0,1,6.95
+sandy,poor,moderate,high,loose,low,black/dark,0,2,1,2,0,0,4,5.56
+clay-loam,moderate,dry,high,loose,high,pale/white,4,1,0,2,0,2,0,6.48
+sandy-loam,poor,moderate,moderate,moderate,moderate,pale/white,1,2,1,1,1,1,0,6.71
+sandy,poor,moderate,low,compacted,moderate,dark brown,0,2,1,0,2,1,3,5.61
+loamy,moderate,wet,low,loose,moderate,red,2,1,2,0,0,1,5,6.42
+clay,moderate,moderate,low,moderate,moderate,black/dark,5,1,1,0,1,1,4,7.09
+sandy-loam,good,moderate,low,loose,low,black/dark,1,0,1,0,0,0,4,6.27
+clay-loam,moderate,wet,moderate,moderate,low,brown,4,1,2,1,1,0,2,6.63
+silty,moderate,wet,low,moderate,low,brown,3,1,2,0,1,0,2,6.58
+clay,poor,wet,low,compacted,low,black/dark,5,2,2,0,2,0,4,6.78
+clay-loam,good,wet,low,compacted,moderate,dark brown,4,0,2,0,2,1,3,6.76
+sandy-loam,good,moderate,low,moderate,moderate,pale/white,1,0,1,0,1,1,0,6.85
+silty,good,wet,low,loose,moderate,black/dark,3,0,2,0,0,1,4,6.61
+sandy-loam,good,wet,moderate,moderate,moderate,black/dark,1,0,2,1,1,1,4,6.07
+sandy,moderate,moderate,moderate,compacted,low,red,0,1,1,1,2,0,5,5.59
+sandy-loam,good,dry,moderate,compacted,low,red,1,0,0,1,2,0,5,5.54
+silty,poor,dry,low,loose,moderate,black/dark,3,2,0,0,0,1,4,5.76
+clay-loam,good,dry,low,moderate,moderate,brown,4,0,0,0,1,1,2,6.8
+sandy-loam,poor,moderate,low,moderate,moderate,red,1,2,1,0,1,1,5,5.43
+sandy-loam,poor,wet,low,compacted,low,black/dark,1,2,2,0,2,0,4,5.84
+loamy,moderate,moderate,moderate,compacted,low,black/dark,2,1,1,1,2,0,4,6.05
+clay-loam,poor,dry,low,loose,low,black/dark,4,2,0,0,0,0,4,6.12
+sandy-loam,good,wet,high,loose,high,brown,1,0,2,2,0,2,2,6.11
+silty,good,wet,high,loose,low,dark brown,3,0,2,2,0,0,3,6.5
+sandy,poor,wet,low,moderate,low,dark brown,0,2,2,0,1,0,3,5.9
+clay,moderate,dry,high,compacted,moderate,pale/white,5,1,0,2,2,1,0,6.91
+clay-loam,good,wet,moderate,loose,high,pale/white,4,0,2,1,0,2,0,7.11
+silty,poor,dry,moderate,loose,low,black/dark,3,2,0,1,0,0,4,6.09
+clay-loam,moderate,wet,high,compacted,moderate,yellow/tan,4,1,2,2,2,1,1,6.44
+loamy,poor,wet,low,moderate,moderate,yellow/tan,2,2,2,0,1,1,1,7.08
+clay,good,moderate,moderate,moderate,low,yellow/tan,5,0,1,1,1,0,1,7.0
+clay-loam,poor,wet,moderate,loose,low,yellow/tan,4,2,2,1,0,0,1,6.48
+clay-loam,good,dry,low,compacted,low,brown,4,0,0,0,2,0,2,7.0
+silty,poor,moderate,high,compacted,high,red,3,2,1,2,2,2,5,6.7
+silty,moderate,wet,moderate,loose,low,pale/white,3,1,2,1,0,0,0,7.24
+loamy,good,dry,moderate,compacted,high,pale/white,2,0,0,1,2,2,0,6.86
+sandy-loam,poor,moderate,high,moderate,moderate,dark brown,1,2,1,2,1,1,3,6.04
+clay-loam,poor,moderate,high,moderate,high,dark brown,4,2,1,2,1,2,3,6.3
+silty,good,moderate,moderate,moderate,moderate,black/dark,3,0,1,1,1,1,4,6.39
+sandy-loam,poor,wet,high,compacted,high,brown,1,2,2,2,2,2,2,5.78
+sandy-loam,poor,moderate,moderate,compacted,moderate,pale/white,1,2,1,1,2,1,0,6.34
+sandy-loam,moderate,wet,high,loose,high,dark brown,1,1,2,2,0,2,3,5.47
+clay-loam,good,wet,high,loose,high,brown,4,0,2,2,0,2,2,6.46
+silty,poor,moderate,low,loose,moderate,dark brown,3,2,1,0,0,1,3,5.8
+clay-loam,moderate,wet,high,compacted,high,dark brown,4,1,2,2,2,2,3,5.83
+loamy,poor,dry,moderate,moderate,high,brown,2,2,0,1,1,2,2,6.37
+clay-loam,moderate,wet,high,compacted,high,dark brown,4,1,2,2,2,2,3,6.45
+sandy-loam,good,wet,moderate,moderate,high,brown,1,0,2,1,1,2,2,6.06
+loamy,poor,moderate,moderate,loose,moderate,dark brown,2,2,1,1,0,1,3,6.08
+clay,good,wet,high,moderate,low,pale/white,5,0,2,2,1,0,0,6.62
+loamy,good,wet,moderate,loose,moderate,pale/white,2,0,2,1,0,1,0,6.52
+sandy-loam,good,wet,high,loose,high,red,1,0,2,2,0,2,5,5.71
+clay-loam,poor,wet,low,loose,low,brown,4,2,2,0,0,0,2,6.4
+sandy,poor,dry,low,loose,low,pale/white,0,2,0,0,0,0,0,5.57
+sandy-loam,good,wet,high,compacted,high,pale/white,1,0,2,2,2,2,0,6.59
+clay-loam,moderate,moderate,low,compacted,moderate,pale/white,4,1,1,0,2,1,0,7.02
+sandy,poor,moderate,high,compacted,moderate,dark brown,0,2,1,2,2,1,3,4.92
+sandy,moderate,dry,moderate,loose,high,yellow/tan,0,1,0,1,0,2,1,5.73
+silty,moderate,moderate,high,loose,moderate,red,3,1,1,2,0,1,5,6.0
+silty,moderate,moderate,moderate,compacted,low,dark brown,3,1,1,1,2,0,3,6.45
+loamy,moderate,wet,moderate,compacted,moderate,pale/white,2,1,2,1,2,1,0,6.97
+sandy,moderate,moderate,high,moderate,moderate,dark brown,0,1,1,2,1,1,3,5.26
+clay,moderate,moderate,low,compacted,low,yellow/tan,5,1,1,0,2,0,1,7.37
+loamy,good,moderate,moderate,moderate,moderate,black/dark,2,0,1,1,1,1,4,6.59
+sandy-loam,poor,moderate,moderate,loose,moderate,dark brown,1,2,1,1,0,1,3,6.17
+silty,moderate,wet,low,compacted,high,dark brown,3,1,2,0,2,2,3,6.22
+loamy,moderate,dry,low,loose,low,red,2,1,0,0,0,0,5,6.44
+clay,moderate,dry,high,loose,low,black/dark,5,1,0,2,0,0,4,6.3
+loamy,moderate,wet,low,loose,moderate,black/dark,2,1,2,0,0,1,4,6.29
+sandy,moderate,dry,high,compacted,low,black/dark,0,1,0,2,2,0,4,5.6
+clay-loam,good,wet,moderate,moderate,low,black/dark,4,0,2,1,1,0,4,6.31
+sandy,poor,wet,moderate,loose,moderate,brown,0,2,2,1,0,1,2,5.8
+sandy,moderate,moderate,moderate,compacted,low,yellow/tan,0,1,1,1,2,0,1,5.89
+sandy-loam,poor,dry,moderate,loose,low,yellow/tan,1,2,0,1,0,0,1,6.24
+clay-loam,moderate,dry,low,loose,low,red,4,1,0,0,0,0,5,6.47
+clay,poor,wet,moderate,loose,high,brown,5,2,2,1,0,2,2,6.78
+sandy-loam,moderate,moderate,high,compacted,high,brown,1,1,1,2,2,2,2,5.73
+silty,good,wet,moderate,moderate,moderate,brown,3,0,2,1,1,1,2,6.67
+clay,poor,moderate,moderate,moderate,low,pale/white,5,2,1,1,1,0,0,6.89
+loamy,poor,moderate,moderate,loose,low,dark brown,2,2,1,1,0,0,3,6.03
+silty,moderate,wet,high,compacted,moderate,red,3,1,2,2,2,1,5,5.58
+loamy,moderate,wet,moderate,compacted,low,pale/white,2,1,2,1,2,0,0,6.64
+clay,moderate,moderate,high,loose,high,pale/white,5,1,1,2,0,2,0,7.07
+sandy-loam,good,dry,low,loose,moderate,black/dark,1,0,0,0,0,1,4,5.88
+sandy-loam,moderate,dry,high,moderate,low,yellow/tan,1,1,0,2,1,0,1,6.07
+silty,moderate,wet,low,loose,low,brown,3,1,2,0,0,0,2,6.65
+clay-loam,poor,moderate,high,loose,high,black/dark,4,2,1,2,0,2,4,6.48
+clay-loam,good,wet,moderate,loose,high,dark brown,4,0,2,1,0,2,3,6.57
+silty,poor,dry,low,moderate,high,dark brown,3,2,0,0,1,2,3,6.04
+loamy,good,dry,moderate,compacted,high,yellow/tan,2,0,0,1,2,2,1,6.65
+loamy,poor,moderate,high,moderate,high,dark brown,2,2,1,2,1,2,3,5.53
+sandy-loam,good,moderate,moderate,compacted,low,brown,1,0,1,1,2,0,2,6.64
+sandy,good,moderate,low,moderate,low,yellow/tan,0,0,1,0,1,0,1,6.11
+loamy,poor,wet,high,compacted,moderate,dark brown,2,2,2,2,2,1,3,5.97
+sandy-loam,moderate,wet,high,loose,moderate,dark brown,1,1,2,2,0,1,3,5.94
+silty,moderate,wet,low,loose,low,dark brown,3,1,2,0,0,0,3,6.63
+clay,poor,moderate,high,loose,high,black/dark,5,2,1,2,0,2,4,6.72
+clay,moderate,moderate,low,compacted,high,dark brown,5,1,1,0,2,2,3,6.42
+clay-loam,good,dry,low,loose,low,dark brown,4,0,0,0,0,0,3,6.69
+sandy,poor,dry,moderate,moderate,high,pale/white,0,2,0,1,1,2,0,6.09
+loamy,moderate,dry,moderate,loose,low,yellow/tan,2,1,0,1,0,0,1,6.24
+sandy,good,dry,low,moderate,low,brown,0,0,0,0,1,0,2,6.07
+loamy,poor,moderate,low,loose,low,dark brown,2,2,1,0,0,0,3,6.33
+sandy-loam,good,wet,moderate,loose,moderate,brown,1,0,2,1,0,1,2,6.46
+sandy-loam,good,dry,high,loose,low,red,1,0,0,2,0,0,5,6.05
+sandy-loam,good,moderate,low,moderate,high,red,1,0,1,0,1,2,5,6.21
+clay,poor,wet,high,loose,low,yellow/tan,5,2,2,2,0,0,1,6.68
+clay,poor,wet,low,loose,moderate,black/dark,5,2,2,0,0,1,4,6.71
+clay,good,wet,moderate,moderate,low,black/dark,5,0,2,1,1,0,4,7.17
+sandy,good,wet,low,moderate,low,pale/white,0,0,2,0,1,0,0,6.02
+sandy-loam,good,wet,low,moderate,high,dark brown,1,0,2,0,1,2,3,5.82
+silty,good,dry,high,loose,moderate,dark brown,3,0,0,2,0,1,3,6.17
+sandy,moderate,dry,low,compacted,high,red,0,1,0,0,2,2,5,5.94
+sandy-loam,poor,wet,moderate,compacted,high,dark brown,1,2,2,1,2,2,3,5.62
+clay,good,dry,high,moderate,moderate,brown,5,0,0,2,1,1,2,6.64
+loamy,good,wet,moderate,loose,moderate,red,2,0,2,1,0,1,5,6.33
+sandy-loam,good,moderate,moderate,compacted,high,dark brown,1,0,1,1,2,2,3,6.4
+clay,moderate,wet,moderate,compacted,high,dark brown,5,1,2,1,2,2,3,6.56
+clay,poor,moderate,low,loose,low,brown,5,2,1,0,0,0,2,7.1
+clay-loam,poor,wet,high,compacted,moderate,brown,4,2,2,2,2,1,2,6.02
+sandy,moderate,moderate,high,moderate,moderate,pale/white,0,1,1,2,1,1,0,6.15
+sandy-loam,good,dry,low,compacted,low,brown,1,0,0,0,2,0,2,6.08
+loamy,poor,moderate,high,moderate,low,brown,2,2,1,2,1,0,2,5.99
+sandy-loam,moderate,dry,low,loose,low,brown,1,1,0,0,0,0,2,6.41
+clay-loam,moderate,wet,low,loose,low,pale/white,4,1,2,0,0,0,0,7.42
+sandy-loam,moderate,wet,moderate,compacted,moderate,pale/white,1,1,2,1,2,1,0,6.29
+loamy,good,wet,high,compacted,moderate,brown,2,0,2,2,2,1,2,6.62
+silty,moderate,moderate,moderate,compacted,high,yellow/tan,3,1,1,1,2,2,1,6.22
+clay,moderate,dry,high,loose,high,pale/white,5,1,0,2,0,2,0,6.89
+sandy-loam,poor,dry,moderate,loose,low,red,1,2,0,1,0,0,5,5.96
+sandy-loam,good,wet,high,loose,high,dark brown,1,0,2,2,0,2,3,5.81
+clay,good,wet,low,compacted,low,black/dark,5,0,2,0,2,0,4,6.88
+loamy,good,moderate,low,loose,high,pale/white,2,0,1,0,0,2,0,6.8
+loamy,good,dry,high,loose,moderate,pale/white,2,0,0,2,0,1,0,7.2
+clay,moderate,moderate,moderate,moderate,low,red,5,1,1,1,1,0,5,5.74
+clay,moderate,moderate,high,loose,high,red,5,1,1,2,0,2,5,7.06
+sandy,poor,moderate,moderate,loose,high,dark brown,0,2,1,1,0,2,3,5.35
+clay-loam,good,moderate,high,loose,moderate,red,4,0,1,2,0,1,5,6.41
+loamy,good,wet,moderate,moderate,moderate,pale/white,2,0,2,1,1,1,0,6.81
+clay,moderate,moderate,low,moderate,moderate,red,5,1,1,0,1,1,5,7.1
+clay,poor,moderate,low,compacted,moderate,yellow/tan,5,2,1,0,2,1,1,6.8
+clay,poor,moderate,low,loose,moderate,red,5,2,1,0,0,1,5,6.81
+sandy,poor,moderate,moderate,compacted,high,yellow/tan,0,2,1,1,2,2,1,5.52
+loamy,poor,moderate,moderate,moderate,low,pale/white,2,2,1,1,1,0,0,6.68
+clay-loam,moderate,dry,low,compacted,low,black/dark,4,1,0,0,2,0,4,6.37
+sandy-loam,poor,wet,low,loose,high,yellow/tan,1,2,2,0,0,2,1,6.09
+clay-loam,good,wet,moderate,moderate,high,black/dark,4,0,2,1,1,2,4,6.85
+clay,poor,wet,moderate,moderate,moderate,black/dark,5,2,2,1,1,1,4,6.85
+loamy,moderate,dry,high,compacted,high,yellow/tan,2,1,0,2,2,2,1,6.47
+sandy-loam,moderate,moderate,high,moderate,high,yellow/tan,1,1,1,2,1,2,1,6.05
+sandy-loam,poor,wet,high,loose,high,red,1,2,2,2,0,2,5,5.44
+clay-loam,moderate,dry,low,loose,moderate,dark brown,4,1,0,0,0,1,3,6.54
+sandy-loam,poor,moderate,low,moderate,low,pale/white,1,2,1,0,1,0,0,6.22
+loamy,moderate,dry,low,moderate,moderate,red,2,1,0,0,1,1,5,6.72
+loamy,moderate,wet,high,loose,high,dark brown,2,1,2,2,0,2,3,6.14
+sandy,good,moderate,moderate,loose,high,black/dark,0,0,1,1,0,2,4,5.72
+sandy-loam,moderate,dry,high,compacted,moderate,pale/white,1,1,0,2,2,1,0,6.65
+clay,poor,wet,low,compacted,low,yellow/tan,5,2,2,0,2,0,1,6.97
+clay-loam,moderate,dry,high,compacted,high,red,4,1,0,2,2,2,5,6.69
+clay-loam,poor,wet,low,moderate,low,red,4,2,2,0,1,0,5,6.67
+sandy-loam,good,moderate,low,loose,low,pale/white,1,0,1,0,0,0,0,7.2
+loamy,moderate,dry,low,loose,low,red,2,1,0,0,0,0,5,6.23
+sandy,good,moderate,moderate,moderate,high,dark brown,0,0,1,1,1,2,3,5.98
+sandy-loam,poor,moderate,low,moderate,moderate,yellow/tan,1,2,1,0,1,1,1,6.36
+clay-loam,good,moderate,low,loose,low,pale/white,4,0,1,0,0,0,0,7.08
+clay-loam,good,moderate,high,moderate,low,red,4,0,1,2,1,0,5,6.17
+loamy,moderate,wet,low,loose,high,pale/white,2,1,2,0,0,2,0,6.85
+silty,moderate,dry,high,moderate,moderate,brown,3,1,0,2,1,1,2,6.2
+sandy-loam,poor,dry,high,moderate,moderate,pale/white,1,2,0,2,1,1,0,6.32
+loamy,moderate,wet,high,loose,moderate,pale/white,2,1,2,2,0,1,0,6.88
+clay,poor,dry,moderate,compacted,moderate,red,5,2,0,1,2,1,5,7.21
+clay,moderate,dry,low,compacted,low,yellow/tan,5,1,0,0,2,0,1,6.69
+sandy,moderate,moderate,low,loose,low,dark brown,0,1,1,0,0,0,3,5.69
+clay,moderate,moderate,moderate,loose,high,dark brown,5,1,1,1,0,2,3,6.82
+sandy,poor,wet,low,compacted,low,pale/white,0,2,2,0,2,0,0,6.4
+sandy,poor,moderate,low,compacted,moderate,pale/white,0,2,1,0,2,1,0,6.47
+clay,poor,wet,low,compacted,high,yellow/tan,5,2,2,0,2,2,1,6.97
+loamy,poor,moderate,moderate,loose,moderate,yellow/tan,2,2,1,1,0,1,1,6.73
+clay-loam,poor,dry,moderate,moderate,moderate,black/dark,4,2,0,1,1,1,4,6.17
+loamy,poor,wet,high,moderate,high,yellow/tan,2,2,2,2,1,2,1,6.06
+loamy,moderate,moderate,low,compacted,moderate,pale/white,2,1,1,0,2,1,0,7.02
+loamy,poor,moderate,high,loose,high,dark brown,2,2,1,2,0,2,3,5.96
+sandy-loam,moderate,dry,high,compacted,low,dark brown,1,1,0,2,2,0,3,5.63
+clay,poor,dry,moderate,loose,high,black/dark,5,2,0,1,0,2,4,6.93
+sandy,poor,dry,moderate,loose,moderate,brown,0,2,0,1,0,1,2,5.33
+sandy,poor,wet,high,moderate,high,dark brown,0,2,2,2,1,2,3,5.46
+sandy-loam,poor,dry,high,compacted,high,red,1,2,0,2,2,2,5,4.8
+sandy-loam,moderate,wet,moderate,moderate,low,dark brown,1,1,2,1,1,0,3,6.17
+clay,moderate,dry,moderate,loose,low,red,5,1,0,1,0,0,5,6.75
+clay-loam,poor,dry,high,compacted,low,pale/white,4,2,0,2,2,0,0,6.47
+silty,poor,dry,moderate,compacted,moderate,pale/white,3,2,0,1,2,1,0,6.32
+sandy,moderate,dry,moderate,loose,moderate,brown,0,1,0,1,0,1,2,5.73
+silty,poor,dry,moderate,loose,high,brown,3,2,0,1,0,2,2,6.64
+clay,poor,wet,high,moderate,moderate,brown,5,2,2,2,1,1,2,6.33
+loamy,poor,moderate,low,loose,high,dark brown,2,2,1,0,0,2,3,5.57
+sandy-loam,poor,dry,low,loose,low,red,1,2,0,0,0,0,5,5.68
+clay-loam,moderate,wet,moderate,compacted,low,yellow/tan,4,1,2,1,2,0,1,6.56
+clay,moderate,dry,low,compacted,low,pale/white,5,1,0,0,2,0,0,7.21
+sandy,poor,moderate,high,moderate,high,dark brown,0,2,1,2,1,2,3,5.34
+sandy,good,wet,moderate,compacted,high,brown,0,0,2,1,2,2,2,5.6
+sandy-loam,moderate,dry,low,compacted,low,dark brown,1,1,0,0,2,0,3,6.42
+clay-loam,good,dry,low,loose,high,yellow/tan,4,0,0,0,0,2,1,6.89
+silty,poor,wet,high,loose,low,dark brown,3,2,2,2,0,0,3,6.19
+sandy,good,moderate,moderate,moderate,high,yellow/tan,0,0,1,1,1,2,1,6.72
+silty,poor,moderate,high,loose,moderate,pale/white,3,2,1,2,0,1,0,6.74
+sandy,good,wet,low,moderate,moderate,yellow/tan,0,0,2,0,1,1,1,6.3
+clay-loam,good,wet,high,compacted,low,black/dark,4,0,2,2,2,0,4,6.34
+clay,poor,moderate,low,compacted,low,brown,5,2,1,0,2,0,2,6.93
+clay-loam,moderate,dry,low,compacted,moderate,dark brown,4,1,0,0,2,1,3,6.65
+sandy,good,moderate,high,loose,high,black/dark,0,0,1,2,0,2,4,5.68
+sandy-loam,poor,wet,moderate,loose,moderate,brown,1,2,2,1,0,1,2,5.54
+silty,moderate,moderate,moderate,compacted,moderate,dark brown,3,1,1,1,2,1,3,6.05
+silty,good,moderate,high,moderate,low,brown,3,0,1,2,1,0,2,6.43
+sandy-loam,poor,dry,moderate,loose,low,red,1,2,0,1,0,0,5,6.01
+sandy-loam,moderate,dry,high,compacted,high,yellow/tan,1,1,0,2,2,2,1,6.28
+clay-loam,poor,moderate,high,loose,moderate,yellow/tan,4,2,1,2,0,1,1,6.23
+clay-loam,poor,dry,low,moderate,moderate,yellow/tan,4,2,0,0,1,1,1,6.24
+clay-loam,moderate,wet,low,loose,moderate,brown,4,1,2,0,0,1,2,6.79
+clay-loam,good,wet,high,loose,low,yellow/tan,4,0,2,2,0,0,1,5.99
+sandy-loam,poor,dry,moderate,compacted,low,red,1,2,0,1,2,0,5,5.17
+silty,poor,moderate,moderate,moderate,high,black/dark,3,2,1,1,1,2,4,6.39
+clay,poor,dry,moderate,moderate,moderate,brown,5,2,0,1,1,1,2,6.86
+clay-loam,moderate,moderate,high,compacted,low,black/dark,4,1,1,2,2,0,4,5.98
+sandy-loam,poor,wet,low,compacted,low,yellow/tan,1,2,2,0,2,0,1,5.88
+loamy,moderate,wet,moderate,moderate,low,yellow/tan,2,1,2,1,1,0,1,6.29
+sandy-loam,moderate,wet,high,moderate,low,red,1,1,2,2,1,0,5,5.98
+clay,good,wet,high,compacted,low,yellow/tan,5,0,2,2,2,0,1,6.68
+clay-loam,moderate,dry,low,moderate,high,brown,4,1,0,0,1,2,2,6.7
+silty,poor,moderate,moderate,compacted,high,red,3,2,1,1,2,2,5,5.67
+sandy-loam,poor,dry,low,loose,high,dark brown,1,2,0,0,0,2,3,5.31
+sandy,moderate,dry,low,loose,low,dark brown,0,1,0,0,0,0,3,5.82
+loamy,poor,wet,low,compacted,low,brown,2,2,2,0,2,0,2,6.16
+sandy,poor,wet,low,moderate,moderate,pale/white,0,2,2,0,1,1,0,6.05
+sandy-loam,moderate,wet,moderate,loose,moderate,yellow/tan,1,1,2,1,0,1,1,6.18
+sandy,poor,moderate,moderate,compacted,low,brown,0,2,1,1,2,0,2,5.59
+clay,good,dry,high,moderate,moderate,black/dark,5,0,0,2,1,1,4,5.94
+sandy,good,moderate,low,compacted,high,dark brown,0,0,1,0,2,2,3,6.23
+sandy-loam,good,wet,low,compacted,high,brown,1,0,2,0,2,2,2,6.49
+sandy,poor,moderate,low,moderate,low,red,0,2,1,0,1,0,5,5.53
+sandy-loam,poor,wet,high,compacted,high,yellow/tan,1,2,2,2,2,2,1,5.17
+loamy,poor,moderate,high,loose,high,black/dark,2,2,1,2,0,2,4,6.19
+clay,good,wet,low,loose,moderate,brown,5,0,2,0,0,1,2,7.09
+silty,poor,moderate,high,compacted,low,yellow/tan,3,2,1,2,2,0,1,6.27
+clay-loam,poor,wet,high,loose,moderate,yellow/tan,4,2,2,2,0,1,1,5.94
+loamy,moderate,wet,high,compacted,low,red,2,1,2,2,2,0,5,5.94
+loamy,moderate,wet,low,compacted,high,red,2,1,2,0,2,2,5,6.76
+clay-loam,good,moderate,low,moderate,high,brown,4,0,1,0,1,2,2,7.04
+clay-loam,good,moderate,low,moderate,low,dark brown,4,0,1,0,1,0,3,6.13
+clay,moderate,dry,low,loose,high,yellow/tan,5,1,0,0,0,2,1,7.05
+clay,poor,dry,low,loose,low,pale/white,5,2,0,0,0,0,0,7.66
+sandy,good,moderate,high,compacted,moderate,pale/white,0,0,1,2,2,1,0,6.19
+clay-loam,poor,wet,moderate,moderate,high,brown,4,2,2,1,1,2,2,6.23
+clay-loam,good,moderate,low,compacted,low,black/dark,4,0,1,0,2,0,4,6.53
+clay,poor,wet,low,loose,high,yellow/tan,5,2,2,0,0,2,1,6.69
+sandy-loam,good,moderate,moderate,loose,moderate,brown,1,0,1,1,0,1,2,6.34
+silty,good,wet,moderate,compacted,moderate,black/dark,3,0,2,1,2,1,4,6.08
+clay,good,dry,moderate,compacted,high,black/dark,5,0,0,1,2,2,4,7.0
+sandy-loam,poor,moderate,moderate,moderate,low,dark brown,1,2,1,1,1,0,3,5.7
+silty,moderate,wet,high,loose,low,brown,3,1,2,2,0,0,2,6.44
+silty,moderate,moderate,high,compacted,moderate,brown,3,1,1,2,2,1,2,6.72
+sandy,good,moderate,low,moderate,moderate,brown,0,0,1,0,1,1,2,6.07
+clay-loam,poor,dry,low,compacted,high,yellow/tan,4,2,0,0,2,2,1,6.4
+sandy-loam,moderate,dry,high,loose,low,yellow/tan,1,1,0,2,0,0,1,6.01
+clay,moderate,wet,moderate,compacted,high,yellow/tan,5,1,2,1,2,2,1,6.96
+clay-loam,good,moderate,moderate,compacted,high,pale/white,4,0,1,1,2,2,0,6.67
+clay,moderate,wet,low,loose,moderate,dark brown,5,1,2,0,0,1,3,7.34
+loamy,poor,wet,high,moderate,high,red,2,2,2,2,1,2,5,5.81
+sandy-loam,moderate,moderate,high,compacted,high,brown,1,1,1,2,2,2,2,6.04
+loamy,good,moderate,high,compacted,moderate,pale/white,2,0,1,2,2,1,0,6.81
+sandy-loam,good,dry,low,moderate,high,yellow/tan,1,0,0,0,1,2,1,6.05
+clay-loam,good,dry,high,loose,low,dark brown,4,0,0,2,0,0,3,6.75
+silty,moderate,wet,low,loose,moderate,yellow/tan,3,1,2,0,0,1,1,6.76
+clay,good,wet,moderate,loose,high,yellow/tan,5,0,2,1,0,2,1,7.3
+silty,poor,moderate,high,moderate,high,yellow/tan,3,2,1,2,1,2,1,6.2
+loamy,good,dry,moderate,moderate,moderate,yellow/tan,2,0,0,1,1,1,1,6.27
+silty,good,wet,low,loose,high,brown,3,0,2,0,0,2,2,6.62
+silty,moderate,dry,moderate,loose,low,pale/white,3,1,0,1,0,0,0,7.35
+clay-loam,moderate,wet,moderate,loose,low,red,4,1,2,1,0,0,5,6.35
+clay-loam,poor,dry,high,loose,high,yellow/tan,4,2,0,2,0,2,1,6.6
+silty,poor,moderate,moderate,moderate,moderate,dark brown,3,2,1,1,1,1,3,5.97
+clay-loam,poor,dry,high,moderate,moderate,black/dark,4,2,0,2,1,1,4,6.22
+silty,poor,dry,moderate,loose,high,brown,3,2,0,1,0,2,2,6.54
+sandy,good,wet,high,moderate,moderate,yellow/tan,0,0,2,2,1,1,1,5.71
+clay,good,wet,moderate,compacted,moderate,pale/white,5,0,2,1,2,1,0,7.15
+loamy,moderate,wet,high,loose,low,dark brown,2,1,2,2,0,0,3,6.15
+loamy,poor,wet,low,moderate,low,pale/white,2,2,2,0,1,0,0,6.27
+sandy,good,moderate,low,moderate,low,yellow/tan,0,0,1,0,1,0,1,6.11
+loamy,moderate,dry,high,moderate,low,brown,2,1,0,2,1,0,2,5.8
+loamy,good,moderate,low,moderate,moderate,yellow/tan,2,0,1,0,1,1,1,6.67
+loamy,good,moderate,low,loose,moderate,dark brown,2,0,1,0,0,1,3,6.64
+clay,poor,dry,low,compacted,moderate,yellow/tan,5,2,0,0,2,1,1,6.95
+clay-loam,good,wet,high,compacted,high,pale/white,4,0,2,2,2,2,0,7.05
+sandy-loam,good,dry,moderate,loose,high,dark brown,1,0,0,1,0,2,3,6.21
+sandy-loam,good,dry,low,loose,high,red,1,0,0,0,0,2,5,6.37
+sandy,poor,wet,moderate,compacted,high,red,0,2,2,1,2,2,5,5.46
+sandy-loam,moderate,wet,high,moderate,low,dark brown,1,1,2,2,1,0,3,5.63
+loamy,moderate,moderate,low,compacted,high,brown,2,1,1,0,2,2,2,6.71
+sandy-loam,moderate,moderate,moderate,moderate,low,black/dark,1,1,1,1,1,0,4,5.69
+sandy,poor,dry,moderate,loose,low,pale/white,0,2,0,1,0,0,0,5.7
+clay,moderate,dry,high,loose,high,black/dark,5,1,0,2,0,2,4,6.53
+sandy-loam,moderate,dry,high,moderate,high,black/dark,1,1,0,2,1,2,4,6.0
+clay,poor,moderate,high,loose,moderate,dark brown,5,2,1,2,0,1,3,6.39
+clay,good,wet,low,moderate,low,black/dark,5,0,2,0,1,0,4,6.34
+sandy,moderate,dry,low,loose,moderate,pale/white,0,1,0,0,0,1,0,6.72
+loamy,poor,dry,moderate,compacted,moderate,red,2,2,0,1,2,1,5,6.0
+sandy-loam,moderate,wet,low,moderate,low,black/dark,1,1,2,0,1,0,4,5.62
+clay,poor,moderate,high,loose,low,yellow/tan,5,2,1,2,0,0,1,6.51
+silty,poor,moderate,moderate,compacted,moderate,pale/white,3,2,1,1,2,1,0,6.87
+silty,moderate,moderate,low,compacted,moderate,red,3,1,1,0,2,1,5,6.65
+loamy,poor,moderate,high,loose,high,dark brown,2,2,1,2,0,2,3,6.0
+clay-loam,moderate,moderate,moderate,moderate,moderate,brown,4,1,1,1,1,1,2,6.72
+clay-loam,poor,wet,low,compacted,moderate,red,4,2,2,0,2,1,5,6.17
+sandy-loam,moderate,dry,low,loose,high,red,1,1,0,0,0,2,5,5.82
+sandy,moderate,moderate,low,compacted,low,pale/white,0,1,1,0,2,0,0,6.56
+loamy,good,moderate,high,loose,high,yellow/tan,2,0,1,2,0,2,1,6.52
+sandy-loam,moderate,moderate,moderate,loose,high,pale/white,1,1,1,1,0,2,0,6.84
+sandy-loam,poor,dry,moderate,compacted,high,red,1,2,0,1,2,2,5,5.5
+sandy,moderate,dry,low,moderate,high,brown,0,1,0,0,1,2,2,5.78
+silty,poor,wet,low,moderate,high,dark brown,3,2,2,0,1,2,3,5.9
+sandy,poor,wet,high,compacted,moderate,red,0,2,2,2,2,1,5,5.59
+clay,good,moderate,moderate,moderate,low,dark brown,5,0,1,1,1,0,3,6.9
+loamy,good,moderate,low,moderate,high,dark brown,2,0,1,0,1,2,3,6.81
+sandy-loam,moderate,dry,high,compacted,high,brown,1,1,0,2,2,2,2,6.21
+sandy,moderate,wet,high,moderate,low,pale/white,0,1,2,2,1,0,0,5.89
+sandy,poor,wet,high,moderate,moderate,red,0,2,2,2,1,1,5,5.08
+silty,poor,dry,low,compacted,high,dark brown,3,2,0,0,2,2,3,6.66
+sandy-loam,good,wet,low,moderate,high,black/dark,1,0,2,0,1,2,4,5.6
+clay-loam,good,dry,moderate,loose,high,pale/white,4,0,0,1,0,2,0,7.04
+clay,poor,wet,high,loose,high,yellow/tan,5,2,2,2,0,2,1,6.6
+loamy,moderate,moderate,low,moderate,moderate,red,2,1,1,0,1,1,5,6.61
+sandy,good,wet,moderate,loose,low,yellow/tan,0,0,2,1,0,0,1,5.96
+sandy-loam,poor,dry,high,loose,low,brown,1,2,0,2,0,0,2,5.16
+sandy-loam,good,dry,low,loose,moderate,brown,1,0,0,0,0,1,2,6.67
+loamy,good,dry,high,moderate,low,black/dark,2,0,0,2,1,0,4,5.92
+sandy-loam,good,wet,low,moderate,high,red,1,0,2,0,1,2,5,5.75
+sandy-loam,good,dry,high,loose,moderate,red,1,0,0,2,0,1,5,5.69
+clay,moderate,dry,moderate,compacted,high,brown,5,1,0,1,2,2,2,7.21
+sandy,poor,dry,low,moderate,low,red,0,2,0,0,1,0,5,5.76
+sandy,moderate,moderate,moderate,loose,moderate,brown,0,1,1,1,0,1,2,6.29
+sandy-loam,poor,dry,high,moderate,low,pale/white,1,2,0,2,1,0,0,6.11
+clay,poor,dry,low,moderate,low,dark brown,5,2,0,0,1,0,3,7.0
+sandy,moderate,wet,low,loose,high,dark brown,0,1,2,0,0,2,3,6.2
+sandy-loam,poor,wet,low,moderate,low,dark brown,1,2,2,0,1,0,3,5.77
+sandy,moderate,wet,low,loose,moderate,dark brown,0,1,2,0,0,1,3,6.16
+clay,poor,moderate,moderate,loose,moderate,red,5,2,1,1,0,1,5,6.6
+loamy,good,dry,high,compacted,high,pale/white,2,0,0,2,2,2,0,6.43
+clay,poor,dry,low,loose,high,red,5,2,0,0,0,2,5,6.14
+silty,moderate,dry,high,compacted,low,red,3,1,0,2,2,0,5,6.36
+clay-loam,poor,moderate,high,moderate,low,pale/white,4,2,1,2,1,0,0,6.5
+sandy-loam,moderate,moderate,high,moderate,high,dark brown,1,1,1,2,1,2,3,5.83
+sandy-loam,poor,wet,moderate,compacted,moderate,pale/white,1,2,2,1,2,1,0,5.68
+silty,moderate,wet,low,loose,moderate,dark brown,3,1,2,0,0,1,3,6.65
+clay,moderate,dry,moderate,compacted,moderate,red,5,1,0,1,2,1,5,6.61
+clay,good,moderate,low,loose,high,pale/white,5,0,1,0,0,2,0,7.59
+clay,good,wet,low,loose,moderate,pale/white,5,0,2,0,0,1,0,7.24
+clay-loam,poor,wet,low,moderate,low,pale/white,4,2,2,0,1,0,0,6.96
+clay-loam,poor,wet,moderate,loose,low,dark brown,4,2,2,1,0,0,3,5.95
+clay-loam,moderate,wet,moderate,compacted,low,dark brown,4,1,2,1,2,0,3,6.28
+clay,good,dry,low,compacted,low,yellow/tan,5,0,0,0,2,0,1,6.9
+clay,poor,dry,moderate,loose,moderate,dark brown,5,2,0,1,0,1,3,6.48
+loamy,good,wet,high,loose,high,red,2,0,2,2,0,2,5,5.94
+clay-loam,good,wet,high,moderate,low,black/dark,4,0,2,2,1,0,4,6.63
+silty,moderate,wet,low,loose,moderate,red,3,1,2,0,0,1,5,6.4
+loamy,moderate,moderate,low,moderate,low,dark brown,2,1,1,0,1,0,3,6.86
+clay,good,dry,low,loose,moderate,red,5,0,0,0,0,1,5,7.02
+sandy,poor,moderate,low,moderate,moderate,pale/white,0,2,1,0,1,1,0,6.53
+silty,moderate,moderate,high,moderate,high,brown,3,1,1,2,1,2,2,6.32
+silty,poor,wet,high,loose,low,red,3,2,2,2,0,0,5,6.06
+silty,moderate,wet,moderate,loose,low,yellow/tan,3,1,2,1,0,0,1,6.6
+loamy,moderate,wet,high,moderate,high,pale/white,2,1,2,2,1,2,0,6.96
+clay,poor,moderate,high,moderate,moderate,red,5,2,1,2,1,1,5,6.32
+clay-loam,moderate,moderate,high,loose,high,dark brown,4,1,1,2,0,2,3,6.19
+silty,moderate,dry,high,loose,low,pale/white,3,1,0,2,0,0,0,7.29
+loamy,poor,wet,moderate,compacted,high,red,2,2,2,1,2,2,5,5.92
+clay-loam,moderate,moderate,moderate,loose,low,black/dark,4,1,1,1,0,0,4,6.96
+sandy-loam,poor,wet,moderate,moderate,high,dark brown,1,2,2,1,1,2,3,6.11
+loamy,good,wet,high,compacted,high,red,2,0,2,2,2,2,5,6.12
+silty,good,moderate,low,compacted,low,red,3,0,1,0,2,0,5,6.32
+clay,poor,dry,moderate,moderate,moderate,dark brown,5,2,0,1,1,1,3,6.58
+sandy,poor,moderate,moderate,loose,low,brown,0,2,1,1,0,0,2,5.61
+silty,good,wet,moderate,moderate,moderate,yellow/tan,3,0,2,1,1,1,1,6.17
+silty,good,moderate,low,moderate,low,brown,3,0,1,0,1,0,2,6.74
+silty,poor,moderate,high,loose,low,pale/white,3,2,1,2,0,0,0,6.23
+silty,good,dry,moderate,moderate,low,red,3,0,0,1,1,0,5,6.6
+loamy,poor,dry,low,compacted,high,dark brown,2,2,0,0,2,2,3,6.4
+sandy,good,moderate,high,compacted,moderate,black/dark,0,0,1,2,2,1,4,5.55
+silty,moderate,wet,high,loose,low,yellow/tan,3,1,2,2,0,0,1,6.14
+sandy-loam,good,moderate,moderate,compacted,moderate,pale/white,1,0,1,1,2,1,0,6.78
+sandy-loam,moderate,wet,moderate,moderate,low,yellow/tan,1,1,2,1,1,0,1,6.11
+clay-loam,good,moderate,moderate,compacted,high,pale/white,4,0,1,1,2,2,0,7.49
+silty,good,moderate,moderate,compacted,low,pale/white,3,0,1,1,2,0,0,6.67
+silty,good,wet,moderate,loose,low,black/dark,3,0,2,1,0,0,4,6.46
+clay-loam,moderate,wet,low,compacted,low,pale/white,4,1,2,0,2,0,0,6.87
+clay-loam,poor,wet,moderate,compacted,moderate,black/dark,4,2,2,1,2,1,4,6.32
+silty,good,dry,low,moderate,high,dark brown,3,0,0,0,1,2,3,6.73
+loamy,good,wet,low,compacted,low,pale/white,2,0,2,0,2,0,0,7.07
+silty,good,moderate,low,compacted,low,pale/white,3,0,1,0,2,0,0,6.97
+silty,poor,moderate,moderate,compacted,moderate,brown,3,2,1,1,2,1,2,5.93
+loamy,poor,dry,high,compacted,high,pale/white,2,2,0,2,2,2,0,6.39
+silty,moderate,wet,low,moderate,moderate,pale/white,3,1,2,0,1,1,0,7.17
+silty,poor,wet,low,compacted,low,pale/white,3,2,2,0,2,0,0,6.18
+sandy,moderate,dry,high,moderate,low,brown,0,1,0,2,1,0,2,5.8
+clay-loam,poor,moderate,low,compacted,high,red,4,2,1,0,2,2,5,6.13
+clay,moderate,wet,low,loose,high,brown,5,1,2,0,0,2,2,7.11
+loamy,moderate,wet,moderate,moderate,low,dark brown,2,1,2,1,1,0,3,6.39
+loamy,moderate,moderate,high,loose,high,yellow/tan,2,1,1,2,0,2,1,6.55
+silty,good,dry,high,compacted,moderate,dark brown,3,0,0,2,2,1,3,6.25
+loamy,good,wet,moderate,moderate,high,brown,2,0,2,1,1,2,2,6.72
+clay-loam,moderate,dry,low,moderate,low,brown,4,1,0,0,1,0,2,6.94
+loamy,moderate,moderate,low,compacted,low,pale/white,2,1,1,0,2,0,0,7.03
+loamy,good,wet,low,compacted,low,pale/white,2,0,2,0,2,0,0,6.5
+sandy-loam,good,moderate,low,loose,moderate,dark brown,1,0,1,0,0,1,3,5.75
+clay-loam,good,dry,low,compacted,high,dark brown,4,0,0,0,2,2,3,7.15
+silty,moderate,dry,high,moderate,moderate,brown,3,1,0,2,1,1,2,6.56
+sandy-loam,good,moderate,high,moderate,moderate,black/dark,1,0,1,2,1,1,4,5.88
+silty,moderate,wet,high,loose,moderate,dark brown,3,1,2,2,0,1,3,6.53
+sandy-loam,poor,wet,low,loose,high,black/dark,1,2,2,0,0,2,4,5.55
+clay,good,wet,moderate,moderate,moderate,brown,5,0,2,1,1,1,2,7.18
+clay,moderate,wet,high,compacted,high,black/dark,5,1,2,2,2,2,4,6.72
+loamy,good,wet,high,loose,low,black/dark,2,0,2,2,0,0,4,6.35
+sandy,poor,moderate,high,compacted,low,pale/white,0,2,1,2,2,0,0,5.72
+clay-loam,poor,dry,moderate,loose,low,yellow/tan,4,2,0,1,0,0,1,6.16
+silty,poor,wet,low,compacted,moderate,pale/white,3,2,2,0,2,1,0,6.86
+sandy-loam,good,moderate,low,moderate,low,pale/white,1,0,1,0,1,0,0,7.07
+clay-loam,poor,dry,high,moderate,high,yellow/tan,4,2,0,2,1,2,1,6.79
+silty,good,dry,high,loose,moderate,pale/white,3,0,0,2,0,1,0,6.8
+clay,poor,dry,low,compacted,moderate,red,5,2,0,0,2,1,5,6.94
+silty,poor,dry,moderate,compacted,moderate,dark brown,3,2,0,1,2,1,3,6.57
+loamy,poor,moderate,moderate,moderate,low,yellow/tan,2,2,1,1,1,0,1,6.1
+sandy,good,wet,moderate,compacted,moderate,black/dark,0,0,2,1,2,1,4,5.41
+silty,good,moderate,low,moderate,moderate,brown,3,0,1,0,1,1,2,6.94
+clay-loam,moderate,dry,moderate,loose,high,red,4,1,0,1,0,2,5,6.41
+loamy,poor,moderate,low,moderate,low,brown,2,2,1,0,1,0,2,6.75
+sandy-loam,poor,dry,low,loose,moderate,dark brown,1,2,0,0,0,1,3,6.04
+loamy,poor,dry,high,loose,moderate,yellow/tan,2,2,0,2,0,1,1,5.95
+silty,moderate,dry,high,moderate,low,black/dark,3,1,0,2,1,0,4,6.56
+sandy-loam,good,wet,low,moderate,low,yellow/tan,1,0,2,0,1,0,1,6.8
+silty,good,moderate,high,moderate,moderate,yellow/tan,3,0,1,2,1,1,1,6.47
+silty,poor,dry,high,moderate,high,pale/white,3,2,0,2,1,2,0,6.71
+clay,poor,dry,low,loose,low,pale/white,5,2,0,0,0,0,0,7.53
+clay,good,moderate,moderate,compacted,moderate,black/dark,5,0,1,1,2,1,4,6.43
+clay,moderate,wet,low,moderate,high,pale/white,5,1,2,0,1,2,0,7.16
+clay,poor,dry,low,loose,high,black/dark,5,2,0,0,0,2,4,6.78
+clay-loam,moderate,dry,low,compacted,low,yellow/tan,4,1,0,0,2,0,1,6.54
+silty,moderate,dry,moderate,moderate,moderate,pale/white,3,1,0,1,1,1,0,7.05
+sandy,poor,dry,moderate,loose,high,yellow/tan,0,2,0,1,0,2,1,6.16
+sandy,good,wet,low,loose,moderate,yellow/tan,0,0,2,0,0,1,1,6.14
+sandy,moderate,dry,high,loose,low,black/dark,0,1,0,2,0,0,4,5.56
+sandy,poor,dry,moderate,loose,low,dark brown,0,2,0,1,0,0,3,5.71
+sandy-loam,moderate,moderate,low,compacted,low,black/dark,1,1,1,0,2,0,4,6.24
+sandy,moderate,dry,moderate,compacted,low,brown,0,1,0,1,2,0,2,5.72
+sandy-loam,good,dry,high,loose,high,red,1,0,0,2,0,2,5,5.62
+sandy,poor,dry,moderate,loose,high,yellow/tan,0,2,0,1,0,2,1,6.3
+sandy,poor,moderate,low,compacted,moderate,black/dark,0,2,1,0,2,1,4,5.55
+sandy,poor,wet,moderate,compacted,low,pale/white,0,2,2,1,2,0,0,5.62
+silty,good,dry,high,loose,high,black/dark,3,0,0,2,0,2,4,6.33
+silty,good,dry,moderate,moderate,high,yellow/tan,3,0,0,1,1,2,1,6.85
+silty,moderate,dry,moderate,loose,moderate,red,3,1,0,1,0,1,5,6.37
+clay-loam,poor,wet,moderate,moderate,high,red,4,2,2,1,1,2,5,6.18
+loamy,moderate,moderate,low,compacted,high,black/dark,2,1,1,0,2,2,4,7.25
+silty,good,wet,low,loose,low,red,3,0,2,0,0,0,5,6.65
+sandy-loam,poor,wet,moderate,loose,low,dark brown,1,2,2,1,0,0,3,5.71
+loamy,good,moderate,low,loose,low,brown,2,0,1,0,0,0,2,6.47
+clay,moderate,wet,high,moderate,high,red,5,1,2,2,1,2,5,6.79
+sandy-loam,poor,moderate,high,loose,moderate,pale/white,1,2,1,2,0,1,0,6.22
+clay,good,wet,low,loose,high,yellow/tan,5,0,2,0,0,2,1,6.86
+sandy-loam,good,dry,moderate,compacted,moderate,pale/white,1,0,0,1,2,1,0,6.37
+sandy-loam,good,dry,high,compacted,low,dark brown,1,0,0,2,2,0,3,5.74
+sandy-loam,moderate,moderate,moderate,loose,low,red,1,1,1,1,0,0,5,6.02
+sandy,good,dry,low,loose,low,yellow/tan,0,0,0,0,0,0,1,6.43
+sandy,good,dry,moderate,moderate,moderate,dark brown,0,0,0,1,1,1,3,6.19
+clay-loam,good,wet,moderate,compacted,high,brown,4,0,2,1,2,2,2,6.64
+loamy,good,moderate,low,compacted,high,pale/white,2,0,1,0,2,2,0,7.11
+clay-loam,good,dry,low,compacted,high,red,4,0,0,0,2,2,5,6.97
+sandy-loam,poor,wet,low,loose,low,black/dark,1,2,2,0,0,0,4,5.52
+sandy-loam,good,wet,high,moderate,low,red,1,0,2,2,1,0,5,5.82
+sandy,good,moderate,moderate,loose,moderate,brown,0,0,1,1,0,1,2,5.9
+silty,poor,moderate,low,moderate,high,black/dark,3,2,1,0,1,2,4,6.22
+clay-loam,poor,dry,moderate,compacted,high,yellow/tan,4,2,0,1,2,2,1,6.11
+loamy,poor,dry,low,loose,low,brown,2,2,0,0,0,0,2,6.84
+silty,poor,dry,high,compacted,low,yellow/tan,3,2,0,2,2,0,1,6.37
+loamy,poor,dry,moderate,compacted,low,dark brown,2,2,0,1,2,0,3,6.33
+silty,good,wet,high,loose,low,brown,3,0,2,2,0,0,2,6.96
+silty,good,wet,low,loose,low,red,3,0,2,0,0,0,5,6.52
+clay,poor,moderate,moderate,loose,low,red,5,2,1,1,0,0,5,6.26
+sandy,good,wet,high,compacted,high,pale/white,0,0,2,2,2,2,0,6.4
+loamy,moderate,moderate,high,loose,high,black/dark,2,1,1,2,0,2,4,6.15
+clay-loam,poor,dry,high,moderate,high,pale/white,4,2,0,2,1,2,0,6.36
+loamy,moderate,dry,high,compacted,low,pale/white,2,1,0,2,2,0,0,6.47
+clay,good,moderate,moderate,loose,moderate,dark brown,5,0,1,1,0,1,3,6.89
+loamy,poor,wet,moderate,loose,moderate,red,2,2,2,1,0,1,5,5.86
+clay,moderate,dry,moderate,loose,moderate,dark brown,5,1,0,1,0,1,3,6.63
+sandy,good,wet,moderate,loose,high,pale/white,0,0,2,1,0,2,0,6.13
+loamy,good,wet,high,moderate,moderate,pale/white,2,0,2,2,1,1,0,6.43
+sandy,good,dry,high,loose,moderate,brown,0,0,0,2,0,1,2,5.84
+clay-loam,good,wet,low,moderate,moderate,yellow/tan,4,0,2,0,1,1,1,6.63
+clay-loam,moderate,moderate,moderate,moderate,moderate,black/dark,4,1,1,1,1,1,4,6.35
+loamy,good,wet,low,moderate,low,brown,2,0,2,0,1,0,2,6.9
+sandy-loam,poor,dry,high,loose,high,black/dark,1,2,0,2,0,2,4,5.08
+sandy-loam,moderate,moderate,moderate,loose,moderate,black/dark,1,1,1,1,0,1,4,6.01
+loamy,moderate,moderate,high,compacted,moderate,red,2,1,1,2,2,1,5,6.37
+silty,good,moderate,high,moderate,moderate,black/dark,3,0,1,2,1,1,4,6.53
+sandy,poor,dry,high,moderate,high,red,0,2,0,2,1,2,5,5.34
+clay-loam,moderate,moderate,moderate,compacted,high,pale/white,4,1,1,1,2,2,0,7.03
+clay,moderate,wet,low,compacted,low,brown,5,1,2,0,2,0,2,7.08
+clay,good,moderate,low,loose,moderate,black/dark,5,0,1,0,0,1,4,7.07
+sandy-loam,good,moderate,high,compacted,moderate,dark brown,1,0,1,2,2,1,3,6.03
+clay,poor,wet,low,loose,low,red,5,2,2,0,0,0,5,6.74
+sandy,poor,wet,moderate,moderate,high,dark brown,0,2,2,1,1,2,3,5.34
+silty,poor,dry,low,compacted,low,black/dark,3,2,0,0,2,0,4,6.18
+sandy-loam,poor,wet,low,loose,low,red,1,2,2,0,0,0,5,5.95
+loamy,good,dry,low,compacted,moderate,black/dark,2,0,0,0,2,1,4,6.19
+clay,moderate,dry,moderate,compacted,high,brown,5,1,0,1,2,2,2,7.14
+sandy-loam,good,dry,low,compacted,moderate,pale/white,1,0,0,0,2,1,0,6.84
+sandy-loam,poor,dry,moderate,compacted,low,yellow/tan,1,2,0,1,2,0,1,6.11
+sandy,moderate,wet,high,loose,moderate,pale/white,0,1,2,2,0,1,0,6.17
+loamy,good,moderate,moderate,loose,high,red,2,0,1,1,0,2,5,6.52
+silty,poor,dry,low,compacted,moderate,dark brown,3,2,0,0,2,1,3,6.33
+loamy,moderate,wet,high,loose,high,red,2,1,2,2,0,2,5,5.9
+silty,poor,moderate,moderate,moderate,low,pale/white,3,2,1,1,1,0,0,6.75
+silty,moderate,moderate,low,compacted,low,pale/white,3,1,1,0,2,0,0,6.88
+clay-loam,good,moderate,low,moderate,low,yellow/tan,4,0,1,0,1,0,1,6.63
+clay,good,moderate,low,compacted,low,red,5,0,1,0,2,0,5,6.6
+sandy,good,dry,high,compacted,moderate,red,0,0,0,2,2,1,5,6.28
+loamy,good,wet,moderate,loose,moderate,red,2,0,2,1,0,1,5,6.24
+loamy,poor,wet,moderate,loose,high,dark brown,2,2,2,1,0,2,3,5.99
+clay,moderate,wet,moderate,loose,low,black/dark,5,1,2,1,0,0,4,7.07
+sandy,moderate,moderate,high,loose,low,dark brown,0,1,1,2,0,0,3,5.69
+clay,moderate,dry,low,moderate,low,brown,5,1,0,0,1,0,2,7.12
+sandy,good,dry,moderate,moderate,high,black/dark,0,0,0,1,1,2,4,5.82
+sandy-loam,poor,wet,moderate,compacted,high,black/dark,1,2,2,1,2,2,4,5.28
+clay,poor,wet,moderate,compacted,moderate,black/dark,5,2,2,1,2,1,4,6.31
+clay-loam,poor,dry,moderate,compacted,high,black/dark,4,2,0,1,2,2,4,6.59
+clay-loam,good,wet,moderate,compacted,low,red,4,0,2,1,2,0,5,6.86
+sandy-loam,good,moderate,high,compacted,high,black/dark,1,0,1,2,2,2,4,5.82
+loamy,good,dry,low,compacted,low,yellow/tan,2,0,0,0,2,0,1,6.63
+clay,good,wet,moderate,compacted,moderate,pale/white,5,0,2,1,2,1,0,7.48
+clay-loam,good,wet,low,loose,low,red,4,0,2,0,0,0,5,6.43
+clay,moderate,dry,moderate,loose,moderate,yellow/tan,5,1,0,1,0,1,1,6.89
+silty,moderate,wet,moderate,compacted,moderate,black/dark,3,1,2,1,2,1,4,6.64
+silty,good,wet,high,loose,high,dark brown,3,0,2,2,0,2,3,6.0
+sandy,good,wet,moderate,loose,high,brown,0,0,2,1,0,2,2,6.24
+sandy,good,wet,low,loose,moderate,pale/white,0,0,2,0,0,1,0,6.59
+silty,good,dry,low,loose,moderate,yellow/tan,3,0,0,0,0,1,1,6.71
+clay-loam,moderate,moderate,high,loose,high,red,4,1,1,2,0,2,5,6.36
+silty,poor,moderate,low,moderate,high,brown,3,2,1,0,1,2,2,7.26
+silty,poor,moderate,moderate,loose,moderate,dark brown,3,2,1,1,0,1,3,5.98
+sandy,good,dry,high,compacted,moderate,dark brown,0,0,0,2,2,1,3,5.29
+sandy-loam,good,dry,moderate,compacted,high,red,1,0,0,1,2,2,5,6.36
+sandy,poor,moderate,moderate,moderate,low,dark brown,0,2,1,1,1,0,3,5.12
+silty,poor,moderate,low,loose,low,dark brown,3,2,1,0,0,0,3,6.62
+loamy,good,dry,moderate,compacted,low,brown,2,0,0,1,2,0,2,6.53
+sandy,moderate,wet,low,compacted,high,pale/white,0,1,2,0,2,2,0,6.38
+loamy,good,moderate,high,moderate,low,brown,2,0,1,2,1,0,2,6.87
+silty,poor,moderate,moderate,loose,low,pale/white,3,2,1,1,0,0,0,7.21
+clay,moderate,wet,moderate,compacted,high,brown,5,1,2,1,2,2,2,7.01
+silty,poor,dry,high,compacted,high,brown,3,2,0,2,2,2,2,6.17
+sandy-loam,poor,moderate,high,compacted,high,dark brown,1,2,1,2,2,2,3,5.81
+loamy,good,wet,high,compacted,high,yellow/tan,2,0,2,2,2,2,1,6.2
+silty,moderate,moderate,high,compacted,low,dark brown,3,1,1,2,2,0,3,6.16
+silty,moderate,dry,low,moderate,moderate,red,3,1,0,0,1,1,5,6.22
+silty,poor,wet,low,moderate,low,red,3,2,2,0,1,0,5,6.13
+sandy,poor,moderate,moderate,compacted,moderate,yellow/tan,0,2,1,1,2,1,1,6.35
+silty,good,dry,moderate,moderate,low,dark brown,3,0,0,1,1,0,3,6.38
+clay,good,wet,low,loose,moderate,black/dark,5,0,2,0,0,1,4,6.87
+sandy-loam,good,moderate,moderate,compacted,moderate,red,1,0,1,1,2,1,5,5.79
+sandy-loam,poor,dry,high,compacted,low,pale/white,1,2,0,2,2,0,0,6.17
+loamy,poor,moderate,moderate,loose,moderate,brown,2,2,1,1,0,1,2,6.07
+sandy,good,moderate,high,moderate,low,red,0,0,1,2,1,0,5,5.57
+silty,moderate,dry,high,moderate,high,dark brown,3,1,0,2,1,2,3,6.01
+sandy-loam,good,dry,moderate,loose,low,brown,1,0,0,1,0,0,2,5.95
+sandy-loam,moderate,wet,high,compacted,moderate,brown,1,1,2,2,2,1,2,5.65
+sandy-loam,good,wet,low,compacted,moderate,black/dark,1,0,2,0,2,1,4,6.7
+loamy,good,moderate,moderate,loose,low,brown,2,0,1,1,0,0,2,6.45
+sandy-loam,moderate,dry,low,compacted,low,yellow/tan,1,1,0,0,2,0,1,5.93
+clay,good,moderate,moderate,loose,high,brown,5,0,1,1,0,2,2,6.66
+clay,good,wet,low,moderate,low,brown,5,0,2,0,1,0,2,7.3
+clay,moderate,moderate,moderate,compacted,moderate,dark brown,5,1,1,1,2,1,3,6.88
+sandy-loam,moderate,wet,low,loose,moderate,dark brown,1,1,2,0,0,1,3,5.6
+sandy-loam,moderate,wet,high,loose,high,red,1,1,2,2,0,2,5,5.8
+sandy,poor,moderate,high,loose,high,yellow/tan,0,2,1,2,0,2,1,5.83
+silty,good,dry,low,compacted,low,brown,3,0,0,0,2,0,2,6.69
+clay-loam,good,moderate,moderate,loose,low,pale/white,4,0,1,1,0,0,0,7.0
+clay-loam,poor,dry,high,moderate,moderate,dark brown,4,2,0,2,1,1,3,6.17
+loamy,moderate,moderate,moderate,loose,low,red,2,1,1,1,0,0,5,6.4
+loamy,good,wet,low,loose,moderate,dark brown,2,0,2,0,0,1,3,6.42
+loamy,good,wet,high,moderate,high,brown,2,0,2,2,1,2,2,6.85
+sandy-loam,moderate,wet,moderate,compacted,moderate,yellow/tan,1,1,2,1,2,1,1,5.89
+loamy,good,dry,high,compacted,low,red,2,0,0,2,2,0,5,6.48
+clay-loam,moderate,wet,high,compacted,moderate,dark brown,4,1,2,2,2,1,3,5.83
+clay,good,moderate,moderate,compacted,high,dark brown,5,0,1,1,2,2,3,6.71
+clay-loam,moderate,dry,low,moderate,high,brown,4,1,0,0,1,2,2,6.9
+silty,poor,wet,moderate,loose,moderate,pale/white,3,2,2,1,0,1,0,6.12
+silty,poor,wet,low,compacted,moderate,brown,3,2,2,0,2,1,2,6.51
+loamy,good,dry,low,loose,high,black/dark,2,0,0,0,0,2,4,6.67
+loamy,moderate,moderate,high,moderate,low,pale/white,2,1,1,2,1,0,0,6.28
+sandy-loam,good,moderate,moderate,moderate,low,dark brown,1,0,1,1,1,0,3,5.53
+clay,poor,dry,high,moderate,moderate,dark brown,5,2,0,2,1,1,3,5.61
+sandy-loam,good,wet,high,loose,moderate,brown,1,0,2,2,0,1,2,6.29
+silty,poor,dry,high,compacted,moderate,brown,3,2,0,2,2,1,2,6.53
+clay,good,dry,low,compacted,moderate,yellow/tan,5,0,0,0,2,1,1,7.46
+sandy,poor,dry,high,moderate,high,pale/white,0,2,0,2,1,2,0,5.64
+sandy,poor,wet,low,loose,moderate,pale/white,0,2,2,0,0,1,0,6.0
+clay-loam,poor,wet,low,moderate,low,brown,4,2,2,0,1,0,2,6.49
+loamy,good,dry,high,loose,high,brown,2,0,0,2,0,2,2,6.26
+sandy-loam,poor,dry,moderate,compacted,high,dark brown,1,2,0,1,2,2,3,5.85
+clay-loam,poor,wet,low,moderate,high,brown,4,2,2,0,1,2,2,7.42
+clay-loam,moderate,moderate,moderate,compacted,high,black/dark,4,1,1,1,2,2,4,6.55
+silty,poor,moderate,low,moderate,high,yellow/tan,3,2,1,0,1,2,1,6.39
+sandy,good,dry,low,loose,moderate,dark brown,0,0,0,0,0,1,3,5.75
+silty,poor,wet,low,moderate,high,black/dark,3,2,2,0,1,2,4,6.42
+clay,moderate,wet,moderate,compacted,low,black/dark,5,1,2,1,2,0,4,6.49
+clay-loam,poor,dry,low,compacted,low,dark brown,4,2,0,0,2,0,3,6.22
+loamy,poor,moderate,low,moderate,high,pale/white,2,2,1,0,1,2,0,6.45
+silty,poor,wet,moderate,loose,low,yellow/tan,3,2,2,1,0,0,1,6.18
+sandy,moderate,moderate,low,moderate,low,dark brown,0,1,1,0,1,0,3,5.41
+sandy-loam,poor,dry,high,loose,moderate,black/dark,1,2,0,2,0,1,4,5.61
+sandy,good,moderate,low,moderate,high,black/dark,0,0,1,0,1,2,4,6.46
+loamy,poor,wet,high,loose,high,black/dark,2,2,2,2,0,2,4,5.57
+loamy,poor,moderate,low,loose,low,black/dark,2,2,1,0,0,0,4,6.39
+sandy-loam,good,wet,moderate,loose,high,black/dark,1,0,2,1,0,2,4,6.18
+sandy,poor,dry,low,loose,high,dark brown,0,2,0,0,0,2,3,5.79
+loamy,poor,wet,moderate,moderate,high,dark brown,2,2,2,1,1,2,3,6.29
+sandy-loam,good,wet,high,compacted,moderate,yellow/tan,1,0,2,2,2,1,1,5.92
+clay,moderate,wet,high,compacted,high,dark brown,5,1,2,2,2,2,3,6.39
+sandy,good,dry,high,loose,moderate,dark brown,0,0,0,2,0,1,3,6.15
+clay-loam,good,wet,high,loose,low,red,4,0,2,2,0,0,5,6.45
+silty,moderate,dry,moderate,loose,high,black/dark,3,1,0,1,0,2,4,6.24
+sandy,poor,dry,moderate,loose,moderate,pale/white,0,2,0,1,0,1,0,6.04
+loamy,moderate,dry,high,compacted,high,black/dark,2,1,0,2,2,2,4,6.04
+clay-loam,moderate,wet,moderate,moderate,high,brown,4,1,2,1,1,2,2,6.63
+loamy,moderate,moderate,moderate,loose,high,black/dark,2,1,1,1,0,2,4,6.39
+clay,poor,wet,moderate,compacted,low,yellow/tan,5,2,2,1,2,0,1,6.57
+sandy,moderate,moderate,low,loose,moderate,dark brown,0,1,1,0,0,1,3,5.98
+sandy,good,dry,low,compacted,low,black/dark,0,0,0,0,2,0,4,5.76
+clay,poor,wet,moderate,loose,low,yellow/tan,5,2,2,1,0,0,1,6.69
+sandy,poor,wet,high,moderate,low,red,0,2,2,2,1,0,5,5.09
+loamy,moderate,wet,moderate,moderate,high,dark brown,2,1,2,1,1,2,3,6.29
+clay-loam,moderate,dry,low,compacted,high,black/dark,4,1,0,0,2,2,4,7.12
+loamy,moderate,dry,high,loose,moderate,pale/white,2,1,0,2,0,1,0,7.01
+sandy,poor,wet,low,loose,moderate,pale/white,0,2,2,0,0,1,0,6.43
+sandy,moderate,wet,moderate,moderate,high,dark brown,0,1,2,1,1,2,3,6.23
+silty,good,dry,high,loose,low,black/dark,3,0,0,2,0,0,4,5.87
+sandy-loam,poor,dry,low,loose,low,brown,1,2,0,0,0,0,2,5.76
+sandy,poor,moderate,low,compacted,moderate,black/dark,0,2,1,0,2,1,4,5.46
+silty,poor,dry,moderate,compacted,low,yellow/tan,3,2,0,1,2,0,1,6.38
+clay,poor,wet,low,moderate,low,yellow/tan,5,2,2,0,1,0,1,6.5
+sandy-loam,poor,dry,moderate,moderate,high,black/dark,1,2,0,1,1,2,4,5.83
+sandy,poor,wet,high,compacted,low,red,0,2,2,2,2,0,5,5.12
+silty,good,dry,low,moderate,moderate,red,3,0,0,0,1,1,5,6.48
+loamy,poor,wet,moderate,loose,moderate,dark brown,2,2,2,1,0,1,3,5.88
+sandy-loam,good,dry,moderate,compacted,low,pale/white,1,0,0,1,2,0,0,6.42
+clay,poor,moderate,high,moderate,low,brown,5,2,1,2,1,0,2,6.39
+clay-loam,poor,wet,low,loose,moderate,dark brown,4,2,2,0,0,1,3,6.25
+sandy,poor,wet,low,compacted,moderate,brown,0,2,2,0,2,1,2,6.22
+clay,moderate,dry,high,compacted,moderate,black/dark,5,1,0,2,2,1,4,6.58
+silty,poor,dry,moderate,moderate,high,pale/white,3,2,0,1,1,2,0,6.93
+silty,poor,wet,low,loose,moderate,yellow/tan,3,2,2,0,0,1,1,6.02
+sandy,moderate,moderate,moderate,moderate,high,dark brown,0,1,1,1,1,2,3,5.68
+clay,poor,dry,high,compacted,high,yellow/tan,5,2,0,2,2,2,1,6.97
+loamy,good,dry,high,compacted,moderate,black/dark,2,0,0,2,2,1,4,6.06
+sandy-loam,moderate,moderate,low,loose,moderate,red,1,1,1,0,0,1,5,5.52
+silty,moderate,dry,high,compacted,low,brown,3,1,0,2,2,0,2,6.47
+sandy-loam,good,moderate,moderate,loose,moderate,yellow/tan,1,0,1,1,0,1,1,6.15
+clay,moderate,dry,high,loose,low,red,5,1,0,2,0,0,5,6.85
+sandy-loam,moderate,dry,moderate,loose,moderate,red,1,1,0,1,0,1,5,6.09
+clay-loam,good,wet,moderate,loose,high,dark brown,4,0,2,1,0,2,3,6.85
+clay-loam,moderate,wet,low,loose,high,dark brown,4,1,2,0,0,2,3,6.84
+sandy,good,moderate,moderate,loose,moderate,dark brown,0,0,1,1,0,1,3,5.76
+clay-loam,poor,dry,moderate,loose,high,pale/white,4,2,0,1,0,2,0,6.94
+sandy,good,moderate,low,compacted,low,black/dark,0,0,1,0,2,0,4,6.39
+clay,poor,wet,low,moderate,low,yellow/tan,5,2,2,0,1,0,1,6.6
+clay-loam,good,moderate,high,compacted,high,brown,4,0,1,2,2,2,2,6.98
+loamy,good,moderate,high,compacted,moderate,red,2,0,1,2,2,1,5,6.16
+clay,good,wet,low,moderate,moderate,brown,5,0,2,0,1,1,2,7.41
+sandy-loam,moderate,wet,moderate,moderate,low,yellow/tan,1,1,2,1,1,0,1,6.33
+sandy,moderate,moderate,low,moderate,moderate,yellow/tan,0,1,1,0,1,1,1,5.79
+silty,poor,dry,high,moderate,high,black/dark,3,2,0,2,1,2,4,5.87
+loamy,poor,dry,moderate,moderate,low,red,2,2,0,1,1,0,5,5.6
+clay,moderate,dry,low,moderate,moderate,yellow/tan,5,1,0,0,1,1,1,7.14
+loamy,good,moderate,low,loose,low,dark brown,2,0,1,0,0,0,3,6.39
+loamy,good,moderate,low,moderate,low,brown,2,0,1,0,1,0,2,6.64
+silty,poor,moderate,low,compacted,high,yellow/tan,3,2,1,0,2,2,1,6.52
+silty,good,moderate,high,loose,moderate,dark brown,3,0,1,2,0,1,3,6.25
+sandy-loam,moderate,moderate,low,loose,moderate,red,1,1,1,0,0,1,5,5.58
+sandy,poor,dry,high,moderate,moderate,yellow/tan,0,2,0,2,1,1,1,5.64
+loamy,poor,wet,high,loose,low,black/dark,2,2,2,2,0,0,4,6.01
+clay-loam,poor,wet,moderate,loose,low,yellow/tan,4,2,2,1,0,0,1,6.88
+silty,poor,moderate,moderate,loose,low,brown,3,2,1,1,0,0,2,6.04
+sandy,poor,wet,low,moderate,high,dark brown,0,2,2,0,1,2,3,5.57
+loamy,poor,moderate,moderate,loose,low,yellow/tan,2,2,1,1,0,0,1,6.45
+sandy-loam,poor,moderate,moderate,compacted,moderate,yellow/tan,1,2,1,1,2,1,1,6.04
+clay,moderate,dry,moderate,compacted,low,red,5,1,0,1,2,0,5,6.52
+loamy,good,moderate,low,loose,low,black/dark,2,0,1,0,0,0,4,6.56
+loamy,good,wet,low,compacted,low,pale/white,2,0,2,0,2,0,0,6.65
+clay,moderate,dry,low,moderate,moderate,pale/white,5,1,0,0,1,1,0,6.86
+sandy,poor,dry,low,compacted,low,pale/white,0,2,0,0,2,0,0,6.07
+clay,poor,moderate,low,compacted,low,yellow/tan,5,2,1,0,2,0,1,6.49
+silty,good,moderate,low,loose,moderate,red,3,0,1,0,0,1,5,6.27
+silty,poor,moderate,low,moderate,high,yellow/tan,3,2,1,0,1,2,1,7.09
+silty,good,wet,moderate,compacted,moderate,brown,3,0,2,1,2,1,2,6.27
+loamy,good,wet,high,moderate,moderate,red,2,0,2,2,1,1,5,6.29
+sandy-loam,moderate,dry,low,compacted,moderate,dark brown,1,1,0,0,2,1,3,5.97
+clay,poor,dry,high,compacted,low,black/dark,5,2,0,2,2,0,4,6.48
+loamy,good,wet,low,loose,moderate,pale/white,2,0,2,0,0,1,0,7.2
+loamy,moderate,wet,low,moderate,high,brown,2,1,2,0,1,2,2,6.49
+silty,moderate,dry,moderate,compacted,low,dark brown,3,1,0,1,2,0,3,6.25
+loamy,moderate,wet,high,moderate,moderate,black/dark,2,1,2,2,1,1,4,5.54
+clay,poor,wet,moderate,moderate,low,brown,5,2,2,1,1,0,2,7.16
+clay,poor,moderate,moderate,compacted,low,dark brown,5,2,1,1,2,0,3,6.79
+silty,good,dry,high,moderate,low,red,3,0,0,2,1,0,5,5.64
+clay,good,moderate,high,compacted,low,pale/white,5,0,1,2,2,0,0,6.82
+loamy,good,dry,moderate,loose,low,dark brown,2,0,0,1,0,0,3,6.35
+sandy,good,dry,high,compacted,high,dark brown,0,0,0,2,2,2,3,5.6
+sandy-loam,poor,dry,high,compacted,low,dark brown,1,2,0,2,2,0,3,5.76
+sandy-loam,moderate,dry,low,compacted,low,pale/white,1,1,0,0,2,0,0,6.7
+loamy,moderate,moderate,moderate,loose,low,red,2,1,1,1,0,0,5,6.4
+sandy-loam,moderate,moderate,moderate,loose,moderate,dark brown,1,1,1,1,0,1,3,5.83
+clay,good,moderate,moderate,moderate,high,black/dark,5,0,1,1,1,2,4,7.27
+silty,moderate,moderate,low,loose,high,black/dark,3,1,1,0,0,2,4,6.47
+clay-loam,moderate,moderate,moderate,compacted,moderate,dark brown,4,1,1,1,2,1,3,6.49
+clay,moderate,moderate,low,moderate,low,dark brown,5,1,1,0,1,0,3,6.7
+silty,good,dry,low,compacted,high,pale/white,3,0,0,0,2,2,0,7.11
+sandy,poor,dry,moderate,compacted,high,black/dark,0,2,0,1,2,2,4,5.91
+silty,moderate,moderate,low,loose,high,dark brown,3,1,1,0,0,2,3,7.02
+sandy-loam,poor,dry,high,moderate,moderate,dark brown,1,2,0,2,1,1,3,5.49
+clay-loam,moderate,wet,moderate,moderate,low,dark brown,4,1,2,1,1,0,3,6.46
+sandy-loam,good,wet,low,moderate,high,dark brown,1,0,2,0,1,2,3,6.39
+sandy-loam,moderate,wet,moderate,moderate,high,dark brown,1,1,2,1,1,2,3,5.47
+sandy-loam,poor,wet,high,loose,moderate,dark brown,1,2,2,2,0,1,3,5.59
+clay,moderate,wet,high,compacted,low,black/dark,5,1,2,2,2,0,4,5.86
+loamy,good,moderate,low,compacted,high,dark brown,2,0,1,0,2,2,3,6.8
+clay-loam,good,wet,moderate,compacted,high,yellow/tan,4,0,2,1,2,2,1,6.76
+loamy,poor,wet,moderate,loose,moderate,dark brown,2,2,2,1,0,1,3,6.02
+sandy-loam,moderate,wet,high,compacted,low,brown,1,1,2,2,2,0,2,5.85
+silty,good,moderate,high,moderate,moderate,pale/white,3,0,1,2,1,1,0,6.82
+sandy-loam,good,wet,low,moderate,low,yellow/tan,1,0,2,0,1,0,1,6.36
+loamy,poor,dry,moderate,compacted,high,dark brown,2,2,0,1,2,2,3,6.36
+sandy-loam,good,dry,high,loose,high,black/dark,1,0,0,2,0,2,4,5.55
+loamy,poor,moderate,moderate,loose,low,pale/white,2,2,1,1,0,0,0,6.33
+sandy-loam,moderate,dry,low,compacted,high,brown,1,1,0,0,2,2,2,6.02
+clay,moderate,moderate,low,compacted,moderate,brown,5,1,1,0,2,1,2,7.38
+silty,poor,wet,moderate,compacted,high,red,3,2,2,1,2,2,5,6.31
+sandy,good,moderate,high,moderate,moderate,dark brown,0,0,1,2,1,1,3,5.98
+sandy,poor,dry,low,compacted,moderate,brown,0,2,0,0,2,1,2,5.68
+clay,poor,dry,low,compacted,low,red,5,2,0,0,2,0,5,6.5
+sandy-loam,moderate,wet,low,compacted,low,red,1,1,2,0,2,0,5,6.08
+sandy-loam,moderate,wet,low,loose,high,pale/white,1,1,2,0,0,2,0,6.5
+sandy-loam,moderate,moderate,moderate,loose,moderate,dark brown,1,1,1,1,0,1,3,6.32
+sandy,moderate,dry,moderate,moderate,high,pale/white,0,1,0,1,1,2,0,6.63
+clay-loam,moderate,wet,low,loose,low,brown,4,1,2,0,0,0,2,6.56
+sandy-loam,good,moderate,low,moderate,high,black/dark,1,0,1,0,1,2,4,6.39
+silty,moderate,dry,low,compacted,low,pale/white,3,1,0,0,2,0,0,6.91
+sandy-loam,good,moderate,moderate,loose,moderate,pale/white,1,0,1,1,0,1,0,6.77
+loamy,good,dry,high,moderate,high,dark brown,2,0,0,2,1,2,3,6.38
+clay,poor,moderate,low,moderate,moderate,pale/white,5,2,1,0,1,1,0,7.19
+clay,poor,dry,high,loose,moderate,brown,5,2,0,2,0,1,2,6.78
+clay,moderate,moderate,high,compacted,high,dark brown,5,1,1,2,2,2,3,6.47
+clay-loam,poor,dry,low,compacted,high,yellow/tan,4,2,0,0,2,2,1,6.61
+loamy,moderate,moderate,high,loose,moderate,dark brown,2,1,1,2,0,1,3,6.72
+loamy,poor,wet,high,compacted,moderate,yellow/tan,2,2,2,2,2,1,1,6.51
+clay,good,moderate,high,compacted,moderate,brown,5,0,1,2,2,1,2,7.53
+clay,good,wet,low,moderate,moderate,red,5,0,2,0,1,1,5,7.06
+sandy-loam,good,wet,low,moderate,high,yellow/tan,1,0,2,0,1,2,1,6.06
+loamy,good,moderate,low,compacted,moderate,yellow/tan,2,0,1,0,2,1,1,6.6
+clay,good,wet,low,loose,moderate,pale/white,5,0,2,0,0,1,0,7.43
+sandy-loam,good,wet,moderate,compacted,low,dark brown,1,0,2,1,2,0,3,5.67
+clay,poor,wet,low,moderate,high,yellow/tan,5,2,2,0,1,2,1,6.77
+clay-loam,poor,dry,high,moderate,moderate,yellow/tan,4,2,0,2,1,1,1,6.17
+loamy,good,dry,high,loose,high,red,2,0,0,2,0,2,5,6.36
+sandy,poor,dry,low,moderate,low,brown,0,2,0,0,1,0,2,6.09
+clay,moderate,wet,low,loose,high,black/dark,5,1,2,0,0,2,4,6.47
+clay,poor,wet,low,loose,low,pale/white,5,2,2,0,0,0,0,6.86
+clay-loam,moderate,moderate,high,compacted,low,brown,4,1,1,2,2,0,2,6.32
+sandy-loam,good,dry,low,moderate,high,pale/white,1,0,0,0,1,2,0,6.57
+sandy,good,moderate,moderate,compacted,moderate,brown,0,0,1,1,2,1,2,5.78
+silty,poor,wet,low,loose,high,black/dark,3,2,2,0,0,2,4,6.19
+sandy-loam,moderate,dry,low,moderate,high,brown,1,1,0,0,1,2,2,6.11
+sandy,good,wet,high,loose,moderate,red,0,0,2,2,0,1,5,5.99
+clay,poor,moderate,low,moderate,moderate,black/dark,5,2,1,0,1,1,4,7.03
+clay-loam,good,dry,low,moderate,high,pale/white,4,0,0,0,1,2,0,7.49
+clay-loam,moderate,moderate,high,moderate,moderate,brown,4,1,1,2,1,1,2,7.01
+silty,poor,wet,low,compacted,high,dark brown,3,2,2,0,2,2,3,6.71
+silty,moderate,dry,low,loose,high,black/dark,3,1,0,0,0,2,4,6.44
+loamy,good,wet,moderate,compacted,low,brown,2,0,2,1,2,0,2,6.73
+silty,poor,wet,low,loose,high,yellow/tan,3,2,2,0,0,2,1,6.28
+sandy,good,moderate,moderate,compacted,moderate,pale/white,0,0,1,1,2,1,0,6.52
+clay,moderate,moderate,moderate,compacted,moderate,yellow/tan,5,1,1,1,2,1,1,7.07
+clay,good,wet,low,moderate,high,brown,5,0,2,0,1,2,2,7.23
+sandy-loam,poor,dry,moderate,moderate,moderate,pale/white,1,2,0,1,1,1,0,6.72
+sandy,good,moderate,moderate,compacted,high,pale/white,0,0,1,1,2,2,0,6.48
+silty,poor,dry,moderate,loose,low,red,3,2,0,1,0,0,5,6.22
+silty,moderate,moderate,moderate,loose,low,yellow/tan,3,1,1,1,0,0,1,6.39
+loamy,good,dry,high,compacted,high,yellow/tan,2,0,0,2,2,2,1,6.54
+clay-loam,moderate,moderate,high,compacted,moderate,red,4,1,1,2,2,1,5,6.17
+loamy,good,moderate,moderate,moderate,high,pale/white,2,0,1,1,1,2,0,7.25
+loamy,moderate,dry,moderate,moderate,low,pale/white,2,1,0,1,1,0,0,7.04
+clay,good,moderate,high,loose,high,pale/white,5,0,1,2,0,2,0,7.32
+clay,good,moderate,low,moderate,high,yellow/tan,5,0,1,0,1,2,1,6.88
+sandy,good,dry,high,compacted,high,yellow/tan,0,0,0,2,2,2,1,5.85
+silty,poor,dry,low,compacted,low,black/dark,3,2,0,0,2,0,4,6.48
+silty,moderate,wet,low,compacted,high,black/dark,3,1,2,0,2,2,4,6.32
+clay-loam,poor,moderate,high,loose,moderate,pale/white,4,2,1,2,0,1,0,6.78
+sandy-loam,good,moderate,moderate,loose,high,dark brown,1,0,1,1,0,2,3,6.21
+sandy-loam,moderate,moderate,moderate,compacted,moderate,brown,1,1,1,1,2,1,2,6.13
+sandy,moderate,wet,moderate,moderate,moderate,dark brown,0,1,2,1,1,1,3,5.58
+sandy-loam,poor,moderate,low,moderate,high,black/dark,1,2,1,0,1,2,4,6.1
+sandy-loam,good,wet,high,moderate,high,pale/white,1,0,2,2,1,2,0,6.37
+clay,moderate,moderate,high,moderate,high,pale/white,5,1,1,2,1,2,0,6.97
+sandy,poor,moderate,low,loose,high,pale/white,0,2,1,0,0,2,0,6.04
+sandy-loam,moderate,dry,moderate,loose,high,dark brown,1,1,0,1,0,2,3,5.66
+clay-loam,poor,dry,high,moderate,low,yellow/tan,4,2,0,2,1,0,1,6.35
+sandy-loam,moderate,moderate,low,compacted,low,black/dark,1,1,1,0,2,0,4,5.89
+clay,poor,moderate,moderate,loose,low,dark brown,5,2,1,1,0,0,3,6.88
+clay,good,moderate,high,moderate,moderate,black/dark,5,0,1,2,1,1,4,6.39
+clay-loam,good,moderate,moderate,compacted,moderate,pale/white,4,0,1,1,2,1,0,7.66
+clay,poor,moderate,moderate,compacted,low,black/dark,5,2,1,1,2,0,4,6.81
+silty,moderate,dry,high,compacted,low,red,3,1,0,2,2,0,5,6.11
+silty,poor,dry,high,loose,low,yellow/tan,3,2,0,2,0,0,1,5.77
+sandy,moderate,wet,low,loose,high,pale/white,0,1,2,0,0,2,0,6.36
+loamy,poor,wet,low,moderate,moderate,dark brown,2,2,2,0,1,1,3,6.31
+clay-loam,moderate,wet,low,compacted,low,pale/white,4,1,2,0,2,0,0,7.34
+clay-loam,poor,wet,high,compacted,high,black/dark,4,2,2,2,2,2,4,5.99
+silty,good,wet,high,compacted,high,pale/white,3,0,2,2,2,2,0,6.81
+sandy-loam,poor,dry,moderate,compacted,high,yellow/tan,1,2,0,1,2,2,1,6.13
+clay,good,dry,high,compacted,moderate,red,5,0,0,2,2,1,5,6.85
+sandy-loam,poor,dry,low,loose,moderate,yellow/tan,1,2,0,0,0,1,1,5.88
+sandy,poor,dry,low,compacted,moderate,black/dark,0,2,0,0,2,1,4,6.03
+clay,moderate,moderate,moderate,compacted,high,black/dark,5,1,1,1,2,2,4,6.18
+clay-loam,poor,moderate,low,loose,moderate,pale/white,4,2,1,0,0,1,0,7.09
+loamy,poor,wet,high,loose,moderate,pale/white,2,2,2,2,0,1,0,6.06
+clay,poor,moderate,high,compacted,low,black/dark,5,2,1,2,2,0,4,6.52
+silty,moderate,moderate,high,moderate,moderate,dark brown,3,1,1,2,1,1,3,6.2
+loamy,poor,moderate,moderate,moderate,moderate,black/dark,2,2,1,1,1,1,4,6.06
+loamy,poor,wet,moderate,compacted,low,dark brown,2,2,2,1,2,0,3,6.1
+clay-loam,moderate,dry,moderate,moderate,low,brown,4,1,0,1,1,0,2,6.48
+sandy-loam,poor,moderate,high,loose,low,brown,1,2,1,2,0,0,2,6.27
+loamy,moderate,moderate,moderate,compacted,moderate,black/dark,2,1,1,1,2,1,4,6.91
+loamy,moderate,moderate,moderate,loose,low,red,2,1,1,1,0,0,5,6.53
+clay,good,dry,low,moderate,high,yellow/tan,5,0,0,0,1,2,1,7.28
+sandy,poor,wet,high,compacted,low,black/dark,0,2,2,2,2,0,4,5.13
+sandy,moderate,dry,moderate,compacted,high,dark brown,0,1,0,1,2,2,3,6.02
+clay,good,moderate,moderate,moderate,low,yellow/tan,5,0,1,1,1,0,1,7.01
+silty,moderate,dry,moderate,compacted,moderate,black/dark,3,1,0,1,2,1,4,6.82
+silty,moderate,moderate,low,moderate,low,brown,3,1,1,0,1,0,2,6.19
+sandy,moderate,moderate,moderate,loose,low,black/dark,0,1,1,1,0,0,4,6.02
+sandy-loam,good,moderate,high,compacted,high,brown,1,0,1,2,2,2,2,6.15
+loamy,poor,wet,high,loose,low,red,2,2,2,2,0,0,5,5.74
+sandy-loam,good,dry,high,moderate,moderate,red,1,0,0,2,1,1,5,6.0
+sandy,poor,moderate,low,compacted,moderate,dark brown,0,2,1,0,2,1,3,5.93
+silty,good,moderate,moderate,moderate,low,dark brown,3,0,1,1,1,0,3,6.43
+sandy-loam,poor,wet,low,loose,moderate,brown,1,2,2,0,0,1,2,5.97
+loamy,good,moderate,high,compacted,high,dark brown,2,0,1,2,2,2,3,6.17
+clay,moderate,dry,low,loose,low,dark brown,5,1,0,0,0,0,3,6.77
+clay,poor,dry,high,moderate,moderate,black/dark,5,2,0,2,1,1,4,6.27
+sandy,moderate,wet,moderate,moderate,high,dark brown,0,1,2,1,1,2,3,5.97
+clay-loam,good,moderate,moderate,loose,moderate,black/dark,4,0,1,1,0,1,4,6.18
+silty,poor,dry,low,loose,high,brown,3,2,0,0,0,2,2,7.18
+sandy,poor,dry,low,moderate,moderate,dark brown,0,2,0,0,1,1,3,5.12
+clay-loam,good,wet,high,loose,high,black/dark,4,0,2,2,0,2,4,6.48
+sandy-loam,poor,moderate,moderate,moderate,high,black/dark,1,2,1,1,1,2,4,6.18
+loamy,poor,moderate,moderate,loose,moderate,black/dark,2,2,1,1,0,1,4,6.07
+sandy,moderate,wet,moderate,compacted,high,pale/white,0,1,2,1,2,2,0,6.5
+clay,moderate,dry,low,moderate,moderate,dark brown,5,1,0,0,1,1,3,7.46
+loamy,poor,wet,high,compacted,low,yellow/tan,2,2,2,2,2,0,1,6.07
+silty,moderate,wet,high,compacted,moderate,red,3,1,2,2,2,1,5,6.25
+sandy,poor,wet,low,compacted,low,dark brown,0,2,2,0,2,0,3,5.67
+clay,poor,wet,moderate,compacted,moderate,red,5,2,2,1,2,1,5,6.7
+clay-loam,good,wet,high,compacted,high,black/dark,4,0,2,2,2,2,4,6.46
+silty,poor,moderate,low,moderate,low,red,3,2,1,0,1,0,5,6.29
+silty,moderate,dry,high,loose,high,black/dark,3,1,0,2,0,2,4,6.24
+silty,poor,dry,high,compacted,low,brown,3,2,0,2,2,0,2,6.25
+loamy,poor,dry,low,moderate,low,pale/white,2,2,0,0,1,0,0,6.25
+sandy-loam,poor,dry,low,compacted,low,yellow/tan,1,2,0,0,2,0,1,5.74
+clay,good,wet,high,moderate,moderate,pale/white,5,0,2,2,1,1,0,7.83
+sandy-loam,good,moderate,low,compacted,high,brown,1,0,1,0,2,2,2,6.27
+loamy,good,moderate,moderate,compacted,low,dark brown,2,0,1,1,2,0,3,6.15
+clay,good,wet,low,loose,low,brown,5,0,2,0,0,0,2,7.11
+sandy-loam,poor,moderate,moderate,loose,high,brown,1,2,1,1,0,2,2,6.39
+loamy,moderate,dry,low,loose,moderate,brown,2,1,0,0,0,1,2,6.29
+clay,good,dry,low,moderate,low,red,5,0,0,0,1,0,5,6.9
+sandy,good,wet,low,loose,low,yellow/tan,0,0,2,0,0,0,1,6.13
+sandy,moderate,wet,low,compacted,low,black/dark,0,1,2,0,2,0,4,5.83
+sandy,poor,dry,high,compacted,high,black/dark,0,2,0,2,2,2,4,5.21
+clay,moderate,dry,low,moderate,moderate,dark brown,5,1,0,0,1,1,3,6.52
+sandy,good,moderate,high,moderate,low,dark brown,0,0,1,2,1,0,3,5.72
+sandy,poor,moderate,high,moderate,moderate,dark brown,0,2,1,2,1,1,3,5.42
+loamy,moderate,moderate,high,moderate,high,brown,2,1,1,2,1,2,2,6.23
+loamy,poor,moderate,moderate,compacted,low,pale/white,2,2,1,1,2,0,0,6.13
+clay-loam,poor,moderate,low,compacted,low,pale/white,4,2,1,0,2,0,0,6.81
+loamy,poor,moderate,low,compacted,moderate,red,2,2,1,0,2,1,5,6.24
+clay,good,dry,high,compacted,moderate,brown,5,0,0,2,2,1,2,6.73
+silty,good,moderate,high,moderate,moderate,dark brown,3,0,1,2,1,1,3,6.52
+silty,moderate,dry,moderate,moderate,moderate,brown,3,1,0,1,1,1,2,6.27
+sandy-loam,moderate,dry,low,moderate,moderate,dark brown,1,1,0,0,1,1,3,6.66
+sandy,moderate,moderate,moderate,compacted,high,brown,0,1,1,1,2,2,2,6.09
+clay-loam,good,moderate,moderate,loose,low,dark brown,4,0,1,1,0,0,3,6.44
+loamy,poor,moderate,low,loose,moderate,pale/white,2,2,1,0,0,1,0,6.67
+silty,poor,moderate,moderate,loose,moderate,yellow/tan,3,2,1,1,0,1,1,6.3
+clay-loam,good,moderate,low,compacted,moderate,red,4,0,1,0,2,1,5,6.43
+sandy,poor,moderate,low,moderate,low,brown,0,2,1,0,1,0,2,5.6
+clay-loam,good,wet,moderate,loose,low,pale/white,4,0,2,1,0,0,0,6.9
+sandy,good,moderate,high,moderate,low,dark brown,0,0,1,2,1,0,3,5.79
+silty,poor,moderate,moderate,loose,high,red,3,2,1,1,0,2,5,5.82
+sandy-loam,moderate,moderate,high,moderate,high,red,1,1,1,2,1,2,5,5.51
+clay,good,wet,low,compacted,high,dark brown,5,0,2,0,2,2,3,6.97
+silty,good,moderate,high,compacted,low,pale/white,3,0,1,2,2,0,0,6.92
+clay-loam,good,wet,low,compacted,high,pale/white,4,0,2,0,2,2,0,7.33
+silty,moderate,wet,low,loose,moderate,black/dark,3,1,2,0,0,1,4,6.1
+clay,poor,moderate,low,moderate,low,yellow/tan,5,2,1,0,1,0,1,6.97
+loamy,moderate,wet,high,compacted,moderate,yellow/tan,2,1,2,2,2,1,1,6.56
+loamy,moderate,wet,high,compacted,low,red,2,1,2,2,2,0,5,6.24
+loamy,poor,moderate,moderate,compacted,high,red,2,2,1,1,2,2,5,6.01
+clay-loam,poor,dry,high,moderate,moderate,yellow/tan,4,2,0,2,1,1,1,6.49
+silty,moderate,dry,moderate,compacted,moderate,brown,3,1,0,1,2,1,2,6.19
+sandy,poor,moderate,moderate,moderate,low,yellow/tan,0,2,1,1,1,0,1,5.58
+sandy-loam,poor,dry,high,compacted,low,dark brown,1,2,0,2,2,0,3,5.82
+sandy-loam,moderate,wet,low,compacted,moderate,dark brown,1,1,2,0,2,1,3,6.02
+sandy,good,wet,high,moderate,low,brown,0,0,2,2,1,0,2,6.39
+sandy,good,wet,moderate,compacted,moderate,pale/white,0,0,2,1,2,1,0,6.82
+sandy,good,dry,moderate,loose,low,pale/white,0,0,0,1,0,0,0,6.33
+clay-loam,good,dry,moderate,loose,moderate,black/dark,4,0,0,1,0,1,4,6.4
+clay,good,dry,moderate,loose,low,pale/white,5,0,0,1,0,0,0,7.3
+clay,poor,wet,moderate,compacted,low,pale/white,5,2,2,1,2,0,0,7.35
+clay,good,wet,moderate,moderate,moderate,yellow/tan,5,0,2,1,1,1,1,7.06
+sandy,good,moderate,high,loose,high,red,0,0,1,2,0,2,5,6.19
+clay-loam,poor,wet,low,loose,low,yellow/tan,4,2,2,0,0,0,1,6.27
+clay-loam,good,dry,high,moderate,moderate,yellow/tan,4,0,0,2,1,1,1,6.12
+sandy,poor,wet,moderate,loose,high,red,0,2,2,1,0,2,5,5.05
+sandy-loam,moderate,wet,moderate,loose,high,black/dark,1,1,2,1,0,2,4,5.74
+sandy,moderate,wet,high,compacted,moderate,dark brown,0,1,2,2,2,1,3,6.05
+sandy,moderate,moderate,high,compacted,low,brown,0,1,1,2,2,0,2,5.97
+sandy,poor,wet,high,compacted,low,pale/white,0,2,2,2,2,0,0,6.03
+silty,moderate,dry,low,compacted,low,pale/white,3,1,0,0,2,0,0,6.63
+sandy-loam,moderate,wet,high,loose,low,yellow/tan,1,1,2,2,0,0,1,5.6
+silty,poor,wet,low,loose,high,dark brown,3,2,2,0,0,2,3,6.34
+sandy-loam,good,dry,moderate,moderate,high,red,1,0,0,1,1,2,5,6.25
+silty,good,moderate,moderate,loose,high,yellow/tan,3,0,1,1,0,2,1,7.13
+sandy-loam,good,dry,moderate,loose,low,yellow/tan,1,0,0,1,0,0,1,6.15
+sandy-loam,poor,dry,moderate,moderate,moderate,yellow/tan,1,2,0,1,1,1,1,5.95
+sandy,moderate,wet,high,loose,high,yellow/tan,0,1,2,2,0,2,1,5.62
+sandy-loam,good,wet,high,loose,low,dark brown,1,0,2,2,0,0,3,5.55
+clay,good,wet,low,loose,moderate,brown,5,0,2,0,0,1,2,7.11
+clay,moderate,moderate,low,loose,moderate,red,5,1,1,0,0,1,5,6.54
+clay-loam,moderate,moderate,moderate,compacted,high,yellow/tan,4,1,1,1,2,2,1,6.59
+clay-loam,poor,moderate,low,moderate,moderate,brown,4,2,1,0,1,1,2,6.52
+loamy,poor,dry,high,moderate,high,red,2,2,0,2,1,2,5,5.77
+silty,moderate,dry,low,compacted,high,red,3,1,0,0,2,2,5,6.9
+loamy,moderate,dry,high,compacted,high,black/dark,2,1,0,2,2,2,4,5.98
+loamy,good,moderate,moderate,loose,high,pale/white,2,0,1,1,0,2,0,7.03
+sandy,good,moderate,high,loose,low,dark brown,0,0,1,2,0,0,3,5.63
+sandy,good,dry,low,compacted,high,pale/white,0,0,0,0,2,2,0,6.61
+silty,poor,moderate,low,loose,low,pale/white,3,2,1,0,0,0,0,7.3
+loamy,moderate,dry,moderate,compacted,moderate,black/dark,2,1,0,1,2,1,4,6.41
+silty,moderate,dry,high,moderate,low,brown,3,1,0,2,1,0,2,6.54
+sandy,good,moderate,moderate,loose,high,black/dark,0,0,1,1,0,2,4,5.88
+sandy,good,dry,low,loose,low,red,0,0,0,0,0,0,5,5.96
+clay,moderate,moderate,low,moderate,high,brown,5,1,1,0,1,2,2,6.93
+silty,poor,dry,moderate,moderate,low,black/dark,3,2,0,1,1,0,4,6.22
+clay,poor,wet,high,compacted,high,brown,5,2,2,2,2,2,2,6.71
+silty,moderate,moderate,moderate,moderate,high,pale/white,3,1,1,1,1,2,0,7.03
+sandy,moderate,dry,low,moderate,moderate,dark brown,0,1,0,0,1,1,3,5.62
+silty,good,dry,moderate,loose,high,black/dark,3,0,0,1,0,2,4,6.81
+clay,poor,dry,low,compacted,high,black/dark,5,2,0,0,2,2,4,6.08
+loamy,poor,moderate,moderate,compacted,low,yellow/tan,2,2,1,1,2,0,1,6.46
+silty,moderate,moderate,high,moderate,moderate,yellow/tan,3,1,1,2,1,1,1,6.0
+loamy,good,dry,low,moderate,high,red,2,0,0,0,1,2,5,5.69
+sandy-loam,moderate,wet,moderate,moderate,moderate,brown,1,1,2,1,1,1,2,6.11
+loamy,moderate,dry,low,loose,moderate,pale/white,2,1,0,0,0,1,0,6.79
+loamy,good,moderate,moderate,compacted,moderate,dark brown,2,0,1,1,2,1,3,6.74
+silty,poor,dry,low,compacted,moderate,yellow/tan,3,2,0,0,2,1,1,6.23
+clay-loam,good,dry,high,loose,high,pale/white,4,0,0,2,0,2,0,6.37
+sandy,poor,dry,low,moderate,low,pale/white,0,2,0,0,1,0,0,5.78
+clay-loam,good,wet,low,moderate,high,yellow/tan,4,0,2,0,1,2,1,6.56
+silty,good,wet,moderate,loose,high,brown,3,0,2,1,0,2,2,6.87
+loamy,good,moderate,high,moderate,high,red,2,0,1,2,1,2,5,6.05
+sandy-loam,moderate,moderate,high,loose,moderate,pale/white,1,1,1,2,0,1,0,6.22
+loamy,good,moderate,low,moderate,moderate,black/dark,2,0,1,0,1,1,4,7.27
+sandy,poor,moderate,moderate,loose,moderate,yellow/tan,0,2,1,1,0,1,1,5.53
+silty,good,moderate,high,loose,moderate,brown,3,0,1,2,0,1,2,6.55
+sandy,poor,dry,high,compacted,moderate,pale/white,0,2,0,2,2,1,0,5.62
+clay,good,moderate,low,loose,high,dark brown,5,0,1,0,0,2,3,6.62
+sandy,poor,moderate,moderate,compacted,high,yellow/tan,0,2,1,1,2,2,1,6.23
+loamy,moderate,moderate,high,loose,moderate,red,2,1,1,2,0,1,5,6.56
+silty,moderate,dry,low,compacted,high,yellow/tan,3,1,0,0,2,2,1,6.84
+loamy,good,moderate,moderate,compacted,high,red,2,0,1,1,2,2,5,5.83
+sandy,moderate,dry,moderate,compacted,low,dark brown,0,1,0,1,2,0,3,5.97
+sandy-loam,moderate,wet,moderate,compacted,high,brown,1,1,2,1,2,2,2,5.99
+sandy-loam,good,dry,moderate,compacted,low,yellow/tan,1,0,0,1,2,0,1,6.7
+sandy-loam,good,dry,high,compacted,moderate,pale/white,1,0,0,2,2,1,0,6.29
+clay-loam,good,moderate,moderate,compacted,moderate,dark brown,4,0,1,1,2,1,3,7.05
+clay-loam,good,dry,moderate,moderate,high,pale/white,4,0,0,1,1,2,0,7.54
+clay,good,wet,moderate,moderate,moderate,pale/white,5,0,2,1,1,1,0,7.67
+clay-loam,poor,moderate,moderate,moderate,low,dark brown,4,2,1,1,1,0,3,6.04
+sandy-loam,good,dry,low,compacted,high,dark brown,1,0,0,0,2,2,3,6.33
+sandy,poor,wet,high,loose,low,brown,0,2,2,2,0,0,2,5.14
+silty,moderate,moderate,high,loose,moderate,dark brown,3,1,1,2,0,1,3,6.11
+silty,poor,moderate,low,moderate,low,yellow/tan,3,2,1,0,1,0,1,6.38
+silty,moderate,moderate,moderate,moderate,moderate,yellow/tan,3,1,1,1,1,1,1,6.58
+sandy-loam,moderate,wet,low,loose,low,red,1,1,2,0,0,0,5,5.75
+clay-loam,moderate,dry,high,loose,high,red,4,1,0,2,0,2,5,6.85
+silty,poor,moderate,moderate,moderate,low,dark brown,3,2,1,1,1,0,3,5.88
+clay,poor,wet,high,compacted,high,red,5,2,2,2,2,2,5,6.47
+silty,good,dry,high,moderate,low,brown,3,0,0,2,1,0,2,6.45
+clay-loam,moderate,moderate,moderate,compacted,low,red,4,1,1,1,2,0,5,6.31
+silty,moderate,moderate,high,moderate,high,black/dark,3,1,1,2,1,2,4,6.17
+sandy-loam,moderate,wet,low,compacted,high,red,1,1,2,0,2,2,5,6.09
+sandy-loam,moderate,dry,moderate,compacted,high,yellow/tan,1,1,0,1,2,2,1,6.21
+sandy-loam,moderate,wet,low,loose,low,dark brown,1,1,2,0,0,0,3,5.92
+sandy,poor,wet,low,compacted,high,black/dark,0,2,2,0,2,2,4,5.53
+silty,moderate,dry,moderate,loose,high,black/dark,3,1,0,1,0,2,4,6.48
+loamy,good,dry,moderate,moderate,moderate,pale/white,2,0,0,1,1,1,0,7.34
+clay-loam,good,wet,high,moderate,moderate,dark brown,4,0,2,2,1,1,3,6.42
+sandy,poor,moderate,moderate,loose,low,dark brown,0,2,1,1,0,0,3,5.26
+clay,poor,wet,low,moderate,low,yellow/tan,5,2,2,0,1,0,1,6.48
+sandy-loam,poor,wet,low,compacted,low,red,1,2,2,0,2,0,5,5.42
+clay,poor,dry,moderate,loose,low,brown,5,2,0,1,0,0,2,6.51
+silty,good,dry,moderate,moderate,high,brown,3,0,0,1,1,2,2,6.66
+sandy-loam,poor,wet,low,compacted,moderate,yellow/tan,1,2,2,0,2,1,1,5.75
+loamy,moderate,moderate,low,compacted,high,black/dark,2,1,1,0,2,2,4,6.76
+sandy,moderate,wet,low,moderate,low,brown,0,1,2,0,1,0,2,5.73
+silty,moderate,wet,moderate,loose,low,red,3,1,2,1,0,0,5,6.32
+clay,good,wet,moderate,compacted,high,yellow/tan,5,0,2,1,2,2,1,7.2
+clay-loam,moderate,moderate,high,moderate,moderate,red,4,1,1,2,1,1,5,6.06
+silty,moderate,dry,moderate,loose,low,black/dark,3,1,0,1,0,0,4,6.44
+sandy,poor,moderate,high,loose,high,yellow/tan,0,2,1,2,0,2,1,5.31
+sandy,moderate,moderate,low,compacted,high,dark brown,0,1,1,0,2,2,3,5.82
+silty,moderate,wet,moderate,moderate,moderate,black/dark,3,1,2,1,1,1,4,6.46
+silty,good,dry,high,moderate,high,yellow/tan,3,0,0,2,1,2,1,7.06
+sandy-loam,poor,wet,moderate,loose,high,brown,1,2,2,1,0,2,2,5.8
+sandy,good,moderate,high,moderate,low,brown,0,0,1,2,1,0,2,6.12
+sandy-loam,moderate,wet,low,compacted,moderate,pale/white,1,1,2,0,2,1,0,6.79
+loamy,poor,dry,moderate,loose,moderate,pale/white,2,2,0,1,0,1,0,6.61
+clay-loam,good,wet,moderate,compacted,high,red,4,0,2,1,2,2,5,6.23
+sandy-loam,moderate,moderate,high,loose,high,pale/white,1,1,1,2,0,2,0,6.3
+loamy,moderate,dry,low,moderate,low,dark brown,2,1,0,0,1,0,3,6.19
+sandy,good,moderate,low,compacted,high,red,0,0,1,0,2,2,5,6.06
+clay,moderate,moderate,low,loose,low,brown,5,1,1,0,0,0,2,6.69
+sandy-loam,good,moderate,moderate,moderate,moderate,brown,1,0,1,1,1,1,2,6.68
+sandy-loam,moderate,wet,low,compacted,moderate,pale/white,1,1,2,0,2,1,0,6.88
+clay,good,moderate,high,compacted,moderate,red,5,0,1,2,2,1,5,7.27
+loamy,moderate,moderate,high,compacted,high,dark brown,2,1,1,2,2,2,3,5.85
+clay,poor,wet,high,compacted,low,yellow/tan,5,2,2,2,2,0,1,6.65
+sandy-loam,moderate,moderate,high,loose,high,pale/white,1,1,1,2,0,2,0,6.73
+clay,good,dry,low,compacted,low,dark brown,5,0,0,0,2,0,3,7.13
+loamy,poor,moderate,moderate,compacted,high,dark brown,2,2,1,1,2,2,3,6.22
+sandy,moderate,wet,high,loose,high,pale/white,0,1,2,2,0,2,0,6.05
+sandy-loam,good,wet,moderate,moderate,high,dark brown,1,0,2,1,1,2,3,6.21
+loamy,good,wet,high,moderate,high,red,2,0,2,2,1,2,5,6.12
+silty,moderate,wet,high,moderate,low,red,3,1,2,2,1,0,5,5.85
+sandy-loam,poor,dry,moderate,moderate,moderate,dark brown,1,2,0,1,1,1,3,5.93
+silty,poor,dry,high,loose,low,red,3,2,0,2,0,0,5,5.59
+clay,good,dry,moderate,loose,low,pale/white,5,0,0,1,0,0,0,7.14
+clay-loam,moderate,wet,low,loose,moderate,red,4,1,2,0,0,1,5,6.48
+clay,moderate,moderate,moderate,compacted,moderate,pale/white,5,1,1,1,2,1,0,7.44
+sandy,good,moderate,low,moderate,moderate,yellow/tan,0,0,1,0,1,1,1,6.01
+silty,good,wet,high,loose,high,pale/white,3,0,2,2,0,2,0,6.6
+loamy,poor,wet,moderate,moderate,low,red,2,2,2,1,1,0,5,6.33
+sandy,poor,moderate,moderate,loose,moderate,dark brown,0,2,1,1,0,1,3,5.12
+loamy,good,dry,high,compacted,low,dark brown,2,0,0,2,2,0,3,6.34
+clay-loam,moderate,dry,moderate,compacted,moderate,dark brown,4,1,0,1,2,1,3,6.49
+sandy-loam,moderate,dry,moderate,compacted,high,dark brown,1,1,0,1,2,2,3,6.0
+clay-loam,poor,dry,low,loose,low,yellow/tan,4,2,0,0,0,0,1,6.66
+silty,moderate,wet,moderate,loose,low,pale/white,3,1,2,1,0,0,0,6.6
+clay,poor,moderate,low,loose,high,red,5,2,1,0,0,2,5,6.37
+silty,poor,wet,moderate,moderate,moderate,brown,3,2,2,1,1,1,2,6.21
+sandy-loam,good,moderate,low,loose,high,brown,1,0,1,0,0,2,2,5.95
+silty,poor,dry,low,loose,low,yellow/tan,3,2,0,0,0,0,1,6.36
+loamy,moderate,moderate,low,moderate,high,yellow/tan,2,1,1,0,1,2,1,6.59
+clay-loam,good,dry,high,moderate,low,dark brown,4,0,0,2,1,0,3,5.99
+silty,good,wet,high,loose,high,black/dark,3,0,2,2,0,2,4,6.24
+sandy,poor,moderate,low,loose,low,pale/white,0,2,1,0,0,0,0,5.97
+loamy,good,wet,high,moderate,low,yellow/tan,2,0,2,2,1,0,1,6.08
+silty,moderate,dry,high,loose,moderate,brown,3,1,0,2,0,1,2,6.3
+sandy,good,moderate,high,moderate,high,black/dark,0,0,1,2,1,2,4,6.01
+clay-loam,poor,moderate,moderate,moderate,moderate,brown,4,2,1,1,1,1,2,6.92
+silty,good,dry,moderate,loose,moderate,black/dark,3,0,0,1,0,1,4,6.35
+clay,poor,dry,moderate,moderate,moderate,brown,5,2,0,1,1,1,2,6.49
+silty,poor,moderate,high,moderate,low,black/dark,3,2,1,2,1,0,4,5.85
+sandy-loam,poor,wet,moderate,moderate,high,brown,1,2,2,1,1,2,2,5.69
+loamy,good,moderate,moderate,moderate,high,dark brown,2,0,1,1,1,2,3,6.54
+silty,moderate,dry,low,compacted,moderate,yellow/tan,3,1,0,0,2,1,1,6.49
+sandy,good,dry,high,moderate,high,yellow/tan,0,0,0,2,1,2,1,5.53
+clay-loam,poor,dry,high,moderate,moderate,dark brown,4,2,0,2,1,1,3,6.14
+loamy,moderate,wet,moderate,moderate,high,brown,2,1,2,1,1,2,2,6.58
+clay,good,moderate,low,moderate,high,dark brown,5,0,1,0,1,2,3,6.96
+sandy,poor,moderate,high,compacted,moderate,dark brown,0,2,1,2,2,1,3,5.42
+sandy,good,dry,low,loose,moderate,black/dark,0,0,0,0,0,1,4,5.64
+clay-loam,good,dry,moderate,compacted,low,yellow/tan,4,0,0,1,2,0,1,6.87
+loamy,moderate,wet,low,loose,low,yellow/tan,2,1,2,0,0,0,1,6.54
+sandy-loam,poor,moderate,moderate,compacted,low,brown,1,2,1,1,2,0,2,6.39
+silty,poor,dry,low,compacted,moderate,black/dark,3,2,0,0,2,1,4,6.42
+sandy,good,moderate,low,moderate,high,yellow/tan,0,0,1,0,1,2,1,5.77
+clay,good,moderate,low,loose,high,red,5,0,1,0,0,2,5,7.03
+sandy,moderate,dry,high,moderate,low,yellow/tan,0,1,0,2,1,0,1,5.59
+loamy,moderate,wet,moderate,loose,high,pale/white,2,1,2,1,0,2,0,6.16
+silty,good,wet,high,moderate,moderate,red,3,0,2,2,1,1,5,6.68
+loamy,moderate,wet,high,compacted,low,black/dark,2,1,2,2,2,0,4,5.77
+silty,moderate,moderate,moderate,loose,high,pale/white,3,1,1,1,0,2,0,6.77
+clay,moderate,wet,low,compacted,high,black/dark,5,1,2,0,2,2,4,6.78
+sandy,poor,dry,high,moderate,moderate,yellow/tan,0,2,0,2,1,1,1,5.84
+loamy,good,wet,high,compacted,moderate,yellow/tan,2,0,2,2,2,1,1,6.32
+loamy,good,dry,high,moderate,high,red,2,0,0,2,1,2,5,6.21
+sandy,moderate,moderate,moderate,loose,high,pale/white,0,1,1,1,0,2,0,6.07
+silty,moderate,moderate,moderate,loose,low,black/dark,3,1,1,1,0,0,4,6.31
+clay,poor,wet,low,loose,moderate,pale/white,5,2,2,0,0,1,0,6.74
+loamy,moderate,wet,low,moderate,low,yellow/tan,2,1,2,0,1,0,1,6.64
+clay-loam,moderate,moderate,high,moderate,low,red,4,1,1,2,1,0,5,6.13
+silty,moderate,wet,high,moderate,moderate,brown,3,1,2,2,1,1,2,6.15
+silty,poor,wet,moderate,moderate,moderate,brown,3,2,2,1,1,1,2,5.97
+sandy-loam,poor,moderate,high,moderate,high,dark brown,1,2,1,2,1,2,3,5.46
+clay-loam,poor,moderate,moderate,compacted,moderate,brown,4,2,1,1,2,1,2,6.48
+silty,moderate,wet,low,moderate,low,yellow/tan,3,1,2,0,1,0,1,6.78
+silty,good,moderate,high,loose,low,dark brown,3,0,1,2,0,0,3,6.27
+sandy-loam,good,moderate,moderate,moderate,moderate,brown,1,0,1,1,1,1,2,6.41
+silty,poor,moderate,low,loose,low,yellow/tan,3,2,1,0,0,0,1,7.02
+clay-loam,poor,moderate,moderate,moderate,low,dark brown,4,2,1,1,1,0,3,7.2
+clay,poor,moderate,high,loose,moderate,yellow/tan,5,2,1,2,0,1,1,6.49
+clay,moderate,dry,moderate,moderate,low,pale/white,5,1,0,1,1,0,0,7.51
+clay-loam,good,moderate,low,loose,low,brown,4,0,1,0,0,0,2,7.08
+silty,poor,dry,high,compacted,moderate,pale/white,3,2,0,2,2,1,0,6.39
+silty,poor,dry,low,compacted,moderate,red,3,2,0,0,2,1,5,6.56
+sandy-loam,moderate,moderate,moderate,compacted,moderate,black/dark,1,1,1,1,2,1,4,6.01
+clay,moderate,moderate,low,loose,high,black/dark,5,1,1,0,0,2,4,7.06
+loamy,good,dry,low,compacted,low,black/dark,2,0,0,0,2,0,4,7.09
+clay,moderate,dry,moderate,compacted,low,black/dark,5,1,0,1,2,0,4,6.84
+clay,good,dry,moderate,compacted,high,brown,5,0,0,1,2,2,2,7.23
+clay-loam,poor,dry,moderate,compacted,low,dark brown,4,2,0,1,2,0,3,6.34
+sandy,poor,dry,low,compacted,high,pale/white,0,2,0,0,2,2,0,5.91
+loamy,poor,moderate,low,loose,high,black/dark,2,2,1,0,0,2,4,5.93
+clay-loam,good,wet,moderate,compacted,high,dark brown,4,0,2,1,2,2,3,6.5
+sandy-loam,moderate,wet,high,moderate,high,dark brown,1,1,2,2,1,2,3,6.25
+silty,good,wet,high,moderate,low,brown,3,0,2,2,1,0,2,6.35
+clay-loam,moderate,wet,moderate,moderate,moderate,brown,4,1,2,1,1,1,2,6.19
+loamy,poor,dry,low,compacted,high,brown,2,2,0,0,2,2,2,6.22
+sandy-loam,good,dry,low,moderate,high,yellow/tan,1,0,0,0,1,2,1,6.23
+clay-loam,poor,dry,moderate,compacted,moderate,pale/white,4,2,0,1,2,1,0,7.16
+sandy-loam,poor,wet,low,compacted,high,dark brown,1,2,2,0,2,2,3,5.51
+sandy-loam,good,wet,low,compacted,moderate,black/dark,1,0,2,0,2,1,4,5.88
+clay-loam,poor,dry,low,moderate,low,black/dark,4,2,0,0,1,0,4,6.24
+sandy,good,wet,high,loose,low,dark brown,0,0,2,2,0,0,3,5.48
+loamy,moderate,wet,moderate,loose,high,pale/white,2,1,2,1,0,2,0,7.16
+sandy-loam,good,wet,high,compacted,low,brown,1,0,2,2,2,0,2,5.76
+loamy,moderate,dry,moderate,moderate,high,black/dark,2,1,0,1,1,2,4,5.97
+clay,poor,dry,low,compacted,moderate,brown,5,2,0,0,2,1,2,6.77
+clay,moderate,dry,high,compacted,low,brown,5,1,0,2,2,0,2,6.74
+clay,poor,wet,moderate,loose,high,pale/white,5,2,2,1,0,2,0,7.32
+sandy-loam,poor,dry,low,moderate,high,pale/white,1,2,0,0,1,2,0,6.68
+clay-loam,good,dry,low,loose,moderate,red,4,0,0,0,0,1,5,6.15
+sandy-loam,good,dry,high,compacted,low,brown,1,0,0,2,2,0,2,5.84
+clay-loam,moderate,dry,high,loose,low,dark brown,4,1,0,2,0,0,3,6.3
+clay,moderate,dry,low,compacted,high,pale/white,5,1,0,0,2,2,0,7.32
+loamy,good,dry,high,compacted,moderate,dark brown,2,0,0,2,2,1,3,6.3
+clay,moderate,moderate,high,loose,low,black/dark,5,1,1,2,0,0,4,7.03
+loamy,poor,moderate,moderate,compacted,moderate,pale/white,2,2,1,1,2,1,0,6.57
+clay,poor,dry,high,compacted,moderate,red,5,2,0,2,2,1,5,5.94
+sandy-loam,good,moderate,high,moderate,low,pale/white,1,0,1,2,1,0,0,6.52
+loamy,poor,moderate,low,compacted,high,yellow/tan,2,2,1,0,2,2,1,6.31
+loamy,moderate,dry,high,moderate,high,pale/white,2,1,0,2,1,2,0,6.74
+silty,good,moderate,low,loose,moderate,yellow/tan,3,0,1,0,0,1,1,6.63
+silty,moderate,moderate,low,moderate,low,yellow/tan,3,1,1,0,1,0,1,7.2
+clay,poor,moderate,high,moderate,high,black/dark,5,2,1,2,1,2,4,6.52
+sandy,moderate,wet,low,moderate,low,black/dark,0,1,2,0,1,0,4,6.15
+clay,moderate,dry,low,moderate,moderate,red,5,1,0,0,1,1,5,7.02
+clay-loam,poor,dry,high,loose,moderate,brown,4,2,0,2,0,1,2,6.17
+clay-loam,poor,wet,high,compacted,low,dark brown,4,2,2,2,2,0,3,5.89
+sandy,good,dry,moderate,moderate,high,brown,0,0,0,1,1,2,2,6.03
+clay,moderate,moderate,high,loose,low,red,5,1,1,2,0,0,5,6.35
+loamy,moderate,wet,high,loose,moderate,black/dark,2,1,2,2,0,1,4,5.8
+sandy,poor,moderate,low,loose,moderate,dark brown,0,2,1,0,0,1,3,5.64
+silty,moderate,dry,low,loose,moderate,black/dark,3,1,0,0,0,1,4,6.27
+sandy,good,wet,moderate,loose,high,dark brown,0,0,2,1,0,2,3,5.47
+loamy,poor,dry,high,loose,high,brown,2,2,0,2,0,2,2,5.78
+sandy,moderate,moderate,moderate,loose,moderate,yellow/tan,0,1,1,1,0,1,1,6.15
+sandy,poor,wet,low,compacted,high,yellow/tan,0,2,2,0,2,2,1,5.77
+silty,poor,moderate,high,compacted,high,yellow/tan,3,2,1,2,2,2,1,6.27
+clay-loam,poor,dry,moderate,compacted,moderate,red,4,2,0,1,2,1,5,6.18
+silty,poor,dry,low,moderate,low,dark brown,3,2,0,0,1,0,3,6.64
+sandy-loam,good,moderate,low,compacted,moderate,black/dark,1,0,1,0,2,1,4,6.14
+silty,poor,dry,moderate,moderate,low,dark brown,3,2,0,1,1,0,3,5.55
+sandy-loam,poor,dry,high,moderate,low,black/dark,1,2,0,2,1,0,4,5.43
+sandy-loam,good,dry,high,moderate,moderate,black/dark,1,0,0,2,1,1,4,5.88
+clay,poor,wet,high,loose,moderate,yellow/tan,5,2,2,2,0,1,1,6.29
+silty,poor,moderate,low,moderate,high,yellow/tan,3,2,1,0,1,2,1,6.28
+silty,moderate,dry,high,compacted,moderate,black/dark,3,1,0,2,2,1,4,6.03
+loamy,poor,wet,low,loose,moderate,red,2,2,2,0,0,1,5,6.22
+clay,good,dry,low,loose,high,red,5,0,0,0,0,2,5,7.07
+sandy-loam,poor,moderate,high,moderate,low,red,1,2,1,2,1,0,5,5.66
+sandy-loam,good,dry,low,compacted,high,pale/white,1,0,0,0,2,2,0,6.89
+silty,moderate,dry,low,compacted,low,yellow/tan,3,1,0,0,2,0,1,6.76
+sandy,good,dry,high,moderate,moderate,pale/white,0,0,0,2,1,1,0,6.21
+sandy-loam,good,dry,high,compacted,low,dark brown,1,0,0,2,2,0,3,6.14
+sandy-loam,poor,dry,moderate,loose,high,brown,1,2,0,1,0,2,2,6.27
+sandy-loam,moderate,moderate,low,loose,moderate,brown,1,1,1,0,0,1,2,6.07
+silty,poor,dry,high,compacted,low,dark brown,3,2,0,2,2,0,3,6.31
+clay-loam,good,dry,high,compacted,moderate,red,4,0,0,2,2,1,5,6.5
+silty,poor,wet,moderate,compacted,moderate,brown,3,2,2,1,2,1,2,6.08
+sandy,moderate,moderate,high,moderate,high,black/dark,0,1,1,2,1,2,4,5.87
+sandy,moderate,moderate,moderate,loose,moderate,dark brown,0,1,1,1,0,1,3,5.99
+sandy,moderate,wet,low,moderate,high,yellow/tan,0,1,2,0,1,2,1,6.18
+clay-loam,good,moderate,high,compacted,moderate,red,4,0,1,2,2,1,5,6.76
+clay-loam,good,moderate,high,loose,moderate,brown,4,0,1,2,0,1,2,6.9
+loamy,poor,moderate,moderate,loose,high,black/dark,2,2,1,1,0,2,4,5.99
+clay,poor,dry,moderate,moderate,moderate,red,5,2,0,1,1,1,5,6.64
+clay,good,dry,moderate,compacted,low,black/dark,5,0,0,1,2,0,4,7.35
+clay,good,moderate,moderate,compacted,high,brown,5,0,1,1,2,2,2,6.99
+clay,good,wet,moderate,loose,low,yellow/tan,5,0,2,1,0,0,1,7.26
+clay-loam,moderate,wet,moderate,loose,low,dark brown,4,1,2,1,0,0,3,6.12
+sandy-loam,moderate,dry,moderate,compacted,low,yellow/tan,1,1,0,1,2,0,1,6.36
+sandy,poor,wet,moderate,compacted,high,black/dark,0,2,2,1,2,2,4,5.49
+clay-loam,good,moderate,high,loose,low,black/dark,4,0,1,2,0,0,4,6.7
+sandy-loam,poor,wet,high,loose,low,black/dark,1,2,2,2,0,0,4,5.45
+clay,moderate,dry,moderate,moderate,moderate,yellow/tan,5,1,0,1,1,1,1,6.83
+clay-loam,moderate,moderate,moderate,moderate,moderate,brown,4,1,1,1,1,1,2,6.76
+sandy-loam,good,wet,low,moderate,low,brown,1,0,2,0,1,0,2,6.61
+loamy,good,wet,low,moderate,moderate,brown,2,0,2,0,1,1,2,6.41
+clay-loam,poor,wet,high,compacted,high,brown,4,2,2,2,2,2,2,6.0
+silty,poor,wet,low,loose,low,black/dark,3,2,2,0,0,0,4,6.06
+silty,good,dry,low,loose,high,dark brown,3,0,0,0,0,2,3,6.86
+clay,good,wet,moderate,moderate,moderate,red,5,0,2,1,1,1,5,6.83
+silty,poor,moderate,moderate,loose,low,yellow/tan,3,2,1,1,0,0,1,6.3
+sandy,poor,wet,moderate,compacted,low,brown,0,2,2,1,2,0,2,5.62
+clay-loam,poor,wet,low,loose,low,brown,4,2,2,0,0,0,2,6.34
+loamy,good,dry,low,compacted,high,red,2,0,0,0,2,2,5,6.11
+silty,good,dry,high,loose,high,dark brown,3,0,0,2,0,2,3,6.3
+silty,moderate,wet,low,moderate,moderate,dark brown,3,1,2,0,1,1,3,6.76
+sandy-loam,moderate,dry,high,compacted,moderate,black/dark,1,1,0,2,2,1,4,6.06
+sandy,moderate,moderate,low,loose,high,black/dark,0,1,1,0,0,2,4,5.98
+clay-loam,moderate,moderate,high,compacted,high,dark brown,4,1,1,2,2,2,3,6.12
+clay,moderate,dry,moderate,compacted,high,brown,5,1,0,1,2,2,2,6.95
+clay,moderate,moderate,moderate,loose,low,pale/white,5,1,1,1,0,0,0,7.35
+clay,poor,dry,high,compacted,high,pale/white,5,2,0,2,2,2,0,6.85
+silty,good,dry,high,moderate,high,yellow/tan,3,0,0,2,1,2,1,6.18
+sandy-loam,moderate,moderate,low,moderate,moderate,red,1,1,1,0,1,1,5,6.09
+loamy,moderate,dry,moderate,compacted,high,brown,2,1,0,1,2,2,2,6.46
+loamy,good,wet,low,compacted,low,black/dark,2,0,2,0,2,0,4,6.31
+clay,poor,dry,high,moderate,low,black/dark,5,2,0,2,1,0,4,6.65
+sandy,moderate,dry,low,loose,high,red,0,1,0,0,0,2,5,5.51
+clay,moderate,wet,high,compacted,moderate,brown,5,1,2,2,2,1,2,6.29
+silty,good,wet,high,loose,moderate,black/dark,3,0,2,2,0,1,4,5.76
+clay,poor,dry,low,moderate,moderate,brown,5,2,0,0,1,1,2,6.59
+loamy,good,wet,moderate,moderate,high,red,2,0,2,1,1,2,5,6.41
+clay-loam,good,moderate,low,loose,moderate,pale/white,4,0,1,0,0,1,0,7.26
+sandy,moderate,wet,moderate,moderate,moderate,pale/white,0,1,2,1,1,1,0,6.21
+sandy,moderate,moderate,low,moderate,high,brown,0,1,1,0,1,2,2,5.93
+loamy,poor,moderate,high,moderate,moderate,brown,2,2,1,2,1,1,2,5.9
+sandy-loam,good,moderate,high,moderate,moderate,dark brown,1,0,1,2,1,1,3,6.01
+loamy,good,dry,low,compacted,high,dark brown,2,0,0,0,2,2,3,6.54
+loamy,poor,wet,low,compacted,high,pale/white,2,2,2,0,2,2,0,6.72
+clay,poor,dry,moderate,compacted,low,brown,5,2,0,1,2,0,2,6.63
+sandy-loam,moderate,moderate,low,compacted,moderate,brown,1,1,1,0,2,1,2,6.32
+sandy,poor,moderate,low,moderate,low,pale/white,0,2,1,0,1,0,0,5.95
+sandy-loam,good,wet,moderate,moderate,high,pale/white,1,0,2,1,1,2,0,6.83
+sandy-loam,poor,wet,moderate,loose,low,brown,1,2,2,1,0,0,2,5.88
+sandy,moderate,wet,moderate,loose,low,brown,0,1,2,1,0,0,2,5.71
+sandy-loam,poor,dry,moderate,moderate,moderate,brown,1,2,0,1,1,1,2,5.56
+sandy-loam,poor,dry,low,loose,moderate,dark brown,1,2,0,0,0,1,3,5.96
+clay,good,wet,high,compacted,high,black/dark,5,0,2,2,2,2,4,6.14
+clay-loam,good,moderate,high,compacted,low,pale/white,4,0,1,2,2,0,0,6.93
+sandy,poor,dry,low,compacted,moderate,brown,0,2,0,0,2,1,2,6.04
+sandy-loam,good,moderate,low,loose,moderate,brown,1,0,1,0,0,1,2,6.57
+sandy-loam,moderate,dry,moderate,loose,moderate,pale/white,1,1,0,1,0,1,0,6.22
+loamy,good,moderate,high,loose,high,brown,2,0,1,2,0,2,2,6.27
+sandy,good,moderate,high,loose,moderate,black/dark,0,0,1,2,0,1,4,5.66
+loamy,poor,wet,high,compacted,moderate,pale/white,2,2,2,2,2,1,0,7.07
+sandy,poor,wet,low,loose,high,dark brown,0,2,2,0,0,2,3,5.62
+clay-loam,good,wet,high,compacted,moderate,black/dark,4,0,2,2,2,1,4,6.64
+loamy,moderate,moderate,high,compacted,low,black/dark,2,1,1,2,2,0,4,6.29
+loamy,good,dry,moderate,loose,low,red,2,0,0,1,0,0,5,6.57
+silty,poor,moderate,high,moderate,low,black/dark,3,2,1,2,1,0,4,5.58
+sandy-loam,poor,moderate,high,moderate,high,pale/white,1,2,1,2,1,2,0,5.8
+clay-loam,good,dry,low,moderate,moderate,pale/white,4,0,0,0,1,1,0,7.78
+sandy-loam,moderate,dry,moderate,moderate,low,red,1,1,0,1,1,0,5,6.14
+clay-loam,good,dry,moderate,compacted,moderate,dark brown,4,0,0,1,2,1,3,6.44
+sandy-loam,good,dry,moderate,loose,low,red,1,0,0,1,0,0,5,6.1
+sandy-loam,good,moderate,high,loose,low,black/dark,1,0,1,2,0,0,4,5.61
+loamy,moderate,dry,high,moderate,high,brown,2,1,0,2,1,2,2,6.1
+sandy-loam,good,wet,high,compacted,low,brown,1,0,2,2,2,0,2,5.96
+silty,poor,dry,high,moderate,high,dark brown,3,2,0,2,1,2,3,5.78
+sandy-loam,moderate,moderate,high,moderate,moderate,pale/white,1,1,1,2,1,1,0,6.2
+silty,poor,dry,low,moderate,low,brown,3,2,0,0,1,0,2,6.29
+sandy,poor,wet,low,moderate,high,black/dark,0,2,2,0,1,2,4,5.68
+loamy,moderate,moderate,low,loose,high,pale/white,2,1,1,0,0,2,0,6.51
+clay,poor,moderate,high,compacted,moderate,dark brown,5,2,1,2,2,1,3,6.65
+loamy,moderate,moderate,moderate,compacted,moderate,pale/white,2,1,1,1,2,1,0,6.64
+clay,moderate,dry,high,loose,high,red,5,1,0,2,0,2,5,6.29
+sandy,poor,dry,high,compacted,moderate,pale/white,0,2,0,2,2,1,0,5.5
+sandy,poor,wet,moderate,loose,low,black/dark,0,2,2,1,0,0,4,5.5
+silty,good,moderate,low,moderate,low,red,3,0,1,0,1,0,5,6.19
+sandy-loam,poor,moderate,moderate,compacted,high,yellow/tan,1,2,1,1,2,2,1,6.28
+clay,moderate,wet,low,compacted,moderate,yellow/tan,5,1,2,0,2,1,1,6.94
+silty,poor,dry,high,moderate,high,yellow/tan,3,2,0,2,1,2,1,5.85
+silty,poor,dry,low,loose,moderate,black/dark,3,2,0,0,0,1,4,6.28
+loamy,poor,moderate,high,moderate,high,yellow/tan,2,2,1,2,1,2,1,6.24
+loamy,poor,wet,low,compacted,low,dark brown,2,2,2,0,2,0,3,5.98
+loamy,poor,wet,moderate,compacted,high,pale/white,2,2,2,1,2,2,0,6.6
+sandy,moderate,moderate,low,loose,high,black/dark,0,1,1,0,0,2,4,5.97
+loamy,moderate,dry,moderate,moderate,moderate,yellow/tan,2,1,0,1,1,1,1,6.5
+sandy-loam,poor,moderate,moderate,moderate,moderate,pale/white,1,2,1,1,1,1,0,6.16
+sandy-loam,poor,moderate,moderate,compacted,high,brown,1,2,1,1,2,2,2,5.68
+sandy,good,wet,low,loose,low,yellow/tan,0,0,2,0,0,0,1,6.43
+clay,good,moderate,high,compacted,moderate,dark brown,5,0,1,2,2,1,3,6.82
+sandy,moderate,dry,high,compacted,low,black/dark,0,1,0,2,2,0,4,5.77
+sandy,good,wet,low,moderate,low,red,0,0,2,0,1,0,5,6.14
+silty,good,wet,high,compacted,low,red,3,0,2,2,2,0,5,6.25
+silty,good,dry,low,compacted,low,red,3,0,0,0,2,0,5,6.62
+silty,good,dry,high,moderate,high,brown,3,0,0,2,1,2,2,6.52
+loamy,good,wet,high,loose,moderate,pale/white,2,0,2,2,0,1,0,6.66
+sandy,good,moderate,high,loose,moderate,red,0,0,1,2,0,1,5,5.45
+loamy,poor,moderate,low,loose,low,pale/white,2,2,1,0,0,0,0,7.03
+loamy,good,moderate,moderate,loose,high,dark brown,2,0,1,1,0,2,3,6.39
+clay-loam,good,wet,low,loose,moderate,red,4,0,2,0,0,1,5,7.18
+loamy,moderate,dry,moderate,loose,moderate,black/dark,2,1,0,1,0,1,4,6.73
+clay-loam,good,dry,high,moderate,low,black/dark,4,0,0,2,1,0,4,6.72
+clay-loam,good,wet,moderate,compacted,moderate,dark brown,4,0,2,1,2,1,3,6.33
+loamy,moderate,dry,moderate,compacted,low,dark brown,2,1,0,1,2,0,3,6.21
+sandy,moderate,moderate,low,compacted,low,pale/white,0,1,1,0,2,0,0,6.42
+sandy-loam,good,moderate,low,compacted,moderate,yellow/tan,1,0,1,0,2,1,1,6.09
+silty,poor,wet,high,moderate,low,dark brown,3,2,2,2,1,0,3,5.4
+loamy,poor,moderate,low,moderate,moderate,red,2,2,1,0,1,1,5,6.06
+silty,moderate,dry,high,compacted,high,red,3,1,0,2,2,2,5,5.9
+loamy,moderate,moderate,moderate,loose,low,dark brown,2,1,1,1,0,0,3,6.53
+sandy,moderate,dry,moderate,loose,low,brown,0,1,0,1,0,0,2,6.17
+clay-loam,poor,moderate,high,loose,high,pale/white,4,2,1,2,0,2,0,6.2
+silty,good,wet,high,moderate,low,yellow/tan,3,0,2,2,1,0,1,5.87
+loamy,poor,moderate,low,compacted,high,brown,2,2,1,0,2,2,2,5.66
+sandy-loam,good,dry,moderate,loose,low,red,1,0,0,1,0,0,5,6.28
+clay,good,moderate,high,moderate,moderate,pale/white,5,0,1,2,1,1,0,6.8
+loamy,good,dry,low,moderate,high,red,2,0,0,0,1,2,5,6.29
+clay,moderate,moderate,moderate,loose,moderate,brown,5,1,1,1,0,1,2,6.67
+sandy-loam,poor,dry,high,moderate,high,black/dark,1,2,0,2,1,2,4,5.32
+silty,poor,moderate,moderate,loose,high,brown,3,2,1,1,0,2,2,6.55
+sandy-loam,good,dry,low,compacted,moderate,brown,1,0,0,0,2,1,2,5.8
+sandy,good,dry,high,compacted,high,dark brown,0,0,0,2,2,2,3,6.08
+clay-loam,moderate,wet,low,moderate,low,pale/white,4,1,2,0,1,0,0,7.32
+sandy,poor,dry,low,compacted,high,yellow/tan,0,2,0,0,2,2,1,5.84
+clay,poor,wet,high,loose,high,black/dark,5,2,2,2,0,2,4,6.41
+clay-loam,poor,dry,low,loose,moderate,brown,4,2,0,0,0,1,2,6.37
+sandy,good,wet,moderate,moderate,low,black/dark,0,0,2,1,1,0,4,6.01
+sandy-loam,moderate,moderate,low,compacted,low,yellow/tan,1,1,1,0,2,0,1,6.13
+clay,poor,dry,high,loose,low,brown,5,2,0,2,0,0,2,6.67
+silty,moderate,wet,moderate,loose,high,black/dark,3,1,2,1,0,2,4,6.11
+sandy-loam,moderate,wet,high,moderate,high,yellow/tan,1,1,2,2,1,2,1,6.13
+clay,good,moderate,high,moderate,low,pale/white,5,0,1,2,1,0,0,7.58
+silty,poor,dry,high,moderate,moderate,pale/white,3,2,0,2,1,1,0,6.55
+sandy-loam,poor,moderate,low,loose,high,brown,1,2,1,0,0,2,2,5.8
+sandy-loam,good,moderate,moderate,compacted,low,black/dark,1,0,1,1,2,0,4,6.07
+clay,poor,moderate,low,loose,high,dark brown,5,2,1,0,0,2,3,6.63
+silty,moderate,wet,moderate,compacted,low,black/dark,3,1,2,1,2,0,4,6.49
+silty,good,wet,moderate,compacted,high,brown,3,0,2,1,2,2,2,6.4
+sandy,good,moderate,low,loose,high,red,0,0,1,0,0,2,5,5.87
+loamy,poor,moderate,low,moderate,moderate,pale/white,2,2,1,0,1,1,0,6.31
+loamy,moderate,wet,moderate,loose,moderate,dark brown,2,1,2,1,0,1,3,6.54
+sandy-loam,moderate,dry,high,moderate,low,dark brown,1,1,0,2,1,0,3,5.54
+clay-loam,good,dry,high,moderate,moderate,black/dark,4,0,0,2,1,1,4,6.01
+loamy,good,moderate,moderate,moderate,high,pale/white,2,0,1,1,1,2,0,6.91
+silty,moderate,dry,high,loose,low,brown,3,1,0,2,0,0,2,6.45
+clay-loam,good,wet,low,compacted,high,pale/white,4,0,2,0,2,2,0,7.68
+sandy,good,dry,moderate,loose,low,red,0,0,0,1,0,0,5,6.07
+loamy,good,moderate,high,moderate,high,red,2,0,1,2,1,2,5,6.4
+loamy,poor,dry,moderate,loose,low,yellow/tan,2,2,0,1,0,0,1,6.46
+clay-loam,poor,wet,low,compacted,high,black/dark,4,2,2,0,2,2,4,6.15
+sandy-loam,moderate,wet,moderate,compacted,low,brown,1,1,2,1,2,0,2,5.76
+clay-loam,poor,moderate,low,loose,moderate,red,4,2,1,0,0,1,5,5.99
+silty,moderate,moderate,high,loose,low,brown,3,1,1,2,0,0,2,6.67
+sandy,good,moderate,high,compacted,moderate,pale/white,0,0,1,2,2,1,0,5.95
+clay-loam,good,wet,moderate,moderate,moderate,red,4,0,2,1,1,1,5,6.57
+clay-loam,moderate,dry,low,moderate,low,red,4,1,0,0,1,0,5,6.36
+loamy,good,dry,moderate,compacted,moderate,yellow/tan,2,0,0,1,2,1,1,6.69
+sandy-loam,good,dry,moderate,compacted,moderate,black/dark,1,0,0,1,2,1,4,6.0
+sandy,good,wet,moderate,moderate,high,brown,0,0,2,1,1,2,2,5.92
+clay,moderate,wet,low,loose,high,yellow/tan,5,1,2,0,0,2,1,7.21
+silty,poor,wet,low,loose,low,black/dark,3,2,2,0,0,0,4,6.64
+sandy,poor,wet,high,compacted,moderate,brown,0,2,2,2,2,1,2,5.25
+clay,moderate,dry,moderate,loose,high,black/dark,5,1,0,1,0,2,4,7.12
+clay,good,wet,moderate,moderate,high,pale/white,5,0,2,1,1,2,0,7.37
+loamy,good,moderate,high,compacted,moderate,dark brown,2,0,1,2,2,1,3,5.96
+silty,poor,dry,moderate,compacted,low,pale/white,3,2,0,1,2,0,0,6.65
+sandy,poor,moderate,low,moderate,high,black/dark,0,2,1,0,1,2,4,5.57
+clay,poor,moderate,high,loose,high,dark brown,5,2,1,2,0,2,3,6.28
+silty,poor,dry,low,moderate,moderate,pale/white,3,2,0,0,1,1,0,6.19
+silty,moderate,wet,low,loose,low,black/dark,3,1,2,0,0,0,4,6.4
+loamy,moderate,dry,moderate,loose,low,yellow/tan,2,1,0,1,0,0,1,6.3
+clay-loam,moderate,moderate,moderate,loose,high,red,4,1,1,1,0,2,5,6.58
+sandy,good,moderate,low,loose,low,black/dark,0,0,1,0,0,0,4,5.91
+loamy,good,dry,moderate,loose,moderate,dark brown,2,0,0,1,0,1,3,6.84
+clay-loam,poor,dry,low,loose,moderate,dark brown,4,2,0,0,0,1,3,6.38
+sandy,good,moderate,moderate,loose,low,black/dark,0,0,1,1,0,0,4,5.4
+sandy-loam,good,wet,low,moderate,high,red,1,0,2,0,1,2,5,6.11
+clay-loam,poor,wet,moderate,loose,low,red,4,2,2,1,0,0,5,5.79
+clay-loam,moderate,wet,high,moderate,moderate,yellow/tan,4,1,2,2,1,1,1,6.52
+silty,poor,dry,moderate,compacted,moderate,dark brown,3,2,0,1,2,1,3,5.71
+silty,poor,dry,high,compacted,moderate,brown,3,2,0,2,2,1,2,6.29
+sandy-loam,good,moderate,high,compacted,low,yellow/tan,1,0,1,2,2,0,1,5.6
+clay-loam,poor,dry,high,compacted,low,pale/white,4,2,0,2,2,0,0,6.14
+loamy,poor,dry,high,loose,low,dark brown,2,2,0,2,0,0,3,6.13
+clay-loam,good,wet,high,loose,low,red,4,0,2,2,0,0,5,6.13
+clay,good,dry,low,moderate,low,red,5,0,0,0,1,0,5,6.6
+loamy,poor,dry,moderate,moderate,low,black/dark,2,2,0,1,1,0,4,6.18
+clay,moderate,dry,moderate,compacted,moderate,pale/white,5,1,0,1,2,1,0,7.75
+clay,poor,moderate,high,compacted,high,dark brown,5,2,1,2,2,2,3,6.07
+sandy-loam,moderate,dry,low,moderate,low,black/dark,1,1,0,0,1,0,4,6.27
+sandy-loam,good,wet,high,compacted,low,dark brown,1,0,2,2,2,0,3,5.64
+sandy,good,moderate,low,loose,moderate,black/dark,0,0,1,0,0,1,4,6.25
+sandy-loam,moderate,dry,low,loose,low,brown,1,1,0,0,0,0,2,6.42
+sandy,good,dry,moderate,loose,low,pale/white,0,0,0,1,0,0,0,6.76
+loamy,moderate,moderate,high,moderate,moderate,pale/white,2,1,1,2,1,1,0,5.98
+clay,good,dry,moderate,loose,moderate,red,5,0,0,1,0,1,5,6.95
+sandy,moderate,dry,moderate,loose,moderate,red,0,1,0,1,0,1,5,5.83
+clay-loam,moderate,moderate,high,compacted,high,yellow/tan,4,1,1,2,2,2,1,6.8
+loamy,good,dry,low,moderate,moderate,dark brown,2,0,0,0,1,1,3,6.49
+sandy,moderate,moderate,low,moderate,high,dark brown,0,1,1,0,1,2,3,6.1
+clay,poor,moderate,high,moderate,low,yellow/tan,5,2,1,2,1,0,1,6.53
+clay,poor,moderate,moderate,moderate,high,black/dark,5,2,1,1,1,2,4,7.03
+silty,poor,moderate,low,loose,high,red,3,2,1,0,0,2,5,6.14
+sandy-loam,moderate,wet,moderate,loose,high,brown,1,1,2,1,0,2,2,5.88
+loamy,moderate,moderate,high,loose,low,brown,2,1,1,2,0,0,2,6.16
+sandy,good,wet,moderate,loose,high,dark brown,0,0,2,1,0,2,3,5.88
+loamy,good,moderate,moderate,moderate,low,black/dark,2,0,1,1,1,0,4,6.59
+clay,poor,dry,moderate,loose,low,dark brown,5,2,0,1,0,0,3,6.99
+sandy-loam,moderate,dry,low,moderate,moderate,yellow/tan,1,1,0,0,1,1,1,6.09
+clay-loam,good,wet,moderate,compacted,low,pale/white,4,0,2,1,2,0,0,7.16
+clay-loam,moderate,moderate,low,moderate,high,brown,4,1,1,0,1,2,2,6.7
+sandy-loam,moderate,moderate,low,compacted,high,black/dark,1,1,1,0,2,2,4,5.78
+sandy-loam,moderate,moderate,low,compacted,high,brown,1,1,1,0,2,2,2,6.32
+loamy,good,wet,low,loose,high,black/dark,2,0,2,0,0,2,4,6.85
+sandy,poor,moderate,high,moderate,moderate,black/dark,0,2,1,2,1,1,4,5.56
+sandy-loam,poor,wet,moderate,moderate,moderate,brown,1,2,2,1,1,1,2,6.28
+silty,moderate,wet,low,moderate,low,dark brown,3,1,2,0,1,0,3,6.46
+sandy,good,dry,moderate,moderate,low,pale/white,0,0,0,1,1,0,0,6.53
+silty,good,dry,high,loose,low,pale/white,3,0,0,2,0,0,0,6.46
+clay,moderate,moderate,low,compacted,high,red,5,1,1,0,2,2,5,7.23
+clay-loam,good,wet,moderate,moderate,moderate,brown,4,0,2,1,1,1,2,6.64
+sandy-loam,poor,dry,low,compacted,low,dark brown,1,2,0,0,2,0,3,5.59
+clay,poor,moderate,moderate,compacted,high,brown,5,2,1,1,2,2,2,6.9
+clay-loam,moderate,dry,moderate,compacted,high,dark brown,4,1,0,1,2,2,3,6.83
+sandy,moderate,wet,high,moderate,low,red,0,1,2,2,1,0,5,5.46
+clay,poor,dry,moderate,loose,moderate,dark brown,5,2,0,1,0,1,3,6.58
+loamy,good,moderate,moderate,moderate,moderate,black/dark,2,0,1,1,1,1,4,6.37
+sandy,poor,dry,low,compacted,moderate,dark brown,0,2,0,0,2,1,3,5.99
+sandy-loam,poor,dry,low,loose,low,pale/white,1,2,0,0,0,0,0,6.06
+sandy-loam,moderate,wet,low,moderate,moderate,yellow/tan,1,1,2,0,1,1,1,5.64
+sandy,moderate,dry,moderate,compacted,low,dark brown,0,1,0,1,2,0,3,5.27
+clay,good,wet,moderate,moderate,low,black/dark,5,0,2,1,1,0,4,7.39
+clay-loam,moderate,moderate,low,loose,high,dark brown,4,1,1,0,0,2,3,7.25
+sandy,poor,dry,low,moderate,high,black/dark,0,2,0,0,1,2,4,5.97
+clay,good,moderate,high,moderate,high,pale/white,5,0,1,2,1,2,0,7.45
+sandy,moderate,moderate,high,moderate,high,red,0,1,1,2,1,2,5,5.82
+silty,moderate,moderate,low,moderate,moderate,dark brown,3,1,1,0,1,1,3,6.71
+loamy,good,dry,high,loose,low,brown,2,0,0,2,0,0,2,6.63
+silty,good,moderate,low,compacted,low,brown,3,0,1,0,2,0,2,7.03
+sandy,moderate,dry,moderate,compacted,low,dark brown,0,1,0,1,2,0,3,5.96
+loamy,poor,wet,low,compacted,moderate,dark brown,2,2,2,0,2,1,3,6.48
+clay-loam,good,wet,moderate,loose,low,pale/white,4,0,2,1,0,0,0,7.15
+silty,moderate,dry,high,compacted,high,red,3,1,0,2,2,2,5,6.0
+sandy,poor,moderate,high,moderate,low,dark brown,0,2,1,2,1,0,3,5.33
+sandy,good,wet,moderate,compacted,moderate,yellow/tan,0,0,2,1,2,1,1,6.08
+loamy,moderate,dry,low,compacted,high,brown,2,1,0,0,2,2,2,6.46
+silty,good,wet,moderate,compacted,high,brown,3,0,2,1,2,2,2,6.61
+clay,moderate,dry,low,moderate,moderate,red,5,1,0,0,1,1,5,6.34
+sandy-loam,good,moderate,moderate,moderate,high,brown,1,0,1,1,1,2,2,6.3
+sandy-loam,poor,wet,low,moderate,moderate,yellow/tan,1,2,2,0,1,1,1,5.69
+silty,good,dry,high,loose,moderate,dark brown,3,0,0,2,0,1,3,5.94
+clay-loam,moderate,wet,high,loose,low,pale/white,4,1,2,2,0,0,0,6.96
+clay,poor,wet,low,moderate,low,brown,5,2,2,0,1,0,2,6.79
+clay,good,dry,high,loose,low,red,5,0,0,2,0,0,5,6.56
+clay-loam,good,moderate,high,moderate,low,pale/white,4,0,1,2,1,0,0,6.87
+loamy,good,dry,moderate,loose,low,pale/white,2,0,0,1,0,0,0,6.62
+sandy-loam,good,dry,high,compacted,low,yellow/tan,1,0,0,2,2,0,1,6.12
+loamy,moderate,wet,low,moderate,low,yellow/tan,2,1,2,0,1,0,1,7.24
+clay,good,wet,low,moderate,high,black/dark,5,0,2,0,1,2,4,7.0
+sandy-loam,moderate,moderate,high,compacted,low,brown,1,1,1,2,2,0,2,5.79
+sandy,moderate,moderate,moderate,loose,moderate,yellow/tan,0,1,1,1,0,1,1,6.14
+loamy,moderate,dry,high,compacted,low,pale/white,2,1,0,2,2,0,0,6.63
+sandy,good,wet,high,compacted,high,brown,0,0,2,2,2,2,2,6.17
+clay-loam,poor,wet,high,loose,low,yellow/tan,4,2,2,2,0,0,1,6.24
+silty,moderate,moderate,high,loose,moderate,red,3,1,1,2,0,1,5,6.64
+sandy-loam,poor,moderate,high,moderate,moderate,yellow/tan,1,2,1,2,1,1,1,6.36
+silty,good,dry,moderate,compacted,low,brown,3,0,0,1,2,0,2,6.89
+clay,poor,moderate,low,compacted,high,dark brown,5,2,1,0,2,2,3,6.9
+sandy,moderate,dry,moderate,moderate,low,red,0,1,0,1,1,0,5,5.76
+sandy-loam,moderate,moderate,high,loose,low,dark brown,1,1,1,2,0,0,3,5.53
+silty,good,dry,low,loose,high,brown,3,0,0,0,0,2,2,7.22
+clay-loam,poor,wet,moderate,compacted,high,black/dark,4,2,2,1,2,2,4,6.4
+clay,poor,moderate,moderate,compacted,low,red,5,2,1,1,2,0,5,6.7
+clay-loam,moderate,moderate,high,moderate,high,yellow/tan,4,1,1,2,1,2,1,6.97
+clay-loam,moderate,dry,low,moderate,high,red,4,1,0,0,1,2,5,6.85
+sandy,good,wet,low,compacted,high,red,0,0,2,0,2,2,5,5.98
+loamy,moderate,wet,high,moderate,high,pale/white,2,1,2,2,1,2,0,6.74
+clay,good,moderate,low,loose,moderate,black/dark,5,0,1,0,0,1,4,6.69
+sandy-loam,moderate,moderate,low,loose,low,pale/white,1,1,1,0,0,0,0,7.04
+clay-loam,moderate,wet,low,compacted,high,brown,4,1,2,0,2,2,2,6.99
+sandy-loam,poor,dry,high,loose,moderate,dark brown,1,2,0,2,0,1,3,5.22
+sandy,poor,dry,moderate,moderate,moderate,black/dark,0,2,0,1,1,1,4,5.03
+clay-loam,good,dry,moderate,moderate,moderate,red,4,0,0,1,1,1,5,6.63
+silty,moderate,dry,low,compacted,low,pale/white,3,1,0,0,2,0,0,6.67
+silty,poor,dry,high,loose,high,brown,3,2,0,2,0,2,2,6.0
+loamy,poor,wet,high,moderate,high,yellow/tan,2,2,2,2,1,2,1,5.64
+loamy,good,moderate,moderate,loose,high,black/dark,2,0,1,1,0,2,4,6.51
+loamy,moderate,dry,moderate,compacted,moderate,dark brown,2,1,0,1,2,1,3,6.03
+sandy-loam,poor,moderate,high,moderate,high,black/dark,1,2,1,2,1,2,4,5.31
+sandy,good,moderate,moderate,moderate,low,black/dark,0,0,1,1,1,0,4,5.66
+clay,poor,dry,moderate,moderate,high,black/dark,5,2,0,1,1,2,4,6.41
+loamy,poor,dry,high,compacted,moderate,pale/white,2,2,0,2,2,1,0,6.71
+sandy,poor,moderate,low,compacted,low,dark brown,0,2,1,0,2,0,3,5.5
+sandy,moderate,dry,high,moderate,moderate,pale/white,0,1,0,2,1,1,0,6.2
+clay,poor,moderate,high,loose,low,pale/white,5,2,1,2,0,0,0,6.67
+silty,poor,wet,moderate,moderate,moderate,dark brown,3,2,2,1,1,1,3,6.2
+silty,poor,wet,high,moderate,high,red,3,2,2,2,1,2,5,5.81
+sandy,moderate,wet,high,moderate,moderate,yellow/tan,0,1,2,2,1,1,1,5.78
+clay-loam,moderate,dry,low,moderate,high,red,4,1,0,0,1,2,5,6.49
+loamy,poor,dry,moderate,loose,low,brown,2,2,0,1,0,0,2,6.59
+loamy,moderate,moderate,low,moderate,high,brown,2,1,1,0,1,2,2,6.6
+loamy,poor,moderate,moderate,loose,low,brown,2,2,1,1,0,0,2,6.42
+sandy-loam,poor,moderate,high,compacted,moderate,pale/white,1,2,1,2,2,1,0,6.33
+sandy-loam,poor,dry,high,compacted,high,pale/white,1,2,0,2,2,2,0,6.24
+sandy-loam,poor,dry,low,loose,moderate,dark brown,1,2,0,0,0,1,3,5.82
+clay-loam,poor,wet,high,moderate,low,pale/white,4,2,2,2,1,0,0,6.56
+sandy-loam,moderate,wet,low,compacted,low,brown,1,1,2,0,2,0,2,6.25
+silty,poor,dry,moderate,moderate,moderate,brown,3,2,0,1,1,1,2,6.49
+sandy-loam,poor,dry,low,moderate,high,red,1,2,0,0,1,2,5,6.3
+silty,good,wet,low,moderate,high,yellow/tan,3,0,2,0,1,2,1,6.72
+clay-loam,poor,dry,moderate,loose,high,black/dark,4,2,0,1,0,2,4,6.41
+silty,poor,dry,high,moderate,high,black/dark,3,2,0,2,1,2,4,5.88
+silty,poor,dry,moderate,moderate,high,yellow/tan,3,2,0,1,1,2,1,6.27
+sandy,moderate,dry,high,loose,moderate,dark brown,0,1,0,2,0,1,3,5.35
+silty,poor,dry,low,compacted,moderate,yellow/tan,3,2,0,0,2,1,1,6.46
+clay,good,dry,high,moderate,low,black/dark,5,0,0,2,1,0,4,6.78
+clay,moderate,dry,high,loose,high,pale/white,5,1,0,2,0,2,0,6.9
+silty,poor,dry,high,compacted,high,yellow/tan,3,2,0,2,2,2,1,5.88
+sandy,moderate,moderate,moderate,compacted,high,yellow/tan,0,1,1,1,2,2,1,5.65
+sandy-loam,good,dry,low,compacted,moderate,red,1,0,0,0,2,1,5,5.74
+loamy,moderate,wet,moderate,loose,high,black/dark,2,1,2,1,0,2,4,6.45
+sandy-loam,poor,wet,high,loose,low,red,1,2,2,2,0,0,5,5.65
+silty,poor,moderate,high,moderate,moderate,pale/white,3,2,1,2,1,1,0,6.52
+sandy-loam,poor,moderate,low,moderate,low,black/dark,1,2,1,0,1,0,4,5.82
+silty,good,dry,high,moderate,moderate,red,3,0,0,2,1,1,5,6.27
+loamy,good,dry,low,compacted,low,black/dark,2,0,0,0,2,0,4,6.87
+clay-loam,good,moderate,moderate,compacted,high,black/dark,4,0,1,1,2,2,4,7.14
+clay,good,wet,low,loose,moderate,dark brown,5,0,2,0,0,1,3,6.64
+clay,moderate,wet,moderate,moderate,high,dark brown,5,1,2,1,1,2,3,6.33
+silty,poor,dry,low,compacted,moderate,dark brown,3,2,0,0,2,1,3,6.28
+sandy,moderate,moderate,low,compacted,high,pale/white,0,1,1,0,2,2,0,6.54
+clay,moderate,wet,high,compacted,moderate,red,5,1,2,2,2,1,5,6.24
+sandy-loam,good,dry,low,moderate,high,yellow/tan,1,0,0,0,1,2,1,6.65
+loamy,poor,dry,high,compacted,low,black/dark,2,2,0,2,2,0,4,5.54
+silty,poor,dry,high,moderate,low,red,3,2,0,2,1,0,5,6.41
+silty,poor,dry,high,compacted,high,yellow/tan,3,2,0,2,2,2,1,6.28
+sandy,moderate,dry,high,moderate,low,brown,0,1,0,2,1,0,2,5.63
+loamy,moderate,wet,high,compacted,high,black/dark,2,1,2,2,2,2,4,5.51
+sandy-loam,poor,wet,high,moderate,moderate,pale/white,1,2,2,2,1,1,0,6.18
+sandy,moderate,wet,low,compacted,low,black/dark,0,1,2,0,2,0,4,6.09
+sandy,moderate,moderate,high,compacted,moderate,dark brown,0,1,1,2,2,1,3,5.66
+silty,moderate,moderate,high,loose,moderate,dark brown,3,1,1,2,0,1,3,6.2
+sandy,good,moderate,moderate,loose,low,brown,0,0,1,1,0,0,2,5.93
+sandy-loam,moderate,wet,moderate,compacted,low,black/dark,1,1,2,1,2,0,4,5.97
+loamy,moderate,moderate,low,loose,high,red,2,1,1,0,0,2,5,6.66
+clay,poor,moderate,low,compacted,moderate,brown,5,2,1,0,2,1,2,6.92
+silty,poor,wet,high,compacted,moderate,pale/white,3,2,2,2,2,1,0,6.2
+loamy,poor,wet,moderate,loose,high,dark brown,2,2,2,1,0,2,3,5.82
+sandy-loam,poor,moderate,low,compacted,high,brown,1,2,1,0,2,2,2,6.05
+sandy-loam,moderate,dry,moderate,moderate,moderate,black/dark,1,1,0,1,1,1,4,6.07
+loamy,good,dry,moderate,compacted,moderate,black/dark,2,0,0,1,2,1,4,6.08
+sandy,moderate,wet,low,moderate,high,brown,0,1,2,0,1,2,2,6.44
+clay-loam,poor,dry,low,loose,low,red,4,2,0,0,0,0,5,6.35
+sandy-loam,good,dry,moderate,moderate,high,yellow/tan,1,0,0,1,1,2,1,6.0
+loamy,poor,dry,low,compacted,low,pale/white,2,2,0,0,2,0,0,6.79
+silty,moderate,dry,moderate,loose,moderate,red,3,1,0,1,0,1,5,6.0
+clay-loam,good,dry,high,moderate,low,dark brown,4,0,0,2,1,0,3,6.9
+sandy,poor,wet,high,loose,low,yellow/tan,0,2,2,2,0,0,1,5.15
+sandy-loam,moderate,wet,moderate,compacted,moderate,pale/white,1,1,2,1,2,1,0,6.56
+clay-loam,moderate,dry,low,loose,high,brown,4,1,0,0,0,2,2,6.63
+clay,poor,dry,high,moderate,moderate,pale/white,5,2,0,2,1,1,0,6.82
+sandy-loam,moderate,dry,high,compacted,moderate,dark brown,1,1,0,2,2,1,3,6.12
+sandy-loam,poor,moderate,high,loose,low,yellow/tan,1,2,1,2,0,0,1,6.01
+silty,moderate,moderate,moderate,compacted,high,yellow/tan,3,1,1,1,2,2,1,6.17
+loamy,moderate,wet,low,loose,low,pale/white,2,1,2,0,0,0,0,7.14
+sandy,moderate,wet,moderate,loose,moderate,red,0,1,2,1,0,1,5,6.1
+sandy-loam,moderate,dry,high,compacted,low,yellow/tan,1,1,0,2,2,0,1,6.21
+clay,moderate,wet,high,loose,low,dark brown,5,1,2,2,0,0,3,6.31
+sandy,good,wet,high,loose,moderate,yellow/tan,0,0,2,2,0,1,1,5.99
+clay-loam,poor,dry,high,loose,moderate,yellow/tan,4,2,0,2,0,1,1,5.7
+sandy-loam,good,wet,high,moderate,low,black/dark,1,0,2,2,1,0,4,5.93
+clay-loam,poor,wet,low,compacted,high,brown,4,2,2,0,2,2,2,6.38
+clay,moderate,dry,high,moderate,moderate,black/dark,5,1,0,2,1,1,4,6.86
+sandy-loam,good,wet,high,moderate,low,yellow/tan,1,0,2,2,1,0,1,5.94
+clay,good,wet,high,moderate,moderate,red,5,0,2,2,1,1,5,6.39
+loamy,moderate,wet,low,compacted,moderate,red,2,1,2,0,2,1,5,6.39
+clay,poor,wet,moderate,moderate,high,pale/white,5,2,2,1,1,2,0,6.76
+clay,moderate,wet,moderate,loose,high,yellow/tan,5,1,2,1,0,2,1,6.69
+clay-loam,moderate,wet,low,moderate,moderate,dark brown,4,1,2,0,1,1,3,6.62
+clay,poor,wet,high,moderate,moderate,dark brown,5,2,2,2,1,1,3,6.17
+sandy,moderate,wet,low,moderate,low,black/dark,0,1,2,0,1,0,4,5.21
+sandy,moderate,wet,moderate,moderate,high,black/dark,0,1,2,1,1,2,4,5.42
+sandy,poor,moderate,moderate,loose,high,pale/white,0,2,1,1,0,2,0,5.98
+silty,poor,wet,low,compacted,high,black/dark,3,2,2,0,2,2,4,6.36
+silty,moderate,moderate,high,compacted,high,black/dark,3,1,1,2,2,2,4,6.14
+sandy-loam,poor,moderate,low,loose,high,black/dark,1,2,1,0,0,2,4,6.0
+silty,good,moderate,high,moderate,low,red,3,0,1,2,1,0,5,6.24
+clay-loam,moderate,wet,high,moderate,low,red,4,1,2,2,1,0,5,6.22
+loamy,poor,moderate,high,loose,low,pale/white,2,2,1,2,0,0,0,6.56
+clay-loam,moderate,moderate,low,moderate,high,yellow/tan,4,1,1,0,1,2,1,7.19
+sandy-loam,poor,moderate,moderate,moderate,low,red,1,2,1,1,1,0,5,5.72
+clay-loam,moderate,dry,low,moderate,low,dark brown,4,1,0,0,1,0,3,6.51
+sandy,moderate,dry,high,compacted,moderate,yellow/tan,0,1,0,2,2,1,1,6.36
+loamy,moderate,dry,low,compacted,moderate,yellow/tan,2,1,0,0,2,1,1,6.96
+clay,good,wet,moderate,loose,low,black/dark,5,0,2,1,0,0,4,7.16
+clay-loam,good,dry,high,compacted,low,black/dark,4,0,0,2,2,0,4,6.25
+clay,good,wet,high,compacted,moderate,brown,5,0,2,2,2,1,2,6.84
+sandy,poor,moderate,high,compacted,moderate,pale/white,0,2,1,2,2,1,0,6.01
+sandy,poor,dry,moderate,compacted,moderate,pale/white,0,2,0,1,2,1,0,5.82
+loamy,poor,moderate,low,moderate,low,brown,2,2,1,0,1,0,2,6.51
+clay,poor,moderate,high,loose,moderate,yellow/tan,5,2,1,2,0,1,1,6.77
+clay-loam,good,moderate,low,loose,low,pale/white,4,0,1,0,0,0,0,7.4
+sandy-loam,poor,moderate,high,loose,high,black/dark,1,2,1,2,0,2,4,5.9
+clay,good,dry,moderate,compacted,low,pale/white,5,0,0,1,2,0,0,7.01
+clay-loam,good,dry,low,moderate,high,dark brown,4,0,0,0,1,2,3,6.84
+sandy,good,dry,high,compacted,low,red,0,0,0,2,2,0,5,5.53
+sandy-loam,good,wet,high,moderate,high,red,1,0,2,2,1,2,5,5.58
+silty,moderate,wet,high,compacted,high,red,3,1,2,2,2,2,5,5.85
+sandy-loam,poor,wet,moderate,loose,low,red,1,2,2,1,0,0,5,5.63
+sandy,good,wet,moderate,moderate,moderate,yellow/tan,0,0,2,1,1,1,1,6.19
+clay-loam,moderate,dry,moderate,loose,moderate,pale/white,4,1,0,1,0,1,0,6.78
+silty,moderate,dry,low,loose,high,black/dark,3,1,0,0,0,2,4,6.51
+loamy,good,moderate,low,loose,moderate,red,2,0,1,0,0,1,5,6.34
+silty,poor,dry,moderate,loose,low,pale/white,3,2,0,1,0,0,0,6.95
+loamy,moderate,wet,high,moderate,moderate,brown,2,1,2,2,1,1,2,6.71
+silty,moderate,dry,low,loose,high,black/dark,3,1,0,0,0,2,4,6.35
+sandy-loam,poor,moderate,low,compacted,high,dark brown,1,2,1,0,2,2,3,5.28
+clay-loam,moderate,dry,low,compacted,high,pale/white,4,1,0,0,2,2,0,6.95
+sandy,moderate,wet,low,compacted,moderate,dark brown,0,1,2,0,2,1,3,6.26
+sandy-loam,poor,dry,high,moderate,high,pale/white,1,2,0,2,1,2,0,6.15
+clay-loam,moderate,wet,high,moderate,moderate,pale/white,4,1,2,2,1,1,0,6.63
+sandy-loam,good,dry,moderate,loose,low,yellow/tan,1,0,0,1,0,0,1,6.51
+sandy,good,moderate,low,compacted,moderate,black/dark,0,0,1,0,2,1,4,6.25
+sandy,good,moderate,moderate,moderate,high,pale/white,0,0,1,1,1,2,0,6.34
+clay-loam,poor,wet,moderate,loose,low,yellow/tan,4,2,2,1,0,0,1,6.66
+clay,poor,moderate,moderate,compacted,high,black/dark,5,2,1,1,2,2,4,6.4
+sandy-loam,moderate,moderate,high,moderate,high,black/dark,1,1,1,2,1,2,4,5.72
+clay,poor,wet,moderate,loose,low,yellow/tan,5,2,2,1,0,0,1,6.55
+loamy,good,wet,low,compacted,low,pale/white,2,0,2,0,2,0,0,6.59
+loamy,poor,moderate,moderate,compacted,moderate,pale/white,2,2,1,1,2,1,0,6.58
+loamy,poor,wet,high,compacted,moderate,red,2,2,2,2,2,1,5,5.19
+clay,moderate,moderate,moderate,moderate,high,yellow/tan,5,1,1,1,1,2,1,7.27
+sandy-loam,good,dry,low,loose,low,yellow/tan,1,0,0,0,0,0,1,6.29
+clay-loam,moderate,moderate,low,compacted,low,pale/white,4,1,1,0,2,0,0,6.98
+sandy,moderate,wet,low,compacted,moderate,brown,0,1,2,0,2,1,2,6.4
+clay,poor,moderate,moderate,compacted,low,yellow/tan,5,2,1,1,2,0,1,6.86
+loamy,good,dry,high,moderate,moderate,dark brown,2,0,0,2,1,1,3,6.02
+clay-loam,poor,dry,high,loose,low,red,4,2,0,2,0,0,5,6.16
+loamy,good,moderate,moderate,moderate,moderate,yellow/tan,2,0,1,1,1,1,1,6.65
+loamy,poor,wet,high,loose,moderate,yellow/tan,2,2,2,2,0,1,1,5.9
+clay-loam,poor,moderate,high,compacted,high,yellow/tan,4,2,1,2,2,2,1,6.36
+clay-loam,poor,moderate,high,loose,low,yellow/tan,4,2,1,2,0,0,1,6.04
+silty,moderate,dry,moderate,loose,low,pale/white,3,1,0,1,0,0,0,7.09
+sandy,good,moderate,low,compacted,low,black/dark,0,0,1,0,2,0,4,5.93
+clay,poor,wet,low,moderate,moderate,red,5,2,2,0,1,1,5,6.3
+sandy,poor,wet,moderate,loose,low,pale/white,0,2,2,1,0,0,0,6.27
+loamy,moderate,moderate,low,loose,high,red,2,1,1,0,0,2,5,6.3
+clay,poor,dry,moderate,loose,moderate,pale/white,5,2,0,1,0,1,0,7.08
+loamy,moderate,moderate,high,moderate,high,black/dark,2,1,1,2,1,2,4,6.11
+loamy,poor,dry,moderate,loose,low,red,2,2,0,1,0,0,5,6.05
+clay,moderate,moderate,low,compacted,high,pale/white,5,1,1,0,2,2,0,7.11
+clay-loam,good,wet,low,moderate,high,brown,4,0,2,0,1,2,2,6.79
+clay-loam,good,wet,high,compacted,high,black/dark,4,0,2,2,2,2,4,6.19
+clay,poor,moderate,low,compacted,high,red,5,2,1,0,2,2,5,6.96
+clay-loam,good,wet,low,moderate,high,red,4,0,2,0,1,2,5,6.51
+loamy,poor,moderate,high,moderate,high,dark brown,2,2,1,2,1,2,3,5.82
+clay,poor,moderate,low,compacted,low,yellow/tan,5,2,1,0,2,0,1,6.77
+clay,poor,moderate,moderate,compacted,moderate,brown,5,2,1,1,2,1,2,7.11
+sandy,moderate,moderate,low,compacted,high,dark brown,0,1,1,0,2,2,3,5.83
+sandy,good,wet,high,compacted,moderate,dark brown,0,0,2,2,2,1,3,5.38
+sandy-loam,good,moderate,moderate,moderate,low,dark brown,1,0,1,1,1,0,3,5.99
+clay-loam,moderate,moderate,high,compacted,moderate,brown,4,1,1,2,2,1,2,6.54
+silty,moderate,moderate,low,loose,moderate,brown,3,1,1,0,0,1,2,6.73
+sandy,poor,dry,high,compacted,moderate,brown,0,2,0,2,2,1,2,6.02
+clay,moderate,dry,high,compacted,moderate,pale/white,5,1,0,2,2,1,0,6.91
+loamy,poor,moderate,high,compacted,low,brown,2,2,1,2,2,0,2,5.3
+clay-loam,good,dry,high,moderate,high,black/dark,4,0,0,2,1,2,4,6.55
+sandy,good,moderate,high,compacted,high,yellow/tan,0,0,1,2,2,2,1,5.41
+silty,poor,moderate,low,compacted,low,black/dark,3,2,1,0,2,0,4,6.36
+sandy-loam,moderate,moderate,high,loose,high,brown,1,1,1,2,0,2,2,6.19
+clay-loam,good,dry,high,compacted,low,red,4,0,0,2,2,0,5,6.58
+sandy-loam,good,moderate,high,loose,moderate,pale/white,1,0,1,2,0,1,0,6.36
+sandy,poor,moderate,low,compacted,moderate,yellow/tan,0,2,1,0,2,1,1,5.62
+sandy,moderate,moderate,moderate,moderate,high,black/dark,0,1,1,1,1,2,4,5.65
+loamy,good,wet,high,loose,low,brown,2,0,2,2,0,0,2,6.34
+clay-loam,good,moderate,high,moderate,low,black/dark,4,0,1,2,1,0,4,5.99
+silty,good,dry,moderate,loose,moderate,pale/white,3,0,0,1,0,1,0,7.39
+silty,moderate,moderate,moderate,compacted,moderate,brown,3,1,1,1,2,1,2,6.71
+clay,moderate,dry,moderate,compacted,low,yellow/tan,5,1,0,1,2,0,1,7.24
+silty,moderate,moderate,moderate,loose,moderate,red,3,1,1,1,0,1,5,6.05
+sandy,good,wet,moderate,loose,high,black/dark,0,0,2,1,0,2,4,6.11
+silty,moderate,moderate,low,moderate,low,brown,3,1,1,0,1,0,2,6.74
+silty,good,moderate,low,loose,high,yellow/tan,3,0,1,0,0,2,1,6.61
+silty,good,wet,high,compacted,low,red,3,0,2,2,2,0,5,6.5
+clay-loam,good,dry,high,loose,low,dark brown,4,0,0,2,0,0,3,6.15
+sandy-loam,moderate,wet,low,compacted,high,brown,1,1,2,0,2,2,2,6.31
+sandy,good,wet,moderate,loose,moderate,dark brown,0,0,2,1,0,1,3,5.56
+sandy,poor,dry,moderate,moderate,high,red,0,2,0,1,1,2,5,4.95
+sandy-loam,moderate,moderate,high,loose,low,pale/white,1,1,1,2,0,0,0,6.21
+silty,poor,dry,high,moderate,high,black/dark,3,2,0,2,1,2,4,5.93
+sandy-loam,poor,moderate,low,loose,high,red,1,2,1,0,0,2,5,5.53
+clay,good,moderate,low,moderate,high,red,5,0,1,0,1,2,5,6.71
+sandy,good,moderate,low,moderate,high,pale/white,0,0,1,0,1,2,0,6.32
+clay,poor,wet,moderate,compacted,low,brown,5,2,2,1,2,0,2,6.85
+clay,moderate,moderate,low,compacted,low,pale/white,5,1,1,0,2,0,0,7.37
+clay,poor,dry,moderate,loose,high,brown,5,2,0,1,0,2,2,6.87
+clay,moderate,moderate,low,moderate,low,red,5,1,1,0,1,0,5,6.71
+sandy,poor,dry,low,moderate,high,dark brown,0,2,0,0,1,2,3,5.73
+silty,good,dry,high,loose,low,brown,3,0,0,2,0,0,2,6.69
+clay-loam,good,wet,high,compacted,moderate,brown,4,0,2,2,2,1,2,6.62
+clay,moderate,wet,high,compacted,high,dark brown,5,1,2,2,2,2,3,6.22
+clay-loam,poor,wet,moderate,compacted,high,brown,4,2,2,1,2,2,2,6.47
+clay,poor,dry,moderate,loose,low,red,5,2,0,1,0,0,5,6.79
+sandy,good,wet,moderate,moderate,low,black/dark,0,0,2,1,1,0,4,5.75
+sandy,good,wet,low,compacted,moderate,pale/white,0,0,2,0,2,1,0,6.49
+loamy,poor,dry,moderate,compacted,low,red,2,2,0,1,2,0,5,5.7
+silty,moderate,wet,high,moderate,moderate,yellow/tan,3,1,2,2,1,1,1,6.47
+sandy-loam,good,moderate,high,compacted,low,yellow/tan,1,0,1,2,2,0,1,6.28
+loamy,moderate,wet,moderate,moderate,high,red,2,1,2,1,1,2,5,6.33
+clay,poor,moderate,high,moderate,high,black/dark,5,2,1,2,1,2,4,6.28
+silty,poor,moderate,low,moderate,moderate,dark brown,3,2,1,0,1,1,3,5.81
+loamy,moderate,moderate,high,compacted,moderate,dark brown,2,1,1,2,2,1,3,5.99
+clay-loam,poor,wet,low,loose,high,pale/white,4,2,2,0,0,2,0,6.64
+sandy,poor,dry,moderate,moderate,high,yellow/tan,0,2,0,1,1,2,1,5.46
+silty,good,wet,moderate,moderate,moderate,yellow/tan,3,0,2,1,1,1,1,6.08
+sandy-loam,poor,wet,low,moderate,low,dark brown,1,2,2,0,1,0,3,5.26
+clay-loam,poor,moderate,high,moderate,high,red,4,2,1,2,1,2,5,6.03
+clay,poor,wet,high,loose,high,brown,5,2,2,2,0,2,2,6.32
+loamy,poor,dry,moderate,moderate,low,brown,2,2,0,1,1,0,2,6.18
+silty,good,wet,high,compacted,moderate,brown,3,0,2,2,2,1,2,6.98
+loamy,good,dry,low,moderate,moderate,brown,2,0,0,0,1,1,2,6.63
+sandy,poor,wet,high,moderate,moderate,pale/white,0,2,2,2,1,1,0,5.63
+sandy-loam,poor,moderate,low,loose,moderate,brown,1,2,1,0,0,1,2,5.94
+sandy-loam,moderate,dry,high,compacted,high,yellow/tan,1,1,0,2,2,2,1,6.47
+clay-loam,poor,wet,low,moderate,high,pale/white,4,2,2,0,1,2,0,6.77
+sandy-loam,moderate,wet,high,moderate,low,yellow/tan,1,1,2,2,1,0,1,6.15
+silty,good,dry,low,moderate,low,dark brown,3,0,0,0,1,0,3,6.41
+clay,poor,moderate,low,loose,moderate,black/dark,5,2,1,0,0,1,4,6.26
+clay,moderate,moderate,moderate,compacted,low,yellow/tan,5,1,1,1,2,0,1,6.75
+clay,moderate,dry,moderate,loose,moderate,red,5,1,0,1,0,1,5,6.33
+clay-loam,poor,dry,low,compacted,high,dark brown,4,2,0,0,2,2,3,6.43
+sandy,moderate,moderate,high,loose,high,yellow/tan,0,1,1,2,0,2,1,6.01
+clay-loam,good,moderate,moderate,moderate,moderate,black/dark,4,0,1,1,1,1,4,6.69
+clay,moderate,dry,moderate,moderate,moderate,black/dark,5,1,0,1,1,1,4,6.65
+clay-loam,poor,moderate,moderate,loose,moderate,black/dark,4,2,1,1,0,1,4,6.56
+clay-loam,moderate,wet,low,loose,moderate,pale/white,4,1,2,0,0,1,0,7.32
+silty,poor,moderate,moderate,moderate,low,yellow/tan,3,2,1,1,1,0,1,6.22
+sandy,poor,moderate,low,moderate,high,red,0,2,1,0,1,2,5,6.08
+sandy-loam,poor,moderate,high,loose,low,yellow/tan,1,2,1,2,0,0,1,6.12
+loamy,poor,moderate,high,compacted,high,pale/white,2,2,1,2,2,2,0,6.22
+silty,moderate,dry,high,loose,low,dark brown,3,1,0,2,0,0,3,5.82
+loamy,good,wet,high,compacted,low,black/dark,2,0,2,2,2,0,4,6.29
+clay-loam,good,moderate,low,loose,moderate,brown,4,0,1,0,0,1,2,6.61
+loamy,good,wet,moderate,moderate,high,pale/white,2,0,2,1,1,2,0,7.16
+clay,moderate,dry,high,loose,low,yellow/tan,5,1,0,2,0,0,1,7.11
+sandy-loam,good,moderate,high,compacted,low,yellow/tan,1,0,1,2,2,0,1,6.14
+sandy-loam,poor,wet,low,moderate,moderate,dark brown,1,2,2,0,1,1,3,5.9
+loamy,poor,dry,low,moderate,high,pale/white,2,2,0,0,1,2,0,6.79
+sandy,poor,dry,high,loose,moderate,black/dark,0,2,0,2,0,1,4,5.23
+loamy,moderate,moderate,high,compacted,low,pale/white,2,1,1,2,2,0,0,6.69
+clay-loam,poor,wet,low,loose,moderate,dark brown,4,2,2,0,0,1,3,6.71
+sandy,good,wet,low,compacted,moderate,pale/white,0,0,2,0,2,1,0,6.15
+sandy-loam,good,moderate,low,loose,moderate,black/dark,1,0,1,0,0,1,4,6.73
+clay,good,dry,low,moderate,low,red,5,0,0,0,1,0,5,6.66
+silty,moderate,dry,low,loose,high,dark brown,3,1,0,0,0,2,3,6.61
+clay,good,dry,moderate,loose,low,pale/white,5,0,0,1,0,0,0,7.36
+silty,good,wet,moderate,moderate,low,yellow/tan,3,0,2,1,1,0,1,6.49
+sandy,moderate,wet,moderate,compacted,low,black/dark,0,1,2,1,2,0,4,5.74
+sandy,moderate,dry,moderate,loose,low,brown,0,1,0,1,0,0,2,5.93
+sandy-loam,poor,wet,moderate,loose,low,black/dark,1,2,2,1,0,0,4,5.52
+loamy,moderate,dry,high,compacted,high,brown,2,1,0,2,2,2,2,6.69
+clay-loam,good,wet,moderate,loose,moderate,yellow/tan,4,0,2,1,0,1,1,6.62
+silty,moderate,dry,moderate,compacted,high,dark brown,3,1,0,1,2,2,3,6.62
+sandy-loam,poor,wet,moderate,compacted,high,yellow/tan,1,2,2,1,2,2,1,5.58
+silty,good,dry,moderate,compacted,high,yellow/tan,3,0,0,1,2,2,1,6.62
+clay,moderate,wet,moderate,moderate,moderate,brown,5,1,2,1,1,1,2,6.99
+clay,poor,wet,low,loose,low,brown,5,2,2,0,0,0,2,6.61
+clay,poor,moderate,moderate,moderate,moderate,brown,5,2,1,1,1,1,2,7.22
+clay,good,dry,moderate,compacted,low,yellow/tan,5,0,0,1,2,0,1,6.71
+sandy,moderate,dry,high,loose,low,pale/white,0,1,0,2,0,0,0,5.98
+clay-loam,moderate,moderate,moderate,compacted,moderate,black/dark,4,1,1,1,2,1,4,6.11
+sandy,moderate,dry,moderate,moderate,low,yellow/tan,0,1,0,1,1,0,1,5.65
+sandy,poor,dry,high,compacted,moderate,brown,0,2,0,2,2,1,2,5.55
+clay-loam,good,moderate,moderate,compacted,moderate,red,4,0,1,1,2,1,5,6.52
+silty,good,moderate,moderate,compacted,high,dark brown,3,0,1,1,2,2,3,6.76
+loamy,good,wet,high,moderate,moderate,brown,2,0,2,2,1,1,2,6.15
+silty,poor,wet,moderate,loose,high,black/dark,3,2,2,1,0,2,4,6.01
+silty,good,dry,high,moderate,high,brown,3,0,0,2,1,2,2,6.5
+silty,good,wet,moderate,moderate,low,yellow/tan,3,0,2,1,1,0,1,6.73
+silty,good,dry,high,moderate,high,black/dark,3,0,0,2,1,2,4,5.55
+silty,poor,moderate,high,moderate,moderate,red,3,2,1,2,1,1,5,6.3
+sandy,poor,moderate,low,moderate,high,dark brown,0,2,1,0,1,2,3,6.22
+clay,poor,dry,high,loose,low,yellow/tan,5,2,0,2,0,0,1,6.98
+silty,good,wet,moderate,compacted,high,yellow/tan,3,0,2,1,2,2,1,6.57
+clay-loam,good,wet,low,moderate,low,dark brown,4,0,2,0,1,0,3,6.42
+sandy-loam,good,wet,low,moderate,low,black/dark,1,0,2,0,1,0,4,6.0
+clay-loam,poor,moderate,high,moderate,moderate,brown,4,2,1,2,1,1,2,5.96
+silty,good,moderate,low,loose,moderate,brown,3,0,1,0,0,1,2,6.44
+sandy,poor,dry,moderate,loose,moderate,black/dark,0,2,0,1,0,1,4,5.68
+clay,poor,moderate,moderate,moderate,high,black/dark,5,2,1,1,1,2,4,6.36
+sandy,moderate,wet,high,moderate,high,red,0,1,2,2,1,2,5,5.63
+sandy,poor,moderate,low,loose,high,yellow/tan,0,2,1,0,0,2,1,5.97
+sandy-loam,poor,moderate,moderate,loose,low,pale/white,1,2,1,1,0,0,0,6.82
+clay,good,moderate,high,loose,high,pale/white,5,0,1,2,0,2,0,7.35
+loamy,moderate,wet,low,loose,moderate,black/dark,2,1,2,0,0,1,4,6.0
+sandy,moderate,dry,moderate,compacted,moderate,black/dark,0,1,0,1,2,1,4,5.64
+clay,poor,dry,low,compacted,moderate,yellow/tan,5,2,0,0,2,1,1,6.61
+clay-loam,poor,dry,high,loose,moderate,red,4,2,0,2,0,1,5,6.4
+clay-loam,good,dry,high,moderate,low,black/dark,4,0,0,2,1,0,4,6.36
+sandy-loam,good,moderate,high,compacted,moderate,brown,1,0,1,2,2,1,2,5.94
+clay-loam,poor,wet,moderate,compacted,moderate,red,4,2,2,1,2,1,5,6.07
+sandy-loam,poor,dry,moderate,moderate,high,black/dark,1,2,0,1,1,2,4,5.61
+loamy,moderate,wet,low,moderate,low,red,2,1,2,0,1,0,5,6.01
+clay-loam,moderate,dry,moderate,compacted,high,dark brown,4,1,0,1,2,2,3,6.21
+clay,good,wet,low,moderate,low,pale/white,5,0,2,0,1,0,0,7.32
+clay-loam,good,dry,high,moderate,high,dark brown,4,0,0,2,1,2,3,6.42
+sandy,poor,moderate,low,compacted,moderate,black/dark,0,2,1,0,2,1,4,5.59
+sandy,poor,dry,moderate,compacted,low,yellow/tan,0,2,0,1,2,0,1,5.58
+sandy-loam,moderate,dry,low,loose,moderate,pale/white,1,1,0,0,0,1,0,6.62
+sandy,moderate,wet,low,loose,moderate,pale/white,0,1,2,0,0,1,0,6.39
+silty,moderate,moderate,high,compacted,moderate,red,3,1,1,2,2,1,5,6.18
+sandy,moderate,dry,moderate,moderate,high,black/dark,0,1,0,1,1,2,4,5.54
+silty,good,dry,moderate,compacted,moderate,brown,3,0,0,1,2,1,2,6.64
+clay,poor,wet,high,moderate,low,yellow/tan,5,2,2,2,1,0,1,5.89
+loamy,good,dry,moderate,compacted,low,yellow/tan,2,0,0,1,2,0,1,6.62
+sandy-loam,moderate,moderate,low,loose,moderate,pale/white,1,1,1,0,0,1,0,6.74
+sandy,moderate,wet,high,loose,high,black/dark,0,1,2,2,0,2,4,5.46
+loamy,moderate,moderate,high,moderate,low,black/dark,2,1,1,2,1,0,4,5.81
+sandy,good,wet,high,moderate,moderate,brown,0,0,2,2,1,1,2,6.05
+clay,poor,dry,high,compacted,high,pale/white,5,2,0,2,2,2,0,6.86
+silty,poor,moderate,high,compacted,high,brown,3,2,1,2,2,2,2,5.7
+clay-loam,moderate,moderate,high,loose,high,yellow/tan,4,1,1,2,0,2,1,6.27
+silty,poor,wet,high,compacted,moderate,yellow/tan,3,2,2,2,2,1,1,5.97
+sandy,good,moderate,moderate,moderate,moderate,dark brown,0,0,1,1,1,1,3,5.81
+clay-loam,poor,moderate,low,compacted,low,pale/white,4,2,1,0,2,0,0,6.32
+sandy-loam,moderate,moderate,low,loose,low,brown,1,1,1,0,0,0,2,6.16
+loamy,poor,moderate,low,loose,high,dark brown,2,2,1,0,0,2,3,6.47
+sandy-loam,good,dry,moderate,compacted,low,brown,1,0,0,1,2,0,2,6.33
+silty,poor,moderate,low,loose,moderate,red,3,2,1,0,0,1,5,6.62
+sandy-loam,moderate,moderate,high,compacted,high,yellow/tan,1,1,1,2,2,2,1,6.02
+sandy,good,dry,moderate,moderate,high,pale/white,0,0,0,1,1,2,0,6.73
+sandy-loam,poor,moderate,low,compacted,low,yellow/tan,1,2,1,0,2,0,1,6.31
+loamy,poor,wet,high,compacted,moderate,pale/white,2,2,2,2,2,1,0,6.01
+silty,good,dry,moderate,loose,high,brown,3,0,0,1,0,2,2,6.7
+loamy,good,wet,moderate,moderate,moderate,dark brown,2,0,2,1,1,1,3,6.35
+sandy,moderate,dry,high,loose,low,pale/white,0,1,0,2,0,0,0,6.08
+clay,good,moderate,high,loose,moderate,brown,5,0,1,2,0,1,2,6.7
+loamy,moderate,dry,moderate,compacted,low,black/dark,2,1,0,1,2,0,4,6.42
+sandy,poor,moderate,moderate,compacted,high,black/dark,0,2,1,1,2,2,4,5.5
+clay,poor,wet,high,loose,high,red,5,2,2,2,0,2,5,6.27
+silty,moderate,moderate,low,moderate,high,pale/white,3,1,1,0,1,2,0,6.91
+clay-loam,moderate,moderate,moderate,compacted,moderate,dark brown,4,1,1,1,2,1,3,6.42
+clay,moderate,moderate,low,loose,low,dark brown,5,1,1,0,0,0,3,6.76
+sandy-loam,good,dry,low,compacted,low,pale/white,1,0,0,0,2,0,0,6.68
+sandy-loam,moderate,moderate,high,moderate,low,brown,1,1,1,2,1,0,2,5.97
+clay-loam,poor,moderate,moderate,moderate,moderate,black/dark,4,2,1,1,1,1,4,6.19
+sandy-loam,moderate,wet,low,loose,moderate,red,1,1,2,0,0,1,5,6.04
+sandy,moderate,moderate,low,moderate,low,red,0,1,1,0,1,0,5,5.93
+silty,moderate,dry,low,loose,high,yellow/tan,3,1,0,0,0,2,1,6.74
+clay,moderate,wet,low,moderate,moderate,pale/white,5,1,2,0,1,1,0,7.66
+clay-loam,poor,wet,low,compacted,moderate,brown,4,2,2,0,2,1,2,6.55
+sandy-loam,poor,wet,moderate,compacted,high,pale/white,1,2,2,1,2,2,0,6.17
+sandy,good,dry,low,compacted,low,dark brown,0,0,0,0,2,0,3,5.33
+sandy,poor,moderate,low,moderate,moderate,red,0,2,1,0,1,1,5,5.42
+loamy,poor,moderate,low,compacted,moderate,black/dark,2,2,1,0,2,1,4,5.97
+clay-loam,good,moderate,low,loose,low,pale/white,4,0,1,0,0,0,0,7.36
+clay-loam,good,dry,low,loose,moderate,dark brown,4,0,0,0,0,1,3,6.87
+clay,moderate,wet,low,loose,high,pale/white,5,1,2,0,0,2,0,7.54
+sandy-loam,good,moderate,moderate,compacted,low,brown,1,0,1,1,2,0,2,6.45
+sandy,moderate,wet,moderate,compacted,low,red,0,1,2,1,2,0,5,5.69
+silty,moderate,wet,high,moderate,high,yellow/tan,3,1,2,2,1,2,1,6.63
+sandy-loam,moderate,dry,low,moderate,low,black/dark,1,1,0,0,1,0,4,5.77
+loamy,poor,moderate,high,compacted,low,pale/white,2,2,1,2,2,0,0,6.27
+clay,good,moderate,low,loose,high,yellow/tan,5,0,1,0,0,2,1,7.44
+sandy,moderate,moderate,high,compacted,low,dark brown,0,1,1,2,2,0,3,5.35
+silty,good,dry,high,compacted,moderate,pale/white,3,0,0,2,2,1,0,7.05
+silty,moderate,moderate,moderate,moderate,moderate,black/dark,3,1,1,1,1,1,4,6.45
+clay-loam,moderate,dry,moderate,loose,moderate,black/dark,4,1,0,1,0,1,4,6.44
+sandy,moderate,dry,moderate,loose,high,yellow/tan,0,1,0,1,0,2,1,5.84
+silty,moderate,dry,high,moderate,low,yellow/tan,3,1,0,2,1,0,1,6.36
+loamy,good,moderate,low,compacted,moderate,yellow/tan,2,0,1,0,2,1,1,6.78
+clay,poor,wet,high,compacted,low,pale/white,5,2,2,2,2,0,0,6.74
+sandy-loam,good,moderate,low,compacted,moderate,black/dark,1,0,1,0,2,1,4,6.3
+sandy,poor,dry,high,compacted,high,brown,0,2,0,2,2,2,2,5.85
+sandy,good,dry,high,compacted,moderate,red,0,0,0,2,2,1,5,5.75
+loamy,poor,dry,high,moderate,high,brown,2,2,0,2,1,2,2,5.94
+loamy,moderate,wet,high,loose,moderate,brown,2,1,2,2,0,1,2,6.04
+clay,poor,wet,low,moderate,high,brown,5,2,2,0,1,2,2,6.79
+silty,moderate,wet,moderate,compacted,moderate,red,3,1,2,1,2,1,5,6.22
+clay,poor,wet,moderate,moderate,moderate,brown,5,2,2,1,1,1,2,6.49
+clay-loam,moderate,moderate,low,moderate,low,black/dark,4,1,1,0,1,0,4,7.03
+sandy,poor,moderate,moderate,loose,low,brown,0,2,1,1,0,0,2,5.86
+silty,good,wet,high,compacted,high,red,3,0,2,2,2,2,5,6.35
+silty,poor,wet,moderate,compacted,low,black/dark,3,2,2,1,2,0,4,5.75
+sandy,good,dry,high,loose,low,pale/white,0,0,0,2,0,0,0,6.29
+loamy,poor,moderate,low,moderate,low,yellow/tan,2,2,1,0,1,0,1,5.95
+clay,moderate,dry,low,loose,high,black/dark,5,1,0,0,0,2,4,6.69
+clay-loam,poor,dry,high,moderate,high,yellow/tan,4,2,0,2,1,2,1,6.61
+clay-loam,poor,wet,high,compacted,high,red,4,2,2,2,2,2,5,6.23
+loamy,moderate,moderate,low,loose,high,red,2,1,1,0,0,2,5,6.11
+clay,moderate,moderate,high,moderate,moderate,brown,5,1,1,2,1,1,2,6.69
+silty,moderate,wet,low,moderate,high,pale/white,3,1,2,0,1,2,0,6.46
+silty,poor,moderate,high,moderate,moderate,brown,3,2,1,2,1,1,2,5.95
+clay-loam,poor,dry,high,loose,moderate,pale/white,4,2,0,2,0,1,0,6.48
+clay,moderate,wet,low,moderate,moderate,yellow/tan,5,1,2,0,1,1,1,6.76
+loamy,poor,moderate,high,moderate,low,dark brown,2,2,1,2,1,0,3,5.45
+clay,moderate,dry,low,moderate,high,pale/white,5,1,0,0,1,2,0,7.5
+sandy,good,wet,high,loose,high,yellow/tan,0,0,2,2,0,2,1,5.67
+sandy,good,wet,moderate,moderate,low,yellow/tan,0,0,2,1,1,0,1,6.29
+clay-loam,good,wet,moderate,compacted,moderate,brown,4,0,2,1,2,1,2,6.78
+sandy,good,wet,low,moderate,high,pale/white,0,0,2,0,1,2,0,5.86
+sandy,poor,dry,high,compacted,low,pale/white,0,2,0,2,2,0,0,5.31
+sandy,moderate,wet,moderate,loose,low,red,0,1,2,1,0,0,5,5.41
+clay,poor,dry,low,moderate,low,yellow/tan,5,2,0,0,1,0,1,6.62
+clay-loam,poor,wet,low,loose,high,black/dark,4,2,2,0,0,2,4,6.74
+sandy-loam,moderate,dry,low,moderate,high,black/dark,1,1,0,0,1,2,4,6.0
+clay-loam,moderate,moderate,moderate,compacted,moderate,dark brown,4,1,1,1,2,1,3,6.41
+clay,good,wet,high,moderate,high,brown,5,0,2,2,1,2,2,6.61
+silty,moderate,moderate,moderate,moderate,moderate,dark brown,3,1,1,1,1,1,3,6.55
+silty,good,dry,high,moderate,low,brown,3,0,0,2,1,0,2,6.35
+sandy,poor,wet,moderate,compacted,moderate,black/dark,0,2,2,1,2,1,4,5.76
+clay-loam,moderate,wet,low,loose,moderate,pale/white,4,1,2,0,0,1,0,6.83
+clay-loam,good,moderate,high,loose,high,pale/white,4,0,1,2,0,2,0,7.12
+sandy-loam,moderate,moderate,low,loose,high,black/dark,1,1,1,0,0,2,4,6.15
+sandy-loam,good,wet,high,loose,moderate,dark brown,1,0,2,2,0,1,3,5.83
+sandy,poor,moderate,low,moderate,high,black/dark,0,2,1,0,1,2,4,5.51
+sandy-loam,moderate,wet,high,moderate,moderate,black/dark,1,1,2,2,1,1,4,5.8
+clay,moderate,wet,low,loose,low,red,5,1,2,0,0,0,5,6.34
+clay,poor,moderate,high,moderate,moderate,brown,5,2,1,2,1,1,2,6.75
+silty,poor,moderate,moderate,loose,high,dark brown,3,2,1,1,0,2,3,6.19
+clay,poor,dry,high,loose,moderate,dark brown,5,2,0,2,0,1,3,6.31
+sandy-loam,poor,moderate,moderate,compacted,moderate,pale/white,1,2,1,1,2,1,0,6.34
+clay-loam,good,wet,low,moderate,high,dark brown,4,0,2,0,1,2,3,6.5
+sandy,good,moderate,low,compacted,moderate,yellow/tan,0,0,1,0,2,1,1,6.13
+clay,moderate,moderate,moderate,loose,low,pale/white,5,1,1,1,0,0,0,7.02
+loamy,good,dry,high,loose,low,pale/white,2,0,0,2,0,0,0,6.81
+silty,poor,dry,high,loose,moderate,red,3,2,0,2,0,1,5,6.13
+clay-loam,good,wet,low,moderate,moderate,yellow/tan,4,0,2,0,1,1,1,6.73
+clay,good,dry,low,moderate,high,dark brown,5,0,0,0,1,2,3,6.82
+loamy,moderate,moderate,moderate,loose,high,dark brown,2,1,1,1,0,2,3,6.18
+loamy,poor,moderate,high,compacted,low,red,2,2,1,2,2,0,5,5.43
+clay-loam,moderate,dry,high,loose,low,dark brown,4,1,0,2,0,0,3,6.23
+clay,moderate,moderate,high,compacted,high,yellow/tan,5,1,1,2,2,2,1,7.31
+clay,good,dry,moderate,compacted,low,pale/white,5,0,0,1,2,0,0,7.08
+sandy,good,dry,moderate,loose,moderate,pale/white,0,0,0,1,0,1,0,6.51
+clay-loam,good,moderate,moderate,loose,moderate,yellow/tan,4,0,1,1,0,1,1,7.2
+sandy,poor,wet,low,moderate,low,red,0,2,2,0,1,0,5,5.47
+sandy-loam,poor,wet,low,compacted,low,dark brown,1,2,2,0,2,0,3,5.93
+loamy,poor,moderate,high,compacted,moderate,red,2,2,1,2,2,1,5,5.36
+loamy,poor,dry,low,loose,high,pale/white,2,2,0,0,0,2,0,6.54
+sandy-loam,good,dry,high,compacted,low,yellow/tan,1,0,0,2,2,0,1,6.05
+clay,good,moderate,low,moderate,low,yellow/tan,5,0,1,0,1,0,1,7.26
+clay,moderate,dry,moderate,loose,low,pale/white,5,1,0,1,0,0,0,7.3
+loamy,good,wet,low,loose,high,yellow/tan,2,0,2,0,0,2,1,6.59
+clay-loam,poor,wet,low,compacted,low,yellow/tan,4,2,2,0,2,0,1,6.44
+loamy,good,wet,moderate,moderate,moderate,pale/white,2,0,2,1,1,1,0,6.54
+sandy,moderate,wet,low,loose,moderate,pale/white,0,1,2,0,0,1,0,6.14
+clay,good,moderate,moderate,moderate,low,yellow/tan,5,0,1,1,1,0,1,7.01
+clay,poor,wet,high,moderate,low,dark brown,5,2,2,2,1,0,3,6.65
+silty,moderate,dry,low,compacted,moderate,brown,3,1,0,0,2,1,2,6.67
+sandy-loam,moderate,moderate,low,loose,high,yellow/tan,1,1,1,0,0,2,1,6.37
+loamy,poor,moderate,moderate,moderate,high,red,2,2,1,1,1,2,5,6.04
+clay,good,moderate,high,moderate,low,pale/white,5,0,1,2,1,0,0,7.3
+silty,poor,wet,low,moderate,low,brown,3,2,2,0,1,0,2,6.34
+sandy,good,wet,high,moderate,low,pale/white,0,0,2,2,1,0,0,5.89
+sandy-loam,good,dry,high,loose,low,black/dark,1,0,0,2,0,0,4,5.48
+loamy,moderate,dry,high,moderate,high,yellow/tan,2,1,0,2,1,2,1,6.07
+clay-loam,good,wet,moderate,moderate,low,black/dark,4,0,2,1,1,0,4,6.63
+clay,poor,dry,low,loose,low,brown,5,2,0,0,0,0,2,6.54
+clay,poor,moderate,low,compacted,high,red,5,2,1,0,2,2,5,6.57
+sandy-loam,moderate,wet,moderate,compacted,high,brown,1,1,2,1,2,2,2,6.15
+loamy,good,moderate,high,loose,moderate,dark brown,2,0,1,2,0,1,3,6.92
+clay,good,moderate,high,moderate,moderate,dark brown,5,0,1,2,1,1,3,6.49
+silty,good,dry,high,moderate,moderate,pale/white,3,0,0,2,1,1,0,7.0
+sandy-loam,moderate,dry,moderate,loose,high,red,1,1,0,1,0,2,5,6.33
+clay,moderate,wet,moderate,loose,high,black/dark,5,1,2,1,0,2,4,6.59
+sandy-loam,poor,wet,low,loose,moderate,red,1,2,2,0,0,1,5,6.13
+clay-loam,good,wet,high,loose,moderate,black/dark,4,0,2,2,0,1,4,6.42
+sandy,good,dry,high,loose,moderate,brown,0,0,0,2,0,1,2,6.05
+sandy,poor,wet,high,loose,high,brown,0,2,2,2,0,2,2,5.5
+clay-loam,moderate,moderate,low,moderate,high,yellow/tan,4,1,1,0,1,2,1,6.52
+loamy,poor,moderate,low,moderate,high,red,2,2,1,0,1,2,5,5.87
+silty,poor,moderate,moderate,loose,high,dark brown,3,2,1,1,0,2,3,6.33
+clay,good,moderate,high,compacted,high,brown,5,0,1,2,2,2,2,6.8
+sandy,good,dry,low,loose,low,brown,0,0,0,0,0,0,2,6.14
+clay-loam,poor,dry,low,moderate,low,yellow/tan,4,2,0,0,1,0,1,6.19
+silty,good,wet,low,loose,low,yellow/tan,3,0,2,0,0,0,1,6.97
+sandy,good,dry,moderate,loose,moderate,dark brown,0,0,0,1,0,1,3,5.63
+silty,moderate,wet,high,moderate,low,black/dark,3,1,2,2,1,0,4,6.2
+sandy-loam,good,dry,low,moderate,high,yellow/tan,1,0,0,0,1,2,1,6.4
+sandy,good,dry,high,moderate,high,pale/white,0,0,0,2,1,2,0,6.35
+clay,good,wet,high,moderate,low,brown,5,0,2,2,1,0,2,6.95

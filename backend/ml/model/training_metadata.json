@@ -1,0 +1,41 @@
+{
+  "model_name": "RandomForest",
+  "feature_columns": [
+    "texture_code",
+    "drainage_code",
+    "moisture_code",
+    "om_code",
+    "compaction_code",
+    "retention_code",
+    "color_code"
+  ],
+  "dataset_rows": 2000,
+  "dataset_source": "Synthetic (agronomic rules). See data/generate_dataset.py for methodology.",
+  "metrics": {
+    "RandomForest": {
+      "mae": 0.22446705953395035,
+      "rmse": 0.27618265403264597,
+      "r2": 0.6593998045112304
+    },
+    "GradientBoosting": {
+      "mae": 0.22565861332030862,
+      "rmse": 0.2762651770767863,
+      "r2": 0.6591962322464306
+    }
+  },
+  "best_model_metrics": {
+    "mae": 0.22446705953395035,
+    "rmse": 0.27618265403264597,
+    "r2": 0.6593998045112304
+  },
+  "feature_importances": {
+    "texture_code": 0.512814903307389,
+    "drainage_code": 0.10170831833200879,
+    "moisture_code": 0.0313760887057441,
+    "om_code": 0.08367558809986961,
+    "compaction_code": 0.03067096089279361,
+    "retention_code": 0.029979598391213846,
+    "color_code": 0.2097745422709809
+  },
+  "training_note": "This model was trained on a synthetic dataset. Accuracy on real-world soils may differ. Replace data/soil_dataset.csv with measured field data for production use."
+}

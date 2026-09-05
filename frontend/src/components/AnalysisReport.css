@@ -1,0 +1,451 @@
+/* ── AnalysisReport.css ── */
+
+.report {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.report-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.report-title span {
+  color: var(--color-soil-gold);
+}
+
+/* ── Soil Profile Section ── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.profile-item {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 0.2s;
+}
+
+.profile-item:hover {
+  border-color: var(--border-glow);
+}
+
+.profile-item-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.profile-item-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+.profile-item-value.unknown {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ── pH Card ── */
+.ph-card {
+  background: linear-gradient(135deg, rgba(26, 18, 8, 0.95), rgba(45, 30, 15, 0.9));
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-glow-amber);
+  animation: pulseGlow 4s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.ph-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(201, 123, 42, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ph-disclaimer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f87171;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.ph-range {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--color-soil-gold);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.ph-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.ph-confidence {
+  margin-bottom: 16px;
+}
+
+.ph-confidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ph-confidence-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ph-confidence-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* ── pH Scale Visual ── */
+.ph-scale {
+  margin-top: 20px;
+}
+
+.ph-scale-track {
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right,
+    #e53e3e 0%, #dd6b20 14%, #d69e2e 28%,
+    #38a169 42%, #38a169 56%,
+    #d69e2e 70%, #dd6b20 84%, #e53e3e 100%
+  );
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.ph-scale-markers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: var(--text-muted);
+  padding: 0 2px;
+}
+
+.ph-indicator {
+  position: absolute;
+  top: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--color-soil-amber);
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: left 0.5s ease;
+}
+
+/* ── Warning box ── */
+.warning-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.25);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: #fdba74;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+/* ── Weather Section ── */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.weather-stat {
+  text-align: center;
+  padding: 14px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.weather-stat-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.weather-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.weather-stat-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.weather-impact {
+  margin-top: 16px;
+  padding: 14px;
+  background: rgba(79, 163, 224, 0.06);
+  border: 1px solid rgba(79, 163, 224, 0.15);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--color-ai-blue);
+  line-height: 1.6;
+}
+
+/* ── Crop Recommendations ── */
+.crop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.crop-card {
+  padding: 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.crop-card:hover {
+  border-color: var(--border-glow);
+  background: var(--bg-glass-hover);
+}
+
+.crop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.crop-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.crop-reason {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.crop-ph-note {
+  font-size: 12px;
+  color: var(--color-soil-amber);
+  font-style: italic;
+}
+
+.crop-weather-note {
+  font-size: 12px;
+  color: var(--color-ai-blue);
+  margin-top: 4px;
+}
+
+.crops-to-avoid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.avoid-chip {
+  padding: 5px 14px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 100px;
+  font-size: 12px;
+  color: #f87171;
+}
+
+/* ── Action Plan ── */
+.action-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.action-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.step-number.high {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.step-number.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.step-number.low {
+  background: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.step-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ── AI Explanation ── */
+.explanation-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+/* ── Limitations ── */
+.limitations-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.limitations-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.limitations-list li::before {
+  content: '·';
+  color: var(--color-soil-amber);
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Section title ── */
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* ── Back button ── */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: var(--color-soil-gold);
+}
+
+/* ── Demo data banner ── */
+.demo-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: #c4b5fd;
+  margin-bottom: 24px;
+}
