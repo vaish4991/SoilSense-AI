@@ -93,7 +93,7 @@ async def _gemini_completion(
         response_mime_type="application/json" if json_mode else "text/plain",
     )
 
-    candidate_models = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"]
+    candidate_models = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash", "gemini-flash-latest"]
     last_err = None
 
     # Convert messages to Gemini format
