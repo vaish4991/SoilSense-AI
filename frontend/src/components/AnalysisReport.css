@@ -1,451 +1,929 @@
-/* ── AnalysisReport.css ── */
+/* ── AnalysisReport.css — Pro Diagnostic Dossier Theme ── */
 
 .report {
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 24px 80px;
-  position: relative;
-  z-index: 1;
+  padding: 32px 20px 80px;
 }
 
-.report-header {
+/* ── Top Action Toolbar ── */
+.report-action-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: rgba(18, 26, 21, 0.7);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  border-radius: 14px;
+  padding: 12px 20px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(12px);
+}
+
+.report-brand {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 32px;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.report-title {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--text-primary);
-}
-
-.report-title span {
-  color: var(--color-soil-gold);
-}
-
-/* ── Soil Profile Section ── */
-.profile-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.profile-item {
-  background: var(--bg-glass);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 12px 14px;
-  transition: border-color 0.2s;
-}
-
-.profile-item:hover {
-  border-color: var(--border-glow);
-}
-
-.profile-item-label {
-  font-size: 10px;
-  font-weight: 600;
+  gap: 10px;
+  font-size: 12px;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-.profile-item-value {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-primary);
-  text-transform: capitalize;
-}
-
-.profile-item-value.unknown {
-  color: var(--text-muted);
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* ── pH Card ── */
-.ph-card {
-  background: linear-gradient(135deg, rgba(26, 18, 8, 0.95), rgba(45, 30, 15, 0.9));
-  border: 1px solid var(--border-glow);
-  box-shadow: var(--shadow-glow-amber);
-  animation: pulseGlow 4s ease infinite;
-  position: relative;
-  overflow: hidden;
-}
-
-.ph-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(201, 123, 42, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.ph-disclaimer-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px;
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 100px;
-  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #f87171;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  color: #34d399;
 }
 
-.ph-range {
-  font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 800;
-  font-family: 'Space Grotesk', sans-serif;
-  color: var(--color-soil-gold);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  margin-bottom: 8px;
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
 }
 
-.ph-label {
+.brand-id {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.toolbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #e2e8f0;
   font-size: 13px;
-  color: var(--text-secondary);
-  margin-bottom: 24px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 
-.ph-confidence {
+.toolbar-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.toolbar-btn.primary {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.toolbar-btn.primary:hover {
+  filter: brightness(1.1);
+}
+
+/* ── Hero Report Card ── */
+.report-hero-card {
+  background: rgba(18, 26, 21, 0.85);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.report-status-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
-.ph-confidence-header {
-  display: flex;
-  justify-content: space-between;
+.status-pill {
+  display: inline-flex;
   align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.status-pill.green {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+}
+
+.status-pill.blue {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+}
+
+.status-pill.gold {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+}
+
+.pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.report-main-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
-.ph-confidence-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.report-location-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
 }
 
-.ph-confidence-value {
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--text-primary);
+.report-location-subtitle strong {
+  color: #ffffff;
 }
 
-/* ── pH Scale Visual ── */
-.ph-scale {
-  margin-top: 20px;
-}
-
-.ph-scale-track {
-  height: 10px;
-  border-radius: 5px;
-  background: linear-gradient(to right,
-    #e53e3e 0%, #dd6b20 14%, #d69e2e 28%,
-    #38a169 42%, #38a169 56%,
-    #d69e2e 70%, #dd6b20 84%, #e53e3e 100%
-  );
-  position: relative;
-  margin-bottom: 6px;
-}
-
-.ph-scale-markers {
+/* ── Scientific Notice Card ── */
+.scientific-disclaimer-card {
   display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-  color: var(--text-muted);
-  padding: 0 2px;
+  gap: 16px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 14px;
+  padding: 16px 20px;
 }
 
-.ph-indicator {
-  position: absolute;
-  top: -4px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: white;
-  border: 3px solid var(--color-soil-amber);
-  transform: translateX(-50%);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  transition: left 0.5s ease;
+.disclaimer-icon {
+  font-size: 24px;
+  line-height: 1;
 }
 
-/* ── Warning box ── */
-.warning-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 12px 14px;
-  background: rgba(249, 115, 22, 0.08);
-  border: 1px solid rgba(249, 115, 22, 0.25);
-  border-radius: var(--radius-sm);
+.disclaimer-headline {
   font-size: 13px;
-  color: #fdba74;
-  margin-top: 16px;
-  line-height: 1.5;
-}
-
-/* ── Weather Section ── */
-.weather-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.weather-stat {
-  text-align: center;
-  padding: 14px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-}
-
-.weather-stat-icon {
-  font-size: 22px;
-  margin-bottom: 6px;
-}
-
-.weather-stat-value {
-  font-size: 18px;
   font-weight: 700;
-  color: var(--text-primary);
-}
-
-.weather-stat-label {
-  font-size: 10px;
-  color: var(--text-muted);
+  color: #fbbf24;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
 }
 
-.weather-impact {
-  margin-top: 16px;
-  padding: 14px;
-  background: rgba(79, 163, 224, 0.06);
-  border: 1px solid rgba(79, 163, 224, 0.15);
-  border-radius: var(--radius-sm);
+.disclaimer-body {
   font-size: 13px;
-  color: var(--color-ai-blue);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
 }
 
-/* ── Crop Recommendations ── */
-.crop-list {
+/* ── Pro Navigation Tabs ── */
+.report-nav-tabs {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 6px;
+  background: rgba(18, 26, 21, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
 }
 
-.crop-card {
-  padding: 16px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.crop-card:hover {
-  border-color: var(--border-glow);
-  background: var(--bg-glass-hover);
+.tab-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
-.crop-header {
+.tab-btn.active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+/* ── Card Structural Baseline ── */
+.card-top-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #34d399;
+  font-family: monospace;
+}
+
+.card-meta-tag {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ── Module B: pH Pro Card ── */
+.ph-pro-card {
+  background: rgba(18, 26, 21, 0.85);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.ph-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .ph-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ph-point-display {
+  margin-bottom: 20px;
+}
+
+.ph-value-sub {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ph-large-value {
+  font-size: clamp(3.2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin: 6px 0 10px;
+  background: linear-gradient(135deg, #ffffff 40%, #a7f3d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ph-band-bracket {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.ph-band-bracket strong {
+  color: #34d399;
+}
+
+/* ── Confidence Breakdown Panel ── */
+.confidence-breakdown-panel {
+  background: rgba(12, 18, 14, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.confidence-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.conf-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.conf-badge-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
   gap: 8px;
 }
 
-.crop-name {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text-primary);
+.conf-percent-num {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
-.crop-reason {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-bottom: 8px;
+.confidence-meter-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 14px;
 }
 
-.crop-ph-note {
+.confidence-meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.stat-factors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stat-factor-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.factor-title {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.factor-value {
   font-size: 12px;
-  color: var(--color-soil-amber);
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.text-emerald {
+  color: #34d399 !important;
+}
+
+/* ── Pro pH Scale ── */
+.pro-ph-scale-wrapper {
+  background: rgba(12, 18, 14, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.ph-scale-zones {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.zone.acid { color: #f87171; }
+.zone.optimal { color: #34d399; }
+.zone.alkali { color: #38bdf8; }
+
+.ph-track-container {
+  position: relative;
+  margin: 16px 0;
+}
+
+.ph-gradient-track {
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg,
+    #ef4444 0%,
+    #f97316 20%,
+    #eab308 40%,
+    #22c55e 55%,
+    #14b8a6 70%,
+    #3b82f6 85%,
+    #8b5cf6 100%
+  );
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ph-conformal-range-band {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.ph-needle-indicator {
+  position: absolute;
+  top: -12px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.needle-pin {
+  width: 4px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8), 0 0 12px #34d399;
+}
+
+.needle-label {
+  font-size: 11px;
+  font-weight: 800;
+  background: #000000;
+  color: #34d399;
+  border: 1px solid #34d399;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.ph-scale-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: monospace;
+  margin-top: 24px;
+  padding: 0 4px;
+}
+
+.tick.neutral {
+  color: #34d399;
+  font-weight: 800;
+}
+
+.ph-scale-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 6px;
+}
+
+.neutral-tag {
+  color: #34d399;
+  font-weight: 600;
+}
+
+.ph-methodology-note {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Module A: Soil Characteristics Grid ── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.profile-item-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(12, 18, 14, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.profile-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.profile-item-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 2px;
+}
+
+.profile-item-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.profile-item-value.unknown {
+  color: rgba(255, 255, 255, 0.3);
   font-style: italic;
 }
 
-.crop-weather-note {
-  font-size: 12px;
-  color: var(--color-ai-blue);
-  margin-top: 4px;
+.raw-description-quote {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid #34d399;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 16px;
 }
 
-.crops-to-avoid {
+.quote-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #34d399;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.quote-text {
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+/* ── Reasoning & AI Synthesis ── */
+.reasoning-box {
+  background: rgba(12, 18, 14, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.reasoning-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.reasoning-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.65;
+}
+
+.ai-synthesis-block {
+  background: rgba(56, 189, 248, 0.06);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.synthesis-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.synthesis-sparkle {
+  color: #38bdf8;
+  font-size: 16px;
+}
+
+.synthesis-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.synthesis-body {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.65;
+}
+
+/* ── Weather Grid ── */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.weather-stat-card {
+  background: rgba(12, 18, 14, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-icon {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.weather-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.weather-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.weather-summary-box {
+  background: rgba(12, 18, 14, 0.6);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.agronomic-impact-callout {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #34d399;
+}
+
+/* ── Crop Matrix ── */
+.crop-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.pro-crop-card {
+  background: rgba(12, 18, 14, 0.65);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.pro-crop-card:hover {
+  border-color: rgba(52, 211, 153, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.crop-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.crop-heading {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.suitability-pill-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.match-score {
+  font-size: 11px;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.crop-rationale {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.crop-compatibility-badge,
+.crop-climate-badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.crop-compatibility-badge {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+}
+
+.crop-climate-badge {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #7dd3fc;
+}
+
+.avoidance-panel {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.avoidance-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f87171;
+  margin-bottom: 10px;
+}
+
+.avoidance-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 12px;
 }
 
-.avoid-chip {
-  padding: 5px 14px;
-  background: rgba(239, 68, 68, 0.08);
-  border: 1px solid rgba(239, 68, 68, 0.2);
-  border-radius: 100px;
+.avoid-chip-pro {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 4px 10px;
+  border-radius: 6px;
   font-size: 12px;
-  color: #f87171;
+  font-weight: 600;
 }
 
-/* ── Action Plan ── */
-.action-steps {
+.amendment-warning-box {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #fbbf24;
+  line-height: 1.5;
+}
+
+/* ── 4-Stage Action Roadmap ── */
+.action-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.roadmap-step-card {
+  background: rgba(12, 18, 14, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 8px;
+  position: relative;
 }
 
-.action-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 14px 16px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
+.roadmap-step-card.high {
+  border-color: rgba(245, 158, 11, 0.35);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.08);
 }
 
-.step-number {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+.step-badge {
+  font-size: 11px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #34d399;
+}
+
+.step-priority-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.roadmap-step-card.high .step-priority-pill {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.roadmap-step-card.medium .step-priority-pill {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+.roadmap-step-card.low .step-priority-pill {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.step-description {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
+  margin-top: 4px;
+}
+
+/* ── Limitations Card ── */
+.limitations-card {
+  background: rgba(12, 18, 14, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.limitations-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.limitations-list {
+  padding-left: 20px;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+
+/* ── Badges ── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
   font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.step-number.high {
-  background: rgba(239, 68, 68, 0.15);
-  color: #f87171;
-  border: 1px solid rgba(239, 68, 68, 0.3);
+.badge-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-.step-number.medium {
+.badge-amber {
   background: rgba(245, 158, 11, 0.15);
   color: #fbbf24;
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-.step-number.low {
-  background: rgba(34, 197, 94, 0.1);
-  color: #4ade80;
-  border: 1px solid rgba(34, 197, 94, 0.2);
+.badge-red {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
-.step-text {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-
-/* ── AI Explanation ── */
-.explanation-text {
-  font-size: 15px;
-  color: var(--text-secondary);
-  line-height: 1.8;
-  white-space: pre-wrap;
-}
-
-/* ── Limitations ── */
-.limitations-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.limitations-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
-.limitations-list li::before {
-  content: '·';
-  color: var(--color-soil-amber);
-  font-size: 18px;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-/* ── Section title ── */
-.section-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.section-subtitle {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-}
-
-/* ── Back button ── */
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: var(--text-secondary);
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 8px 0;
-  transition: color 0.2s;
-}
-
-.back-btn:hover {
-  color: var(--color-soil-gold);
-}
-
-/* ── Demo data banner ── */
-.demo-banner {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  background: rgba(139, 92, 246, 0.08);
-  border: 1px solid rgba(139, 92, 246, 0.2);
-  border-radius: var(--radius-sm);
-  font-size: 12px;
-  color: #c4b5fd;
-  margin-bottom: 24px;
+/* ── Print Stylesheet for PDF Dossier Export ── */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print,
+  .report-action-toolbar,
+  .report-nav-tabs,
+  .chat-widget-fab {
+    display: none !important;
+  }
+  .card, .ph-pro-card, .report-hero-card {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+  .ph-large-value {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
 }

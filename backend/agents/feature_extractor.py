@@ -146,9 +146,9 @@ def _extract_features_heuristics(
     drainage = "unknown"
     if any(w in text for w in ["slow", "poor", "waterlog", "puddle", "standing water", "ponding", "swamp"]):
         drainage = "poor"
-    elif any(w in text for w in ["fast", "quick", "rapid", "drains fast", "leach"]):
+    elif any(w in text for w in ["fast", "quick", "rapid", "drains fast", "leach", "well-drained", "well drained", "good drainage", "good"]):
         drainage = "good"
-    elif any(w in text for w in ["moderate", "well-drained", "well drained", "good drainage", "normal"]):
+    elif any(w in text for w in ["moderate", "normal", "medium"]):
         drainage = "moderate"
 
     # Moisture
@@ -241,6 +241,24 @@ def _parse_features(
     for field, allowed in enum_fields.items():
         val = str(data.get(field, "unknown")).lower()
         safe_data[field] = val if val in allowed else "unknown"
+
+    # Agronomic physics inferences for compaction and water retention when texture is known
+    tex = safe_data.get("texture", "unknown")
+    if safe_data.get("water_retention") == "unknown":
+        if tex in ("clay", "clay-loam"):
+            safe_data["water_retention"] = "high"
+        elif tex in ("sandy", "sandy-loam"):
+            safe_data["water_retention"] = "low"
+        elif tex in ("loamy", "silty"):
+            safe_data["water_retention"] = "moderate"
+
+    if safe_data.get("soil_compaction") == "unknown":
+        if tex in ("sandy", "sandy-loam"):
+            safe_data["soil_compaction"] = "loose"
+        elif tex in ("clay", "clay-loam"):
+            safe_data["soil_compaction"] = "compacted"
+        elif tex in ("loamy", "silty"):
+            safe_data["soil_compaction"] = "moderate"
 
     for str_field in ["soil_color", "surface_deposits", "vegetation_observed", "location", "target_crop", "raw_description"]:
         safe_data[str_field] = str(data.get(str_field, "unknown"))

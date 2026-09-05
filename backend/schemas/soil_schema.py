@@ -56,6 +56,9 @@ class PHEstimate(BaseModel):
         default=None,
         description="Warning message if prediction is outside training distribution or inputs are sparse"
     )
+    feature_completeness: float = Field(default=0.8, ge=0.0, le=1.0, description="Proportion of key observable characteristics detected (0-1)")
+    detected_features_count: int = Field(default=4, ge=0, le=5, description="Number of observable core features detected out of 5")
+    ensemble_agreement: str = Field(default="High", description="Degree of agreement across Random Forest decision trees")
     method_note: str = Field(
         default="Split Conformal Prediction interval calibrated on real USDA NRCS SSURGO measured soil data.",
         description="Brief explanation of how uncertainty and bounds were derived"
