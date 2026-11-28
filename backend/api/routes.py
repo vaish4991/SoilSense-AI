@@ -9,13 +9,22 @@ Endpoints:
 """
 from __future__ import annotations
 import logging
-from typing import List
+from typing import List, Optional
 
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
 
 from backend.agents.soil_agent import run_soil_analysis, check_if_followup_needed
 from backend.agents.llm_client import chat_completion, get_active_provider_name
+from backend.db.database import (
+    init_db,
+    register_email_user,
+    authenticate_email_user,
+    upsert_google_user,
+    list_users,
+    list_login_events,
+)
 from backend.ml.predict import is_model_loaded, get_model_metadata
 from backend.schemas.soil_schema import (
     AnalyzeSoilRequest,
@@ -132,3 +141,104 @@ async def chat(request: ChatRequest):
             status_code=500,
             detail="Chat service temporarily unavailable. Please try again.",
         )
+
+
+# ── Authentication & Login Tracking ────────────────────────────
+
+class RegisterRequest(BaseModel):
+    email: str = Field(..., min_length=3)
+    password: str = Field(..., min_length=6)
+    display_name: Optional[str] = None
+
+
+class LoginRequest(BaseModel):
+    email: str = Field(..., min_length=3)
+    password: str = Field(..., min_length=1)
+
+
+class GoogleAuthRequest(BaseModel):
+    email: str = Field(..., min_length=3)
+    display_name: Optional[str] = None
+    photo_url: Optional[str] = None
+    uid: Optional[str] = None
+
+
+def _client_meta(request: Request):
+    ip = request.client.host if request.client else None
+    ua = request.headers.get("user-agent")
+    return ip, ua
+
+
+@router.post("/auth/register")
+async def auth_register(payload: RegisterRequest, request: Request):
+    init_db()
+    ip, ua = _client_meta(request)
+    try:
+        user = register_email_user(
+            email=payload.email,
+            password=payload.password,
+            display_name=payload.display_name,
+            ip_address=ip,
+            user_agent=ua,
+        )
+        return {"user": user}
+    except ValueError as exc:
+        if str(exc) == "EMAIL_EXISTS":
+            raise HTTPException(
+                status_code=409,
+                detail="An account with this email address already exists. Please sign in instead.",
+            )
+        raise HTTPException(status_code=400, detail=str(exc))
+
+
+@router.post("/auth/login")
+async def auth_login(payload: LoginRequest, request: Request):
+    init_db()
+    ip, ua = _client_meta(request)
+    try:
+        user = authenticate_email_user(
+            email=payload.email,
+            password=payload.password,
+            ip_address=ip,
+            user_agent=ua,
+        )
+        return {"user": user}
+    except LookupError:
+        raise HTTPException(
+            status_code=404,
+            detail="No account found with this email. Please sign up first.",
+        )
+    except PermissionError:
+        raise HTTPException(
+            status_code=401,
+            detail="Incorrect password. Please verify your credentials.",
+        )
+
+
+@router.post("/auth/google")
+async def auth_google(payload: GoogleAuthRequest, request: Request):
+    init_db()
+    ip, ua = _client_meta(request)
+    user = upsert_google_user(
+        email=payload.email,
+        display_name=payload.display_name,
+        photo_url=payload.photo_url,
+        uid=payload.uid,
+        ip_address=ip,
+        user_agent=ua,
+    )
+    return {"user": user}
+
+
+@router.get("/auth/users")
+async def auth_users():
+    init_db()
+    users = list_users()
+    return {"users": users, "total": len(users)}
+
+
+@router.get("/auth/logins")
+async def auth_logins(limit: int = 50):
+    init_db()
+    events = list_login_events(limit=min(max(limit, 1), 200))
+    return {"events": events, "total": len(events)}

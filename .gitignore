@@ -43,6 +43,8 @@ pnpm-debug.log*
 *.swp
 *.swo
 
-# Logs
+# Logs & runtime databases
 *.log
 logs/
+*.db
+data/*.db

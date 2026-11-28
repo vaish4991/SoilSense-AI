@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Navbar.css';
 
-export default function Navbar({ onReset, onOpenHistory, historyCount = 0 }) {
+export default function Navbar({ onReset, onOpenHistory, onOpenUsers, historyCount = 0 }) {
   const { user, logout, isDemoMode } = useAuth();
 
   return (
@@ -39,6 +39,16 @@ export default function Navbar({ onReset, onOpenHistory, historyCount = 0 }) {
                     {historyCount}
                   </span>
                 )}
+              </button>
+
+              <button
+                type="button"
+                className="history-btn"
+                style={{ padding: '6px 12px', fontSize: 12 }}
+                onClick={onOpenUsers}
+                title="View registered users and login history"
+              >
+                <span>👥 Logins</span>
               </button>
 
               <div className={`navbar-auth-badge ${isDemoMode ? 'demo' : ''}`}>

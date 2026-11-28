@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -9,13 +9,14 @@ import {
   updateProfile,
 } from 'firebase/auth';
 import { auth, googleProvider, isFirebaseConfigured } from '../firebase';
+import { api } from '../services/api';
+import GoogleSignInModal from '../components/GoogleSignInModal';
 
 const AuthContext = createContext(null);
 
 const ACTIVE_USER_KEY = 'soilsense_active_user';
 const REGISTERED_USERS_KEY = 'soilsense_registered_users';
 
-// Helper to get registered user database
 function getRegisteredUsers() {
   try {
     const raw = localStorage.getItem(REGISTERED_USERS_KEY);
@@ -25,7 +26,6 @@ function getRegisteredUsers() {
   }
 }
 
-// Helper to save registered user database
 function saveRegisteredUsers(users) {
   localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(users));
 }
@@ -33,6 +33,8 @@ function saveRegisteredUsers(users) {
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [googleModalOpen, setGoogleModalOpen] = useState(false);
+  const googlePromiseRef = useRef(null);
 
   useEffect(() => {
     if (isFirebaseConfigured && auth) {
@@ -42,7 +44,6 @@ export function AuthProvider({ children }) {
       });
       return unsubscribe;
     } else {
-      // Check active authenticated session
       const saved = localStorage.getItem(ACTIVE_USER_KEY);
       if (saved) {
         try {
@@ -55,10 +56,16 @@ export function AuthProvider({ children }) {
     }
   }, []);
 
+  const persistSessionUser = (sessionUser) => {
+    setUser(sessionUser);
+    localStorage.setItem(ACTIVE_USER_KEY, JSON.stringify(sessionUser));
+    return { user: sessionUser };
+  };
+
   /**
-   * STRICT SIGN IN
-   * - In Firebase mode: calls real Firebase auth
-   * - In Local mode: strictly checks if email exists and password matches exactly
+   * SIGN IN
+   * - Firebase mode: real Firebase auth
+   * - Local/Backend mode: authenticates against SQLite backend (with localStorage fallback)
    */
   const login = async (email, password) => {
     const normalizedEmail = (email || '').trim().toLowerCase();
@@ -67,41 +74,53 @@ export function AuthProvider({ children }) {
       return signInWithEmailAndPassword(auth, normalizedEmail, password);
     }
 
-    // STRICT LOCAL AUTHENTICATION
-    await new Promise((r) => setTimeout(r, 400));
-    const users = getRegisteredUsers();
-    const existing = users.find((u) => u.email === normalizedEmail);
-
-    if (!existing) {
-      const err = new Error('No account found with this email. Please sign up first.');
-      err.code = 'auth/user-not-found';
+    try {
+      const res = await api.authLogin(normalizedEmail, password);
+      const sessionUser = { ...res.user, isDemo: true };
+      return persistSessionUser(sessionUser);
+    } catch (err) {
+      if (err.status === 404) {
+        const notFound = new Error(err.message);
+        notFound.code = 'auth/user-not-found';
+        throw notFound;
+      }
+      if (err.status === 401) {
+        const badPwd = new Error(err.message);
+        badPwd.code = 'auth/wrong-password';
+        throw badPwd;
+      }
+      // Fallback to localStorage only if backend is unreachable
+      if (err.name === 'TypeError') {
+        const users = getRegisteredUsers();
+        const existing = users.find((u) => u.email === normalizedEmail);
+        if (!existing) {
+          const nf = new Error('No account found with this email. Please sign up first.');
+          nf.code = 'auth/user-not-found';
+          throw nf;
+        }
+        if (existing.password !== password) {
+          const bp = new Error('Incorrect password. Please verify your credentials.');
+          bp.code = 'auth/wrong-password';
+          throw bp;
+        }
+        const sessionUser = {
+          uid: existing.uid,
+          email: existing.email,
+          displayName: existing.displayName || existing.email.split('@')[0],
+          photoURL: existing.photoURL || `https://api.dicebear.com/7.x/bottts/svg?seed=${existing.email}`,
+          authProvider: 'email',
+          isDemo: true,
+        };
+        return persistSessionUser(sessionUser);
+      }
       throw err;
     }
-
-    if (existing.password !== password) {
-      const err = new Error('Incorrect password. Please verify your credentials.');
-      err.code = 'auth/wrong-password';
-      throw err;
-    }
-
-    // Credentials match strictly!
-    const sessionUser = {
-      uid: existing.uid,
-      email: existing.email,
-      displayName: existing.displayName || existing.email.split('@')[0],
-      photoURL: existing.photoURL || `https://api.dicebear.com/7.x/bottts/svg?seed=${existing.email}`,
-      isDemo: true,
-    };
-
-    setUser(sessionUser);
-    localStorage.setItem(ACTIVE_USER_KEY, JSON.stringify(sessionUser));
-    return { user: sessionUser };
   };
 
   /**
-   * STRICT SIGN UP
-   * - In Firebase mode: creates user in Firebase
-   * - In Local mode: prevents duplicates, requires strong password, saves record
+   * SIGN UP
+   * - Firebase mode: creates user in Firebase
+   * - Local/Backend mode: registers in SQLite backend & records login event
    */
   const signup = async (email, password, displayName) => {
     const normalizedEmail = (email || '').trim().toLowerCase();
@@ -114,59 +133,107 @@ export function AuthProvider({ children }) {
       return cred;
     }
 
-    // STRICT LOCAL REGISTRATION
-    await new Promise((r) => setTimeout(r, 400));
-    const users = getRegisteredUsers();
-    const existing = users.find((u) => u.email === normalizedEmail);
-
-    if (existing) {
-      const err = new Error('An account with this email address already exists. Please sign in instead.');
-      err.code = 'auth/email-already-in-use';
+    try {
+      const res = await api.authRegister(normalizedEmail, password, displayName);
+      const sessionUser = { ...res.user, isDemo: true };
+      return persistSessionUser(sessionUser);
+    } catch (err) {
+      if (err.status === 409) {
+        const existsErr = new Error(err.message);
+        existsErr.code = 'auth/email-already-in-use';
+        throw existsErr;
+      }
+      if (err.name === 'TypeError') {
+        const users = getRegisteredUsers();
+        if (users.find((u) => u.email === normalizedEmail)) {
+          const existsErr = new Error('An account with this email address already exists.');
+          existsErr.code = 'auth/email-already-in-use';
+          throw existsErr;
+        }
+        const newUser = {
+          uid: 'user_' + Date.now(),
+          email: normalizedEmail,
+          password,
+          displayName: displayName || normalizedEmail.split('@')[0],
+          photoURL: `https://api.dicebear.com/7.x/bottts/svg?seed=${normalizedEmail}`,
+          authProvider: 'email',
+          createdAt: new Date().toISOString(),
+        };
+        users.push(newUser);
+        saveRegisteredUsers(users);
+        return persistSessionUser({
+          uid: newUser.uid,
+          email: newUser.email,
+          displayName: newUser.displayName,
+          photoURL: newUser.photoURL,
+          authProvider: 'email',
+          isDemo: true,
+        });
+      }
       throw err;
     }
-
-    const newUser = {
-      uid: 'user_' + Date.now(),
-      email: normalizedEmail,
-      password: password, // stored locally for strict authentication check
-      displayName: displayName || normalizedEmail.split('@')[0],
-      photoURL: `https://api.dicebear.com/7.x/bottts/svg?seed=${normalizedEmail}`,
-      createdAt: new Date().toISOString(),
-    };
-
-    users.push(newUser);
-    saveRegisteredUsers(users);
-
-    // Auto-login newly registered user
-    const sessionUser = {
-      uid: newUser.uid,
-      email: newUser.email,
-      displayName: newUser.displayName,
-      photoURL: newUser.photoURL,
-      isDemo: true,
-    };
-
-    setUser(sessionUser);
-    localStorage.setItem(ACTIVE_USER_KEY, JSON.stringify(sessionUser));
-    return { user: sessionUser };
   };
 
   /**
-   * REAL-TIME STRICT GOOGLE AUTH
-   * - Must use real-time Firebase Google Auth popup.
-   * - If Firebase config is missing, raises an explicit error so user knows to provide credentials.
+   * GOOGLE SIGN-IN
+   * - Firebase mode: uses real Firebase signInWithPopup & records login in backend SQLite
+   * - Local mode (no Firebase keys): opens Google Account Picker / Sign-In Modal & persists in backend SQLite
    */
   const loginWithGoogle = async () => {
     if (isFirebaseConfigured && auth && googleProvider) {
-      return signInWithPopup(auth, googleProvider);
+      const cred = await signInWithPopup(auth, googleProvider);
+      try {
+        await api.authGoogle({
+          email: cred.user.email,
+          displayName: cred.user.displayName,
+          photoURL: cred.user.photoURL,
+          uid: cred.user.uid,
+        });
+      } catch {
+        // Non-fatal if backend tracking fails while Firebase succeeded
+      }
+      return cred;
     }
 
-    // STRICT: Do not fake Google auth without real-time Firebase provider
-    const err = new Error(
-      'Real-Time Google Sign-In requires active Firebase credentials. Please add VITE_FIREBASE_API_KEY and VITE_FIREBASE_PROJECT_ID to your .env file.'
-    );
-    err.code = 'auth/firebase-not-configured';
-    throw err;
+    return new Promise((resolve, reject) => {
+      googlePromiseRef.current = { resolve, reject };
+      setGoogleModalOpen(true);
+    });
+  };
+
+  const handleGoogleModalConfirm = async ({ email, displayName, photoURL, uid }) => {
+    let sessionUser;
+    try {
+      const res = await api.authGoogle({ email, displayName, photoURL, uid });
+      sessionUser = { ...res.user, isDemo: true };
+    } catch (err) {
+      if (err.name === 'TypeError') {
+        const normalizedEmail = email.trim().toLowerCase();
+        sessionUser = {
+          uid: uid || 'google_' + Date.now(),
+          email: normalizedEmail,
+          displayName: displayName || normalizedEmail.split('@')[0],
+          photoURL: photoURL || `https://api.dicebear.com/7.x/bottts/svg?seed=${normalizedEmail}`,
+          authProvider: 'google',
+          isDemo: true,
+        };
+      } else {
+        throw err;
+      }
+    }
+
+    const result = persistSessionUser(sessionUser);
+    setGoogleModalOpen(false);
+    googlePromiseRef.current?.resolve(result);
+    googlePromiseRef.current = null;
+  };
+
+  const handleGoogleModalCancel = () => {
+    setGoogleModalOpen(false);
+    const err = new Error('Google Sign-In was cancelled.');
+    err.code = 'auth/popup-closed-by-user';
+    googlePromiseRef.current?.reject(err);
+    googlePromiseRef.current = null;
   };
 
   const logout = async () => {
@@ -205,9 +272,15 @@ export function AuthProvider({ children }) {
         logout,
         resetPassword,
         isFirebaseConfigured,
+        isDemoMode: !isFirebaseConfigured,
       }}
     >
       {children}
+      <GoogleSignInModal
+        isOpen={googleModalOpen}
+        onConfirm={handleGoogleModalConfirm}
+        onCancel={handleGoogleModalCancel}
+      />
     </AuthContext.Provider>
   );
 }

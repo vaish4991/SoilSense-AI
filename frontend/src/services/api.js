@@ -60,6 +60,31 @@ export const api = {
       location,
       target_crop: targetCrop,
     }),
+
+  authRegister: (email, password, displayName) =>
+    request('POST', '/api/auth/register', {
+      email,
+      password,
+      display_name: displayName,
+    }),
+
+  authLogin: (email, password) =>
+    request('POST', '/api/auth/login', {
+      email,
+      password,
+    }),
+
+  authGoogle: ({ email, displayName, photoURL, uid }) =>
+    request('POST', '/api/auth/google', {
+      email,
+      display_name: displayName,
+      photo_url: photoURL,
+      uid,
+    }),
+
+  getAuthUsers: () => request('GET', '/api/auth/users'),
+
+  getAuthLogins: (limit = 50) => request('GET', `/api/auth/logins?limit=${limit}`),
 };
 
 export { ApiError };

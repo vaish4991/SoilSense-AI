@@ -13,6 +13,7 @@ import AnalysisReport from './components/AnalysisReport';
 import LoadingScreen from './components/LoadingScreen';
 import ChatInterface from './components/ChatInterface';
 import HistoryModal from './components/HistoryModal';
+import LoginActivityModal from './components/LoginActivityModal';
 
 // Pages
 import LoginPage from './pages/LoginPage';
@@ -32,6 +33,7 @@ function Dashboard() {
 
   // Pro Feature: History Drawer & Local Persistence
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+  const [isUsersOpen, setIsUsersOpen] = useState(false);
   const [history, setHistory] = useState([]);
 
   // Load user-specific history on mount or user change
@@ -125,6 +127,7 @@ function Dashboard() {
       <Navbar
         onReset={handleReset}
         onOpenHistory={() => setIsHistoryOpen(true)}
+        onOpenUsers={() => setIsUsersOpen(true)}
         historyCount={history.length}
       />
 
@@ -154,6 +157,12 @@ function Dashboard() {
         history={history}
         onSelect={handleLoadHistoryRecord}
         onClear={handleClearHistory}
+      />
+
+      {/* Users & Login Activity Modal */}
+      <LoginActivityModal
+        isOpen={isUsersOpen}
+        onClose={() => setIsUsersOpen(false)}
       />
     </>
   );

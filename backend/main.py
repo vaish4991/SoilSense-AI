@@ -22,6 +22,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 from backend.api.routes import router
+from backend.db.database import init_db
 from backend.ml.predict import load_model, is_model_loaded
 
 # ─────────────────────────────────────────────────────────────
@@ -45,6 +46,8 @@ from contextlib import asynccontextmanager
 async def lifespan(app: FastAPI):
     """FastAPI lifespan — runs on startup and shutdown."""
     logger.info("SoilSense AI starting up…")
+    init_db()
+    logger.info("Auth & login tracking database initialized.")
     loaded = load_model()
     if not loaded:
         logger.warning("ML model not found. Attempting to train automatically…")
